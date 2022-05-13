@@ -1,8 +1,8 @@
 # O que é programação?
 
-Programação é a área da ciência e tecnologia especializada na instrução de computadores e sistemas, há também aqueles que defendem que a programação está tambem associada a arte, vide programação de jogos.
+Programação é a área da ciência e tecnologia especializada na instrução de computadores e sistemas, há também aqueles que defendem que a programação está também associada a arte, vide programação de jogos.
 
-ela é divida em inumeras areas, apenas para citar algumas temos:
+ela é divida em inúmeras áreas, apenas para citar algumas temos:
 
 - Desenvolvimento de Sites
 
@@ -24,6 +24,6 @@ _De acordo com a Wikipédia:_
 > 
 > *Há várias décadas se debate se a programação é mais semelhante a uma* [*arte*](https://pt.wikipedia.org/wiki/Arte "Arte") *(*[*Donald Knuth*](https://pt.wikipedia.org/wiki/Donald_Knuth "Donald Knuth")*), a uma* [*ciência*](https://pt.wikipedia.org/wiki/Ci%C3%AAncia "Ciência")*, à* [*matemática*](https://pt.wikipedia.org/wiki/Matem%C3%A1tica "Matemática") *(*[*Edsger Dijkstra*](https://pt.wikipedia.org/wiki/Edsger_Dijkstra "Edsger Dijkstra")*), à* [*engenharia*](https://pt.wikipedia.org/wiki/Engenharia "Engenharia") *(*[David Parnas](https://pt.wikipedia.org/wiki/David_Parnas "David Parnas")*), ou se é um campo completamente novo."*
 
-Os profissionais da area são conhecidos como programadores ou engenheiros de software, a principal habilidade de um programador é a de resolução de problemas, essencialmente falando, um bom programador é medido não apenas pelo seu conhecimento tecnico, mas majoritariamente pela sua habilidade de compreensão e resolução de um problema.
+Os profissionais da área são conhecidos como programadores ou engenheiros de software, a principal habilidade de um programador é a de resolução de problemas, essencialmente falando, um bom programador é medido não apenas pelo seu conhecimento técnico, mas majoritariamente pela sua habilidade de compreensão e resolução de um problema.
 
-Para atingir tais objetivos, nós os programadores usamos ferramentas como as linguagens de programação, os editores de codigo, frameworks, entre outros
+Para atingir tais objetivos, nós os programadores usamos ferramentas como as linguagens de programação, os editores de código, frameworks, entre outros

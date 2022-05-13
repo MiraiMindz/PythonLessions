@@ -14,6 +14,14 @@ As linguagens podem ser classificadas de acordo com seus paradigmas, método de 
 
 Uma pequena introdução aos conceitos mais comuns:
 
+- Linguagens Matriz:
+  
+  - Programação (Cerebro):
+  
+  - Marcação (Esqueleto):
+  
+  - Estilo (aparencia):
+
 - Paradigma:
   
   - O paradigma de uma linguagem de programação define sua funcionalidade, especificidade, ou orientação, informalmente dizendo, o paradigma de uma linguagem é o equivalente a "uma serie de métodos, dogmas, regras e conceitos que guiam o código fonte"
