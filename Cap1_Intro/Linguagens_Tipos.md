@@ -14,15 +14,15 @@ As linguagens podem ser classificadas de acordo com seus paradigmas, método de 
 
 Uma pequena introdução aos conceitos mais comuns:
 
-- Linguagens Matriz:
+- Linguagens Matriz: A matriz de uma linguagem define sua utilidade principal, são 3 tipos, Programação (Logica), Marcação (Documentação), Estilo (Design)
   
-  - Programação (Cerebro):
+  - Programação (Logica): As linguagens de Programação são marcadas por funções e comandos, elas trabalham a logica de maquina, alguns exemplos são, Python e BASH.
   
-  - Marcação (Esqueleto):
+  - Marcação (Documentação): As Linguagens de Marcação são marcada pelo uso de marcadores de texto (ex: itálico, negrito, cabeçalhos, etc...), elas são mais usadas na criação de documentos, exemplos seriam MarkDown e HTML (HyperTextMarkupLanguage)
   
-  - Estilo (aparencia):
+  - Estilo (Design): As Linguagens de Estilo são marcadas pelo o uso de propriedades de aparência (ex: background-color, shadow, etc...), elas são usadas na estilização de sites e aplicativos, exemplos seriam CSS e SASS
 
-- Paradigma:
+-  Paradigma:
   
   - O paradigma de uma linguagem de programação define sua funcionalidade, especificidade, ou orientação, informalmente dizendo, o paradigma de uma linguagem é o equivalente a "uma serie de métodos, dogmas, regras e conceitos que guiam o código fonte"
   
