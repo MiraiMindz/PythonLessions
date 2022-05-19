@@ -37,7 +37,7 @@
 
 # and -> COMBINA
 # or -> SE 1 FOR VERDADE
-# not -> INVERTE
+# not -> INVERTE2
 
 # print(True and True) # -> Verdade
 # print(True and False) # -> Falso
@@ -85,12 +85,12 @@
 # #print("meu nome é {}".format(nome))
 # print(f"Meu nome é {nome.capitalize()} eu tenho {idade} dou aula no {local.upper()} sobre a linguagem {materia.lower()}")
 
-input()
-print()
-str()
-int()
-bool()
-float()
+# input()
+# print()
+# str()
+# int()
+# bool()
+# float()
 
 
 # Desafio:
