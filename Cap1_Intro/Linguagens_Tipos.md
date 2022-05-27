@@ -22,7 +22,7 @@ Uma pequena introdução aos conceitos mais comuns:
   
   - Estilo (Design): As Linguagens de Estilo são marcadas pelo o uso de propriedades de aparência (ex: background-color, shadow, etc...), elas são usadas na estilização de sites e aplicativos, exemplos seriam CSS e SASS
 
--  Paradigma:
+- Paradigma:
   
   - O paradigma de uma linguagem de programação define sua funcionalidade, especificidade, ou orientação, informalmente dizendo, o paradigma de uma linguagem é o equivalente a "uma serie de métodos, dogmas, regras e conceitos que guiam o código fonte"
   
@@ -46,17 +46,17 @@ Uma pequena introdução aos conceitos mais comuns:
         
         // Aqui nós declaramos a primeira função
         func funcao_print_1() {
-            fmt.Println("Função 1")
+           fmt.Println("Função 1")
         }
         
         // Aqui nós declaramos a segunda função
         func funcao_print_2() {
-            fmt.Println("Função 2")
+           fmt.Println("Função 2")
         } 
         
         func main() {
-            funcao_print_2() // Aqui chamamos a segunda
-            funcao_print_1()  // Aqui chamamos a primeira
+           funcao_print_2() // Aqui chamamos a segunda
+           funcao_print_1()  // Aqui chamamos a primeira
         }
         ```
         
@@ -66,10 +66,10 @@ Uma pequena introdução aos conceitos mais comuns:
       
       - ```java
         public class Program {
-            public static void main(String[] args) throws Exception {
-                String str = "Olá Mundo";
-                System.out.println(str);
-            }
+           public static void main(String[] args) throws Exception {
+               String str = "Olá Mundo";
+               System.out.println(str);
+           }
         }
         ```
 
