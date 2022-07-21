@@ -1,123 +1,63 @@
 - Introdução a Programação e ao Ambiente de Desenvolvimento
-
   - [O que é programação?](./Cap1_Intro/Introducao.md)
-
   - [O que são Linguagens de Programação e quais são os tipos? (EXPLICAÇÃO BASICA)](./Cap1_Intro/Linguagens_Tipos.md)
-
   - Configurando o Ambiente
-
   - Instalando Python
-
   - Diferentes IDEs
-
   - Configurando o Visual Studio Code
-
 - Fundamentos do Python - I
-
   - Variaveis e Print, Input e Comentarios
-
   - Declaração e a Função `print`
-
   - Função `input`
-
   - Comentarios
-
   - Tipos de Dados
-
     - O que são dados? (EXPLICAÇÃO BASICA)
-
     - O que são dados Primitivos e Compostos? (EXPLICAÇÃO BASICA)
-
     - Quais são os tipos que existem em Python?
-
   - Tipos Primitivos
-
     - Numeros e Operações Aritimeticas (Matematicas)
-
       - Tipos numericos (Int & Float)
-
       - Operações Matematicas simples (BODMAS & PEMDAS)
-
     - Strings e formatação
-
       - Aspas Unicas e Duplas
-
       - Multiplas linhas (multi comentarios)
-
       - Escapagem
-
       - Concatenação
-
       - fStrings `string.format()`, `f""`
-
       - Formatação
-
     - Booleano, Comparações `and`, `or` & `is`
-
       - Valores Booleanos
-
       - Comparadores Lógicos
-
       - `and`, `or` & `not`
-
         - Curto Circuito
-
           - `or` performance
-
           - `and` performance
-
   - Tipos Compostos
-
   - Listas
-
     - Declaração e Dados Homogêneos `[]`, `list()`
-
     - Indexes[]
-
     - `list.append()`
-
     - `list.remove()`
-
     - `list.pop()`
-
     - `list.insert()`
-
     - Matrizes (Listas Multi-dimensionais)
-
   - Tuples
-
     - Declaração e Dados Homogêneos ` , || ( , )`, `tuple()`
-
     - Adição de elementos e reassociação (associação recursiva)
-
   - Sets
-
     - Declaração e Dados Homogêneos `{}` `set()`
-
     - `set.add()`
-
     - `set.remove()`
-
     - `set.difference()`
-
     - `set.symmetric_difference()`
-
     - `set.intersection()`
-
     - `set.union()`
-
   - Dicionarios
-
     - Declaração e Dados Homogêneos `{chave:valor}`, `dict()`
-
     - Reassociação
-
   - `sum()` & `len()`
-
     - quiz de caso de uso `sum()` & `len()`
-
   - EXTRAS: `bin` e `complex`
-
 - Fundamentos do Python - II
     - Tipos de Controle de Flow e Escopo (SIMPLES)
         - Condicional `if`, `switch`
@@ -219,47 +159,340 @@
         - Membros
             - `in`
             - `in not`
-
 - Milestone 1
-
+  - Criar a Biblioteca de Filmes
 - Programação Orientada a Objetos
-
+  - Introdução a OOP (Object Oriented Programming)
+    - Herança
+    - Abstração
+    - Encapsulação
+    - Polimorfismo
+    - Classes e Objetos
+  - Nomeação de Parametros
+  - Metodos Mágicos (Magic Methods)
+  - Introdução Básica a Decoradores
+    - @property
+    - @classmethod
+    - @staticmethod
+  - `super()`
 - Erros
-
+  - Introdução a Errors
+  - Erros Nativos
+  - Elevando Erros (Raising Exception/Error)
+  - Criando Erros
+  - Lidando Com os Erros do Python
+  - On-Success e Re-Elevando Errors
+  - Lidando Com os Erros do Usuário
+  - Depuração (Debugging)
 - Arquivos
-
+  - Introdução a Arquivos
+  - Copiando Arquivos
+  - Arquivos CSV
+  - Arquivos JSON
+  - Arquivos XML
+  - Usando `with`
+  - Importando Nossos Próprios Arquivos
+  - Importações Relativas
+    - Acima
+    - Abaixo
+  - Importando Erros e Executando Como um Script Em Python
+  - Modulos e Packages
+    - Introdução a Modulos
+    - Introdução a Packages
+    - `if __name__ == '__main__':`
 - Databases
-
+  - Intro a Databases
+  - Usando SQLite
+  - Conceitos de Databases
+  - `SELECT`
+  - Coletando Todos os Valores da Tabela
+  - `UPDATE` e `DELETE`
+  - Filtrando com `WHERE`
+  - Organizando e Limitando
+  - Criando nosso Gerenciador de Contexto (Context Manager)
+  - Erros no Gerenciador de Contexto
 - Milestone 2
-
+  - Criando Biblioteca de Livros
 - Type-Hint
-
+  - O que é Type-Hint
+  - Pra que Serve
+  - Typing em Python
 - Funções nativas avançadas
-
+  - Geradores
+  - Classes Geradoras e Iteradores
+  - Iteráveis
+  - A Função `filter()`
+  - A Função `map()`
+  - As Funções `any()` e `all()`
 - Desenvolvimento avançado
-
+  - Mutabilidade
+  - Mutabilidade de Argumentos
+  - Valores Padrões Para Argumentos
+  - Argumentos Padrões Mutáveis
+  - Unpacking de Argumentos
+  - Filas (Queues)
+  - Python Collections
+  - Datas e Horarios
+    - Timezones
+    - Datas e Horário
+    - Temporizando Código
+  - Expressões Regulares (RegEx)
+    - O que são?
+    - Exemplos
+    - RegEx em Python
+  - Logging
+    - Introdução a Logging
+    - Logging em Python
+  - Funções de Alta Ordem
 - Web Scraping
-
+  - Introdução a Web Scraping
+  - Linguagens de Marcação
+  - HTML com BeautifulSoup
+  - Parsing Complexo de HTML
+  - Estruturando nosso Parser
+  - Dividindo Nossos Localizadores de HTML de nossa Classe (HTML Locators)
+  - Entendendo HTML nos Navegadores
+  - 'Scrapando' nosso Primeiro Site
+- Milestone 3 (Fazer Junto)
+  - Introdução ao Scraper de Citações
+  - Estruturando um App de Scraping
+  - Coletando nossos Localizadores
+  - Criando no Parses
+  - A Pagina de Citações
+  - Recapitulação
+- Milestone 4
+  - Um Scraper de Livros + Desenvolvimento de Aplicação
+  - Recapitulação de Locators
+  - Criando Locators em Python
+  - Criando nossa Pagina
+  - Criando nosso Parser de Livros
+  - Escrevendo o arquivo do app
+  - Organizando os livros
+  - Construindo os menus
+    - O melhor jeito de escrever menus
+  - Coletando Multiplas paginas
+  - Coletando o numero de paginas
+  - Adicionando Logging ao nosso aplicativo
+  - Menção a Scraping com JavaScript
 - Automação de navegador com Selenium
-
+  - Review do QuoteScraper
+  - ChromeDriver
+  - Usando o Chrome no nosso Codigo de Scraping
+  - Novos Localizadores de Página
+  - Interagindo com Dropdowns
+  - Selecionando Tags
+  - Procurando por Citações
+  - Encapsulando uma lógica mais simples
+  - Adicionando Error Handling
+  - Esperas Implicitas e Explicitas (Waits)
+  - Adicionando Esperas (Waits)
 - Async Dev
-
+  - Introdução a Desenvolvimento Asyncrono
+  - Processos e Threads
+  - GIL
+  - Concurrency (Concorrencia)
+    - ThreadPoolExecutor
+    - Não Finalize Threads
+    - Multiprocessing
+    - ProcessPolExecutor
+  - Estado Compartilhado (Shared State)
+  - Enfileirando Threads com estado compartilhado
+  - Usando geradores ao invés de threads
+  - Planejador de thread unica (Single-threaded scheduler)
+  - Yielding
+    - Recebendo dados através de Yields
+  - `async` e `await`
+  - Scraper Asyncrono
+  - Pedido Asyncrono (Async Request)
+  - Coletando Multiplas paginas de forma eficiente
+  - Usando `async_timeout` para segurança
+  - Tornando nosso scraper asyncrono
+- Ambientes Virtuais (Virtual Envs)
+  - Pipenv
+  - Virtualenv
 - Webdev Flask
-
+  - Configurando nosso projeto com Pipenv
+  - Flask Endpoint
+  - Recebendo informação com Flask
+  - Renderizando HTML com Flask
+  - Paginas de erro e herança do Jinja2
+  - Renderizando formulários
+  - Acessando informações pós-formulário com Flask
+  - Colocando nossos formulários em um unico endpoint
+  - Usando Jinja2 `for` loops pra criar uma homepage
+  - Adicionando navegação ao nosso site
+  - Uma menção ao PyScript
 - APIs
-
+  - Criando conta na OpenWeatherAPI
+  - Coletando Informações da API
+  - Criando uma estação de clima
+  - Colocando funções no cache com `functools`
+  - TTL caches com `cachetools`
 - Decorators
-
+  - Um Simples decorador em python
+  - Usando a sintaxe `@` (@syntax)
+  - `functools` wraps
+  - Decorando funções com parametros
+  - Decoradores com parametros
+  - Funções que aceitam multiplos argumentos
+  - Decoradores Genericos para qualquer função
 - Programação orientada a objetos avançada
-
+  - Multipla Herança
+  - ABCs
+    - Ultilidade do ABC
+    - A Relação entre ABC e Interfaces
+  - O Configurador de propriedade (Property Setter)
+- Milestone 5
+  - Um bot pro discord usando o `discord.py`
 - desenvolvimento GUI com Tkinter
-
+  - Configurando o Tkinter
+  - O infame "Hello World!"
+  - Rotulos e campos
+  - Agrupando componentes
+  - Usando molduras para diferentes layouts
+- Milestone 6
+  - Criando um Editor de Texto
+  - Notebooks do Tkinter e criação de arquivos
+  - Adicionando um menu ao nosso aplicativo
+  - Salvando arquivos no disco
+  - Abrindo Arquivos
+  - Adicionando Atalhos
+  - Checando abas por mudanças não salvas
+  - Confirmando saida com mudanças não salvas
+  - Adicionando outro menu
+  - Adicionando uma barra de rolagem permanente na area de texto
+- Desenvolvimento Mobile
+  - Introdução ao Kivy
+  - Elementos do Kivy
+  - A Linguagem Kv
+- Milestone 7
+  - Um App de Pintura
+  - Planejando nosso App
+  - Compilando e Exportando o Aplicativo
 - Unit Tests
-
-- Algoritmos e Estrutura de dados
-
+  - Introdução a Testes
+  - Testando Funções
+  - Testando Erros
+  - Testando uma função de multiplicação
+  - Escrevendo uma classe de exibição para testes (printer class)
+  - Testando Classes
+  - Mais testes de exibição
+  - Testando Bibliotecas Externas
+- Ciencia de Dados
+  - NumPy
+  - Matplotlib
+  - Plotagem de Graficos
+- Algoritmos, Estrutura de Dados e Machine Learning
+  - Introdução a Algoritmos
+  - Introdução a Estrutura de Dados (Apresentação)
+  - Pesquisa Binária (Apresentação)
+  - Arvores Binárias (Apresentação)
+    - Organização de uma Arvore Binária (Apresentação)
+    - Adicionando Elementos (Apresentação)
+    - Adicionando Elementos Usando Python
+    - Recursão e Organização Inversa
+    - Procurando Nodes
+    - Deletandos Nodes (Apresentação)
+    - Deletando Nodes em Python
+      - Deletando Nodes com dois filhos
+    - Testando a Arvore Binária
+  - Machine Learning
+  - Processamento de Audio
+  - Processamento de Imagens
+- Milestone 8
+  - Escrevendo um Perceptron
 - Bibliotecas
-
+  - O que são Bibliotecas?
+  - Linters
+    - O que são?
+    - Pylint
+    - Yapf
+  - Enviando Emails
+    - Usando smtplib
+    - Usando Mailgun
+    - Criando uma Biblioteca Re-ultilizavel do Mailgun
+- Redes e Soquetes
+  - Redes
+    - Endereços MAC, IPv4 e IPv6
+  - Protocolos
+    - HTTP, SSH, UDP, TCP, FTP
+  - Soquetes, Portas, Clientes e Servidores
+    - O que são soquetes?
+    - O que são portas?
+    - O que são clientes e servidores?
+  - Criando um Servidor e Cliente Local pra transimissão de dados
+- Milestone 9
+  - TCP Chat Room
 - Criptografia
-
-- GameDev com a UrsinaEngine
+  - O que é Encriptação
+  - Encriptação de Multiplas Etapas
+  - Criptografia Hibrida
+  - Algoritmos
+    - Cifra Reversa
+    - Cifra de Cesar
+    - ROT13
+    - Transposição
+    - Base64
+    - XOR Process
+    - Multiplicativa
+    - Affine
+    - Monoalfabetico
+    - Substituição Simples
+    - Cifra de Vignere
+    - One Time Pad
+  - Criptografia Simetrica e Assimetrica
+    - DES (Data Encription Standard)
+    - RSA
+      - Autorização e Autenticação
+  - Criptografia via Hash
+  - Criptografando Arquivos
+- Milestone 10
+  - TCP Chat Room Criptografada
+- Cyber Segurança e Hacking Ético
+  - Cyber Segurança
+    - Validação de Cliente (Client-side Validation)
+  - Hacking Ético
+    - Password Cracking (Quebra de Senhas)
+      - Força Bruta (Brute Force)
+      - SHA256
+      - SHA512
+    - Network Scanner
+    - Ataques de DoS e DDoS
+    - Ataques de SSH e FTP
+    - Keylogger
+    - Spoofing
+      - Alterando endereço MAC
+      - ARP Spoofing
+      - TCP Payload
+      - DNS Spoofer
+    - Sniffer
+      - Sniffing FTP
+    - Flooder
+      - SynFlooder
+    - Reverse Shell
+    - Malware
+    - Penetration
+      - Roubando Senhas em Redes Wifi
+      - Bruteforcing GMAIL
+      - Bruteforcing Paginas de Login
+      - Dicionarios Escondidos
+      - Descobrindo Sub-Dominios
+      - Alterando Header HTTP
+      - Ransomware
+- GameDev
+  - Introdução a GameDev
+    - Objetos e Cenas
+    - GameEngines
+  - Turtle Graphics
+    - Galaga
+    - Jogo de Ação
+    - Jogo de Plataforma
+  - PyGame
+    - Jogo Genérico de Carro
+  - UrsinaEngine
+    - Pong
+    - SnakeGame
+- Documentação
+  - A Importancia da Documentação
+  - Comentario vs Documentação
+  - Clean Code
