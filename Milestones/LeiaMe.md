@@ -6,6 +6,8 @@ Bom, não precisa me responder mas imagino que você tenha assistido ao menos um
 
 E se existisse uma forma de você "guardar" esse filme? Pois então este será seu desafio, você irá programar uma biblioteca de filmes.
 
+O seu objetivo é deixar igual ao video que eu enviei.
+
 ---
 
 Antes de começar eu gostaria que você fizesse algumas coisas:
