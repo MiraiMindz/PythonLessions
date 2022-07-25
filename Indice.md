@@ -1,10 +1,10 @@
-- Introdução a Programação e ao Ambiente de Desenvolvimento
-  - [O que é programação?](./Cap1_Intro/Introducao.md)
-  - [O que são Linguagens de Programação e quais são os tipos? (EXPLICAÇÃO BASICA)](./Cap1_Intro/Linguagens_Tipos.md)
-  - Configurando o Ambiente
-  - Instalando Python
-  - Diferentes IDEs
-  - Configurando o Visual Studio Code
+# Indice
+
+## Roadmap
+
+- Introdução a Programação
+  - O que é programação?
+  - O que são Linguagens de Programação e quais são os tipos? (EXPLICAÇÃO BASICA)
 - Fundamentos do Python - I
   - Variaveis e Print, Input e Comentarios
   - Declaração e a Função `print`
@@ -99,13 +99,12 @@
     - a função `zip()`
     - Funções
         - Argumentos e Parametros
-            - Parametros Padrões e Argumentos Chave
-            - DocStrings
-            - `args*`, `kwargs**`
+          - Parametros Padrões (Valores Padrões) e Argumentos Chave (Nomeados)
+          - `args*`, `kwargs**`
+        - DocStrings
         - `return`
-        - Valores Padrões
     - Funções lambda
-    - Funções de primeira Classe e Alta Ordem em Python
+    - Funções de Primeira Classe e Alta Ordem em Python
         - Escopo
         - `global` e `nonlocal`
     - Expressões e Afirmações
@@ -118,6 +117,11 @@
             - modulo (resto) `%`
             - potencia `**`
             - TrueDiv (divisão exclusiva) `//`
+        - Lógicos
+            - `and`
+            - `or`
+            - `not`
+            - "Ternary Operator"
         - Comparativos
             - maior que `>`
             - menor que `<`
@@ -125,11 +129,12 @@
             - diferente `!=`
             - maior ou igual a `>=`
             - menor ou igual a `<=`
-        - Lógicos
-            - `and(&&)`
-            - `or(||)`
-            - `not(!)`
-            - "Ternary Operator"
+        - Identidade
+            - `is`
+            - `is not`
+        - Membros
+            - `in`
+            - `in not`
         - Bitwise
             - O que são Operadores Bitwise?
             - `AND (&)`
@@ -153,12 +158,6 @@
             - RightShift-Igual `>>=` (Bitwise)
             - LeftShift-Igual `<<=` (Bitwise)
             - Walrus Operator
-        - Identidade
-            - `is`
-            - `is not`
-        - Membros
-            - `in`
-            - `in not`
 - Milestone 1
   - Criar a Biblioteca de Filmes
 - Programação Orientada a Objetos
@@ -330,6 +329,7 @@
   - TTL caches com `cachetools`
 - Decorators
   - Um Simples decorador em python
+    - Funções de Alta Ordem em Python (Retorno)
   - Usando a sintaxe `@` (@syntax)
   - `functools` wraps
   - Decorando funções com parametros
@@ -448,6 +448,8 @@
   - Criptografando Arquivos
 - Milestone 10
   - TCP Chat Room Criptografada
+- Milestone 11
+  - Cliente Torrent
 - Cyber Segurança e Hacking Ético
   - Cyber Segurança
     - Validação de Cliente (Client-side Validation)
@@ -496,3 +498,56 @@
   - A Importancia da Documentação
   - Comentario vs Documentação
   - Clean Code
+
+## Milestones
+
+- Milestone 1
+  - Criar a Biblioteca de Filmes
+- Milestone 2
+  - Criando Biblioteca de Livros
+- Milestone 3 (Fazer Junto)
+  - Introdução ao Scraper de Citações
+  - Estruturando um App de Scraping
+  - Coletando nossos Localizadores
+  - Criando no Parses
+  - A Pagina de Citações
+  - Recapitulação
+- Milestone 4
+  - Um Scraper de Livros + Desenvolvimento de Aplicação
+  - Recapitulação de Locators
+  - Criando Locators em Python
+  - Criando nossa Pagina
+  - Criando nosso Parser de Livros
+  - Escrevendo o arquivo do app
+  - Organizando os livros
+  - Construindo os menus
+    - O melhor jeito de escrever menus
+  - Coletando Multiplas paginas
+  - Coletando o numero de paginas
+  - Adicionando Logging ao nosso aplicativo
+  - Menção a Scraping com JavaScript
+- Milestone 5
+  - Um bot pro discord usando o `discord.py`
+- Milestone 6
+  - Criando um Editor de Texto
+  - Notebooks do Tkinter e criação de arquivos
+  - Adicionando um menu ao nosso aplicativo
+  - Salvando arquivos no disco
+  - Abrindo Arquivos
+  - Adicionando Atalhos
+  - Checando abas por mudanças não salvas
+  - Confirmando saida com mudanças não salvas
+  - Adicionando outro menu
+  - Adicionando uma barra de rolagem permanente na area de texto
+- Milestone 7
+  - Um App de Pintura
+  - Planejando nosso App
+  - Compilando e Exportando o Aplicativo
+- Milestone 8
+  - Escrevendo um Perceptron
+- Milestone 9
+  - TCP Chat Room
+- Milestone 10
+  - TCP Chat Room Criptografada
+- Milestone 11
+  - Cliente Torrent
