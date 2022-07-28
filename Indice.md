@@ -1,5 +1,7 @@
 # Indice
 
+Esse indice pode mudar de acordo com o tempo
+
 ## Roadmap
 
 - Introdução a Programação
@@ -57,6 +59,7 @@
     - Reassociação
   - `sum()` & `len()`
     - quiz de caso de uso `sum()` & `len()`
+  - Conversão e Coerção
   - EXTRAS: `bin` e `complex`
 - Fundamentos do Python - II
     - Tipos de Controle de Flow e Escopo (SIMPLES)
