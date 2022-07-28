@@ -15,3 +15,9 @@ Até o presente momento, você construirá 11 projetos (pode variar no futuro):
 - Milestone 9: Uma TCP Chat Room
 - Milestone 10: TCP Chat Room Criptografada
 - Milestone 11: Cliente Torrent
+
+Notas:
+- A pasta `Classes` contém a versão escrita do que será ensinado/dito nas lives
+- A pasta `Code` contém o codigo escrito durante as aulas
+- A pasta `Exercicios` contém praticas e pequenos desafios passados
+- A pasta `Milestones` contém os grandes projetos/milestones

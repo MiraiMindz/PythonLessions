@@ -477,7 +477,7 @@ Esse indice pode mudar de acordo com o tempo
     - Reverse Shell
     - Malware
     - Penetration
-      - Roubando Senhas em Redes Wifi
+      - Bruteforcing Senhas em Redes Wifi
       - Bruteforcing GMAIL
       - Bruteforcing Paginas de Login
       - Dicionarios Escondidos
