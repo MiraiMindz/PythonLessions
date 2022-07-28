@@ -2,7 +2,7 @@
 name: Erro Encontrado - Bug Report
 about: Nos diga o erro assim poderemos corrigi-lo
 title: "[ERROR/BUG]"
-labels: ''
+labels: bug
 assignees: ''
 
 ---

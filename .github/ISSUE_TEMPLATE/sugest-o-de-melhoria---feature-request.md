@@ -2,7 +2,7 @@
 name: Sugestão de Melhoria - Feature Request
 about: Sugira ideias para este repositório
 title: "[SUGESTÃO/FEATURE]"
-labels: ''
+labels: enhancement
 assignees: ''
 
 ---
