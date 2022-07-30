@@ -172,6 +172,7 @@ Esse indice pode mudar de acordo com o tempo
     - @property
     - @classmethod
     - @staticmethod
+  - Herança Básica
   - `super()`
 - Erros
   - Introdução a Errors
