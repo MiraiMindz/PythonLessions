@@ -8,12 +8,12 @@ O HTML é o esqueleto e o CSS é a pele e a linguagem é o cérebro
 
 A ÚNICA MATRIZ QUE A GENTE TEM CASSIFICAÇÂO È A DE PROGRAMAÇÔES
 
-Imperativo --> Paradigma 
+Imperativo --> Paradigma
 
 Tipagem Forte --> um número vai um número na memória
 Tipagem Fraca --> um número pode ser o que a memória quiser
 
-Tipagem dinâmica: eu posso simplesmente somar "a = 2". resumindo linguaguem dinâmica é a linguagem que define o tipo das variáveis em tempo de execução. 
+Tipagem dinâmica: eu posso simplesmente somar "a = 2". resumindo linguaguem dinâmica é a linguagem que define o tipo das variáveis em tempo de execução.
 
 Tipagem estática: não funfa, precisa especificar se não da ruim.Define o tipo das variáveis em tempo de compilação e o tipo deve ser espicificada em código.
  para abrir o python no terminal é só digitar " python3 " e pra sair é só colcar " exit() "

@@ -14,6 +14,6 @@ class B:
     def maisum():
           pass
 
- # não funciona 
+ # não funciona
 
        
