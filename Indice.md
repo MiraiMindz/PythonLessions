@@ -165,11 +165,7 @@ Esse indice pode mudar de acordo com o tempo
   - Criar a Biblioteca de Filmes
 - Programação Orientada a Objetos
   - Introdução a OOP (Object Oriented Programming)
-    - Herança
-    - Abstração
-    - Encapsulação
-    - Polimorfismo
-    - Classes e Objetos
+  - Classes e Objetos
   - Nomeação de Parametros
   - Metodos Mágicos (Magic Methods)
   - Introdução Básica a Decoradores
@@ -340,7 +336,11 @@ Esse indice pode mudar de acordo com o tempo
   - Funções que aceitam multiplos argumentos
   - Decoradores Genericos para qualquer função
 - Programação orientada a objetos avançada
-  - Multipla Herança
+  - Herança
+    - Multipla Herança
+  - Abstração
+  - Encapsulação
+  - Polimorfismo
   - ABCs
     - Ultilidade do ABC
     - A Relação entre ABC e Interfaces
