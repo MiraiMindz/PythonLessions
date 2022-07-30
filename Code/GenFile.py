@@ -10,58 +10,6 @@ from os import getcwd, makedirs, path
 from sys import argv
 from getopt import getopt
 
-
-class _Getch:
-    """Gets a single character from standard input.  Does not echo to the screen."""
-
-    def __init__(self) -> None:
-        if (system() == "Linux"):
-            self.impl = _GetchUnix()
-        elif (system() == "Windows"):
-            self.impl = _GetchWindows()
-        else:
-            try:
-                self.impl = _GetchWindows()
-            except ImportError:
-                self.impl = _GetchUnix()
-
-    def __call__(self) -> None:
-        return self.impl()
-
-
-class _GetchUnix:
-    def __init__(self) -> None:
-        import tty
-        import sys
-
-    def __call__(self) -> None:
-        import sys
-        import tty
-        import termios
-        fd = sys.stdin.fileno()
-        old_settings = termios.tcgetattr(fd)
-
-        try:
-            tty.setraw(sys.stdin.fileno())
-            ch = sys.stdin.read(1)
-        finally:
-            termios.tcsetattr(fd, termios.TCSADRAIN, old_settings)
-
-        return ch
-
-
-class _GetchWindows:
-    def __init__(self):
-        import msvcrt
-
-    def __call__(self):
-        import msvcrt
-        return msvcrt.getch()
-
-
-getch = _Getch()
-
-
 class OsTypeError(Exception):
     """Error created for readability"""
 
@@ -108,8 +56,7 @@ def main(args=None) -> None:
             with open(path.join(cap_dir, f"{filename}.md"), "w") as f:
                 pass
         if (not Path(path.join(cap_dir, f"{filename}.py")).exists()):
-            print("Gostaria de criar um arquivo em Python para acompanhar com codigo? (s/n)")
-            resp = getch()
+            resp = input("Gostaria de criar um arquivo em Python para acompanhar com codigo? (s/n) ")
             if (resp.lower() == "s"):
                 with open(path.join(cap_dir, f"{filename}.py"), "w") as f:
                     pass
