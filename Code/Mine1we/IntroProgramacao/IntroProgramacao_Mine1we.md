@@ -1,7 +1,7 @@
 Programação é sobre resolver problemas e conceito usando as linguagens
 Lembra da parte dos carro mine
 
-Existem 2 tipos coiso o cara que é programador é aquele que vai sentar o CU ele vai começar a falar por que ele entende a merda que ele ta falando.
+Existem 2 tipos coiso o cara que é programador é aquele que vai sentar o CU dele vai começar a falar por que ele entende a merda que ele ta falando.
 O cara que escreve o código ele é leva Block da própria mente em parte da criatividade
 
 O HTML é o esqueleto e o CSS é a pele e a linguagem é o cérebro
