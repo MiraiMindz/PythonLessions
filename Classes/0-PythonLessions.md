@@ -2444,7 +2444,7 @@ _1 = 1 x 10⁰, 10 = 1 x 10¹, 100 = 1 x 10²..._ e por ai vai.
 
 Os computadores contudo, operam em base 2, ou seja, contém apenas dois algarismos, 0 e 1, ou seja, as casas representam potencias de 2.
 
-_1 = 1 x 2⁰, 2 = 1 x 10¹, 4 = 1 x 2²..._ e por ai vai.
+_1 = 1 x 2⁰, 2 = 1 x 2¹, 4 = 1 x 2²..._ e por ai vai.
 
 em notação binária, 1 significa que estamos usando o valor daquela 'casa' e 0 não (da mesma forma que se escrevermos 404, não estamos usando as dezenas)
 
