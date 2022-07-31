@@ -168,12 +168,12 @@ Esse indice pode mudar de acordo com o tempo
   - Classes e Objetos
   - Nomeação de Parametros
   - Metodos Mágicos (Magic Methods)
+  - Herança Básica
+    - `super()`
   - Introdução Básica a Decoradores
     - @property
     - @classmethod
     - @staticmethod
-  - Herança Básica
-  - `super()`
 - Erros
   - Introdução a Errors
   - Erros Nativos
