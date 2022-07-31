@@ -2462,7 +2462,7 @@ irei dispor de uma tabela com algumas casas e seus valores para facilitar o ente
 
 Os numeros binários crescem da direita para a esquerda, começando pelo _**bit menos significante**_
 
-Espero que tenha ficado minimamente claro, e que agora você tenha uma noção básica de binário, enfim vamos aos operadores.
+Espero que tenha ficado minimamente claro, e que agora você tenha uma noção básica de binário vamos aos operadores.
 
 ##### 3.1.11.9.6. AND
 
