@@ -2498,7 +2498,7 @@ o prefixo `0b` é uma conveção em representação de bases em programação, u
 
 ##### 3.1.11.9.7. OR
 
-o  `OR` performa a [disjunção lógica](https://pt.wikipedia.org/wiki/Disjunção_lógica), basicamente ele retorna 1 caso um ou todos s bits sejam 1 (ou se preferir, só retorna 0 se ambos forem iguais, essencialmente o oposto do `AND`)
+o  `OR` performa a [disjunção lógica](https://pt.wikipedia.org/wiki/Disjunção_lógica), basicamente ele retorna 1 caso um ou todos os bits sejam 1 (ou se preferir, só retorna 0 se ambos forem iguais, essencialmente o oposto do `AND`)
 
 ![OR](./images/OR.gif)
 
