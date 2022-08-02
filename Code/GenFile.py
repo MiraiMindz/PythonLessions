@@ -1,7 +1,6 @@
 '''Script feito para padronizar e automatizar a criação de arquivos pertinentes as aulas
 
-Notas: Talvez precise de refact mas funciona por agora então mais tarde eu faço
-'''
+Notas: Talvez precise de refact mas funciona por agora então mais tarde eu faço'''
 
 from pathlib import Path
 from ntpath import split, basename
@@ -18,11 +17,13 @@ class OsTypeError(Exception):
 
 
 def path_leaf(path):
+    """Return the basename of the path"""
     h, t = split(path)
     return t or basename(h)
 
 
 def get_cap(capnum: int):
+    """Get the lessions chapter"""
     match capnum:
         case 1:
             capname = "IntroProgramacao"
@@ -32,6 +33,8 @@ def get_cap(capnum: int):
             capname = "FundamentosII"
         case 4:
             capname = "OrientacaoObjetoBase"
+        case 5:
+            capname = "Arquivos"
         case _:
             print("Cap name out of range")
             capname = input("Insira o nome do capitulo: ")
@@ -39,6 +42,7 @@ def get_cap(capnum: int):
 
 
 def get_user_values():
+    """Get user Values"""
     nm = input("Insira seu nome(Nickname): ")
     _cp = input("Insira o numero do capitulo: ")
     cp = get_cap(int(_cp))
@@ -46,12 +50,15 @@ def get_user_values():
 
 
 def print_help():
+    """Prints the help message"""
     print("Uso:\n\tpython3 GenFile.py [-h] [-n] [-c] name cap_num\n\nUm script feito para automatizar/padronizar a criação de arquivos pertinentes as aulas.\n\nOptions:\n\t-h, --help\t\tExibe esta ajuda\n\t-n, --name\t\tEspecifica o nome\n \t-n, --cap_num\t\tEspecifica o numero do capitulo\n\nAs opções [-n] e [-c] são opcionais, você pode omiti-las caso insira o nome e o numero do capitulo seguindo a ordem\nCaso nenhum argumento seja provido você será perguntado dentro do script\n\nExemplos de Uso:\n\t1.\tpython3 GenFile.py -n Mirai -c 1\n\t2.\tpython3 GenFile.py Mirai 1\n\t3.\tpython3 GenFile.py\n")
     exit()
 
 
 def main(args=None) -> None:
+    """Main function"""
     def mkfiles():
+        """Creates the lessions files"""
         if (not Path(path.join(cap_dir, f"{filename}.md")).exists()):
             with open(path.join(cap_dir, f"{filename}.md"), "w") as f:
                 pass

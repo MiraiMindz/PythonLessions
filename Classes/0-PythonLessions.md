@@ -102,25 +102,25 @@ Esse arquivo vai conter todas as explicações (meio que um arquivo só com o cu
         - [3.1.11.9.14. Igual](#3111914-igual)
         - [3.1.11.9.15. Mais-Igual](#3111915-mais-igual)
         - [3.1.11.9.16. Walrus Operator](#3111916-walrus-operator)
-- [Programação Orientada a Objetos Básica](#programação-orientada-a-objetos-básica)
-  - [Classe, Objetos e Instancias](#classe-objetos-e-instancias)
-    - [Classes](#classes)
-    - [Objetos](#objetos)
-    - [Instancias](#instancias)
-  - [Nomeação de parametros](#nomeação-de-parametros)
-  - [Metodos Mágicos (Magic Methods/Dunder Methods)](#metodos-mágicos-magic-methodsdunder-methods)
-    - [`__init__()`](#__init__)
-    - [`__call__()`](#__call__)
-    - [`__name__`](#__name__)
-    - [`__repr__`](#__repr__)
-  - [Herança (básica)](#herança-básica)
-    - [`super()`](#super)
-    - [`__new__`](#__new__)
-  - [Introdução básica a Decoradores](#introdução-básica-a-decoradores)
-    - [`@property`](#property)
-    - [Decoradores de metodos `@classmethod` e `@staticmethod`](#decoradores-de-metodos-classmethod-e-staticmethod)
-      - [`@classmethod`](#classmethod)
-      - [`@staticmethod`](#staticmethod)
+- [4. Programação Orientada a Objetos Básica](#4-programação-orientada-a-objetos-básica)
+  - [4.1. Classe, Objetos e Instancias](#41-classe-objetos-e-instancias)
+    - [4.1.1. Classes](#411-classes)
+    - [4.1.2. Objetos](#412-objetos)
+    - [4.1.3. Instancias](#413-instancias)
+  - [4.2. Nomeação de parametros](#42-nomeação-de-parametros)
+  - [4.3. Metodos Mágicos (Magic Methods/Dunder Methods)](#43-metodos-mágicos-magic-methodsdunder-methods)
+    - [4.3.1. `__init__()`](#431-__init__)
+    - [4.3.2. `__call__()`](#432-__call__)
+    - [4.3.3. `__name__`](#433-__name__)
+    - [4.3.4. `__repr__`](#434-__repr__)
+  - [4.4. Herança (básica)](#44-herança-básica)
+    - [4.4.1. `super()`](#441-super)
+    - [4.4.2. `__new__`](#442-__new__)
+  - [4.5. Introdução básica a Decoradores](#45-introdução-básica-a-decoradores)
+    - [4.5.1. `@property`](#451-property)
+    - [4.5.2. Decoradores de metodos `@classmethod` e `@staticmethod`](#452-decoradores-de-metodos-classmethod-e-staticmethod)
+      - [4.5.2.1. `@classmethod`](#4521-classmethod)
+      - [4.5.2.2. `@staticmethod`](#4522-staticmethod)
 
 # 1. Introdução a Programação
 
@@ -2816,7 +2816,7 @@ print(n)
 
 Ele nos permite acessar o valor enquanto ele esta sendo associado, e mais a frente podemos acessar a variavel contendo o valor.
 
-# Programação Orientada a Objetos Básica
+# 4. Programação Orientada a Objetos Básica
 
 A [programação orientada a objetos](https://pt.wikipedia.org/wiki/Programação_orientada_a_objetos) (POO em português e OOP em ingles) é um paradigma de programação que consiste na divisão do código em blocos independentes entre si.
 
@@ -2904,27 +2904,27 @@ print(f"O {estudante_mirai.profissao} {estudante_mirai.nome} tem a media {estuda
     O Estudante Mirai tem a media 8.24
 
 
-## Classe, Objetos e Instancias
+## 4.1. Classe, Objetos e Instancias
 
 em palavras simples: *Um Objeto é uma Instancia de uma Classe*.
 
 agora vamos as explicações.
 
-### Classes
+### 4.1.1. Classes
 
 *De acordo com a Wikipédia:*
 > *Em programação e na orientação a objetos, uma **classe** é um Tipo abstrato de Dados (TAD); ou seja, uma descrição que abstrai um conjunto de objetos com características similares (um projeto do objeto), é um código da linguagem de programação orientada a objetos que define e implementa um novo tipo de objeto, que terão características (atributos) que guardaram valores e, também funções específicas para manipular estes.*
 
 Essencialmente, uma classe é um "Template" de objeto, definindo os atributos e metodos.
 
-### Objetos
+### 4.1.2. Objetos
 
 *De acordo com a Wikipédia:*
 > *Em programação orientada a objetos, a palavra **objeto** refere-se a um "molde"/classe, que passa a existir a partir de uma instância da classe. A classe define o comportamento do objeto, usando atributos (propriedades) e métodos (ações).*
 
 Essencialmente, um objeto é uma manifestação independente de uma classe, tendo seus proprios valores para os atributos das classes.
 
-### Instancias
+### 4.1.3. Instancias
 
 *De acordo com a Wikipédia:*
 > *Em programação orientada a objetos, chama-se instância de uma classe, um objeto cujo comportamento e estado são definidos pela classe.*
@@ -2934,7 +2934,7 @@ Essencialmente, As instancias são um conjunto de objetos com metodos e definiç
 Um resumo de tudo *de acordo com a Wikipédia:*
 > *As instâncias de uma classe compartilham o mesmo conjunto de atributos, embora sejam diferentes quanto ao conteúdo desses atributos. Por exemplo, a classe "Empregado" descreve os atributos comuns a todas as instâncias da classe "Empregado". Os objetos dessa classe podem ser semelhantes, mas variam em atributos tais como "nome" e "salário".*
 
-## Nomeação de parametros
+## 4.2. Nomeação de parametros
 
 no seguinte bloco de código:
 
@@ -2949,7 +2949,7 @@ eu irei explicar a diferença entre o `self.notas` e o `notas` e consequentement
 
 o `self` se refere a classe `Estudante` em si, ou seja, quando fazemos `self.notas`, nós estamos criando um *atributo* chamado `notas` dentro da classe `Estudante`, e nós o associamos ao parametro `notas` da função especial `__init__()`
 
-## Metodos Mágicos (Magic Methods/Dunder Methods)
+## 4.3. Metodos Mágicos (Magic Methods/Dunder Methods)
 
 ![MeetTheDunders](./images/MeetTheDunders2.jpeg)
 
@@ -2966,7 +2966,7 @@ aqui uma lista dos mais comumns:
 
 irei ressaltar todos exceto o `__new__()`, deixarei ele para quando aprendermos sobre `super()`
 
-### `__init__()`
+### 4.3.1. `__init__()`
 
 o `__init__()` é executado quando um objeto é instanciado, ele essencialmente serve para definir os atributos das instancias.
 
@@ -2987,7 +2987,7 @@ print(estd.nome)
     Mirai
 
 
-### `__call__()`
+### 4.3.2. `__call__()`
 
 Essencialmente esse metodo é executado quando uma classe é executada como função.
 
@@ -3009,7 +3009,7 @@ Estd_1() # __call__ é executado
     o estudante Mirai tem [1, 2, 3] notas
 
 
-### `__name__`
+### 4.3.3. `__name__`
 
 O `__name__` é usado quando queremos saber o nome da classe na qual o objeto foi instanciado, ou nome do módulo (mais a frente explicarei sobre).
 
@@ -3063,7 +3063,7 @@ em outras palavras `self.__name__` diz o que é o `__main__` dele, usando a repr
 
 > Sendo sincero, nunca cheguei a ter que definir o `__main__` diretamente, sempre usei o `__main__` nativo
 
-### `__repr__`
+### 4.3.4. `__repr__`
 
 O `__repr__` retorna uma string de representação do objeto quando usamos a função `repr()`.
 
@@ -3112,7 +3112,7 @@ print(repr(Estd_2))
     O Estudante Mirai é um objeto
 
 
-## Herança (básica)
+## 4.4. Herança (básica)
 
 Finalmente chegamos a um importantissimo tópico em orientação a objetos, Herança (Inheritance).
 
@@ -3190,7 +3190,7 @@ A classe `Pessoa` é pai da classe `Estudante`.
 
 > NOTA: essas relações se extendem, ou seja, podemos ter classes netas, avós, tias, primas, etc...
 
-### `super()`
+### 4.4.1. `super()`
 
 *De acordo com a [documentação do Python](https://docs.python.org/3/library/functions.html#super)* (tradução livre):
 > A função super() retorna um proxy de objeto que delega os metodos para uma classe pai ou irmã
@@ -3199,7 +3199,7 @@ basicamente, nos dá acesso aos metodos e atributos da classe pai.
 
 ele também pode ser usado para instanciar um novo objeto, através do `__new__`
 
-### `__new__`
+### 4.4.2. `__new__`
 
 O `__new__` é usado para criar um novo objeto, veja um exemplo:
 
@@ -3230,7 +3230,7 @@ Exemplo()
 
 > NOTA: Novamente, eu nunca cheguei a precisar usar o `__new__` pessoalmente
 
-## Introdução básica a Decoradores
+## 4.5. Introdução básica a Decoradores
 
 um decorador é uma funcionalidade da linguagem que nos permite alterar o funcionamento de funções e classes.
 
@@ -3249,7 +3249,7 @@ Existem varios decoradores, mas irei ressaltar 3
 - `@classmethod`
 - `@staticmethod`
 
-### `@property`
+### 4.5.1. `@property`
 
 O `@property` serve para converter um metodo em atributo.
 
@@ -3303,7 +3303,7 @@ Porque isso? Bom, se você lembra, metodos devem ser usados para representar aç
 
 _A média não é uma ação que nosso estudante faz, é um valor que ele possui, logo deve ser uma propriedade._
 
-### Decoradores de metodos `@classmethod` e `@staticmethod`
+### 4.5.2. Decoradores de metodos `@classmethod` e `@staticmethod`
 
 os decoradores de metodos alteram os metodos para pegar parametros em especifico, até então estavamos usando os `instancemethod` através do `self`, esse metodo precisa de uma instancia para performar sua operação.
 
@@ -3334,7 +3334,7 @@ Estudante.media(EstudanteExemplo.notas)
 
 O metodo `media` usa a o objeto instanciado `EstudanteExemplo` para sua execução, ou seja, é um `instancemethod`
 
-#### `@classmethod`
+#### 4.5.2.1. `@classmethod`
 
 o `@classmethod` altera a função para usar a classe ao invés do objeto instanciado, veja o exemplo:
 
@@ -3354,7 +3354,7 @@ objeto.hi()
     Foo
 
 
-#### `@staticmethod`
+#### 4.5.2.2. `@staticmethod`
 
 o `@staticmethod` faz com que os metodos não precise de nenhum argumento, veja o exemplo:
 
@@ -3371,5 +3371,3 @@ objeto_bar.apresentar()
 ```
 
     eu sou um metodo com @staticmethod
-
-

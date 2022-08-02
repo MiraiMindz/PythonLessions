@@ -21,3 +21,8 @@ Notas:
 - A pasta `Code` contém o codigo escrito durante as aulas
 - A pasta `Exercicios` contém praticas e pequenos desafios passados
 - A pasta `Milestones` contém os grandes projetos/milestones
+
+## TODOs
+
+- melhorar final do cap 4
+- escrever o cap 5
