@@ -24,5 +24,6 @@ Notas:
 
 ## TODOs
 
-- melhorar final do cap 4
-- escrever o cap 5
+- Melhorar o Final do Cap 4
+- Escrever o Cap 5
+- \[TALVEZ\] Fazer um Scraper para coletar desafios do CodeWars
