@@ -116,4 +116,66 @@
     var x uint8 = 2
 
     const PI uint8 = 3.14
+
+    LODZ - RAMON:
+
+    Resolver Problemas e Conceitos
+
+    Escrito de Codigo
+
+    Programador
+
+    Falar               - Escrever Código
+    Portugues           - Python | Linguages
+
+
+
+    As coisas do mundo  - Conceitos
+
+    Python é uma
+
+    de , , , de tipagem dinâmica e forte.
+
+    linguagem de programação -> Matriz
+
+    Programação (Lógica) -> 2 + 2 = 4 | > AS outras classificações são exclusiva
+
+    Marcação (Documentação/Estrutural) -> operadores de texto,
+
+    Estilo (Design) -> etilo _> background-color
+
+    Nivel: quanto mais alto, mais proximo da linguagem humana e mais automatico/simples ela é
+
+    interpretada -> tempo real
+
+    compilação -> tem q converter
+
+
+    imperativa, orientada a objetos, funcional -> paradigma
+
+    imperativa
+
+    funcional
+
+
+
+    força -> forte e fraca
+
+    tipagem dinâmica e forte.
+
+    estilo -> dinamico e estatico
+
+
+    x = 5
+
+    x = "bananas"
+
+    num x = 5
+
+    x = "bananas"
+
+    ----------
+
+
+    Python é uma linguagem de programação de alto nível, interpretada de script, imperativa, orientada a objetos, funcional, de tipagem dinâmica e forte.
 -->
