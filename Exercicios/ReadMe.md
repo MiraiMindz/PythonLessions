@@ -4,14 +4,18 @@ Aqui é onde vocês colocam seus exercicios, seguindo este formato:
 
 ```
 ${SEU NOME}/
-└─ ${EXERCICIO}_${SEU NOME}.py
+└─ ${EXERCICIO}/
+   └─ main.py
 ```
 
 exemplo:
 
 ```
 Mirai/
-└─ FizzBuzz_Mirai.py
+└─ FizzBuzz/
+   └─ main.py
 ```
+
+Vocês podem copiar a pasta de algum exercicio dentro da pasta `Mirai/` e resolver, ali já tem algumas atividades para praticar
 
 > Dica: Evitem usar Espaços no nome do arquivo, facilta caso tenhamos que usa-lo em um terminal
