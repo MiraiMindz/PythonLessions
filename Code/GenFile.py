@@ -59,13 +59,17 @@ def main(args=None) -> None:
     """Main function"""
     def mkfiles():
         """Creates the lessions files"""
-        if (not Path(path.join(cap_dir, f"{filename}.md")).exists()):
-            with open(path.join(cap_dir, f"{filename}.md"), "w") as f:
+        mdf = f"{filename}.md"
+        pyf = f"{filename}.py"
+        pyfpath = Path(path.join(cap_dir, pyf))
+        mdfpath = Path(path.join(cap_dir, mdf))
+        if (not mdfpath.exists()):
+            with open(mdfpath, "w") as f:
                 pass
-        if (not Path(path.join(cap_dir, f"{filename}.py")).exists()):
+        if (not pyfpath.exists()):
             resp = input("Gostaria de criar um arquivo em Python para acompanhar com codigo? (s/n) ")
             if (resp.lower() == "s"):
-                with open(path.join(cap_dir, f"{filename}.py"), "w") as f:
+                with open(pyfpath, "w") as f:
                     pass
 
     if (args is None):
