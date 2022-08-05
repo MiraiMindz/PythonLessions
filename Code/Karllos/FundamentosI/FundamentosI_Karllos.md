@@ -12,4 +12,5 @@ dash-case
 ======================
 constants are immutable variable
 ======================
-
+Ctrl + K + C (comment out all lines of code)
+======================
