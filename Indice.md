@@ -79,6 +79,9 @@ Esse indice pode mudar de acordo com o tempo
         - Declaração
         - Sintaxe
         - Iteravéis
+    - Dicas de Performance em Loops
+      - `for` vs `while`
+      - builtIns
     - Desestruturação
         - `$var1, $var2 = val1, val2`
         - Desestruturação em `for` loops
@@ -103,7 +106,8 @@ Esse indice pode mudar de acordo com o tempo
     - Funções
         - Argumentos e Parametros
           - Parametros Padrões (Valores Padrões) e Argumentos Chave (Nomeados)
-          - `args*`, `kwargs**`
+          - `args*`, `kwargs**`, `*` (Keyword Only Arguments), `/` (Positional Only Arguments)
+          - Performance
         - DocStrings
         - `return`
     - Funções lambda
@@ -135,6 +139,7 @@ Esse indice pode mudar de acordo com o tempo
         - Identidade
             - `is`
             - `is not`
+            - Principio de Substituição de Liskov
         - Membros
             - `in`
             - `in not`
@@ -242,7 +247,16 @@ Esse indice pode mudar de acordo com o tempo
   - Logging
     - Introdução a Logging
     - Logging em Python
+    - `pprint()`
+    - `inspect()`
   - Funções de Alta Ordem
+- Noções Avançadas de Programação
+  - Introdução/Explicação
+  - Pointers
+  - Chars
+  - Stack
+  - Registers
+  - Arrays
 - Web Scraping
   - Introdução a Web Scraping
   - Linguagens de Marcação
@@ -332,6 +346,7 @@ Esse indice pode mudar de acordo com o tempo
     - Funções de Alta Ordem em Python (Retorno)
   - Usando a sintaxe `@` (@syntax)
   - `functools` wraps
+    - `@cache`
   - Decorando funções com parametros
   - Decoradores com parametros
   - Funções que aceitam multiplos argumentos
@@ -339,6 +354,8 @@ Esse indice pode mudar de acordo com o tempo
 - Programação orientada a objetos avançada
   - Herança
     - Multipla Herança
+      - MRO (Method Resolution Order)
+      - Herança Coperativa (Cooperative Inheritance)
   - Abstração
   - Encapsulação
   - Polimorfismo
@@ -346,6 +363,7 @@ Esse indice pode mudar de acordo com o tempo
     - Ultilidade do ABC
     - A Relação entre ABC e Interfaces
   - O Configurador de propriedade (Property Setter)
+  - DataClasses (`@dataclass`)
 - Milestone 5
   - Um bot pro discord usando o `discord.py`
 - desenvolvimento GUI com Tkinter
