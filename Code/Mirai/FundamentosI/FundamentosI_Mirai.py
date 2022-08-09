@@ -64,14 +64,14 @@
 
 
 
-nome = "Mirai"
-idade = 17
-linguagem = "Python"
+# nome = "Mirai"
+# idade = 17
+# linguagem = "Python"
 
-string = str()
+# string = str()
 
 
-print("Olá meu nome é " + nome + " eu tenho " + str(idade) + " anos e programo em " + linguagem)
+# print("Olá meu nome é " + nome + " eu tenho " + str(idade) + " anos e programo em " + linguagem)
 
 # print("Olá meu nome é {} eu tenho {} anos e programo em {}".format(nome, idade, linguagem))
 
@@ -88,3 +88,11 @@ print("Olá meu nome é " + nome + " eu tenho " + str(idade) + " anos e programo
 
 
 #print("Meu nome é %s, e eu tenho %s anos" % (nome, idade))
+
+#AULA 02B
+
+NomeVariavel = "Valor"
+
+print(NomeVariavel)
+
+

@@ -27,7 +27,6 @@ SIMPLES (4):
     - Integros e Floats (Numeros)
     - Booleano
 
-		a
 
 String = Texto
 
@@ -41,3 +40,6 @@ multi-line string
 
 			   CASA 1		CASA 2				  CASA 3	   PESS 1	 PESS 2		PESS 3
 "Olá meu nome é { } eu tenho { } anos e programo em { }".format(idade	,nome , 	linguagem)
+
+## AULA 02B
+
