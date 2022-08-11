@@ -250,13 +250,6 @@ Esse indice pode mudar de acordo com o tempo
     - `pprint()`
     - `inspect()`
   - Funções de Alta Ordem
-- Noções Avançadas de Programação
-  - Introdução/Explicação
-  - Pointers
-  - Chars
-  - Stack
-  - Registers
-  - Arrays
 - Web Scraping
   - Introdução a Web Scraping
   - Linguagens de Marcação
@@ -320,6 +313,7 @@ Esse indice pode mudar de acordo com o tempo
   - Coletando Multiplas paginas de forma eficiente
   - Usando `async_timeout` para segurança
   - Tornando nosso scraper asyncrono
+    - httpx
 - Ambientes Virtuais (Virtual Envs)
   - Pipenv
   - Virtualenv
@@ -429,10 +423,21 @@ Esse indice pode mudar de acordo com o tempo
     - O que são?
     - Pylint
     - Yapf
+    - Flake8
+      - AST Parsing e Flake8 Custom Plugin
+        - Syntax Abstract Tree
   - Enviando Emails
     - Usando smtplib
     - Usando Mailgun
     - Criando uma Biblioteca Re-ultilizavel do Mailgun
+- Documentação e Boas Praticas
+  - A Importancia da Documentação
+  - Comentario vs Documentação
+  - Clean Code
+  - Profiling
+  - PEP8
+    - Consistencia
+  - Import Loops
 - Redes e Soquetes
   - Redes
     - Endereços MAC, IPv4 e IPv6
@@ -499,10 +504,24 @@ Esse indice pode mudar de acordo com o tempo
       - Bruteforcing Senhas em Redes Wifi
       - Bruteforcing GMAIL
       - Bruteforcing Paginas de Login
+      - Timing Attack
       - Dicionarios Escondidos
       - Descobrindo Sub-Dominios
       - Alterando Header HTTP
       - Ransomware
+- Noções Avançadas de Programação (BÀSICO)
+  - Introdução/Explicação
+  - Pointers
+  - Chars
+    - UTF-8 Code Pointers
+  - Stack
+  - Registers
+    - Intel 8086 (iAPX 86)
+    - x86_64 (AMD64) vs x86 (i386) Archetures
+  - Arrays
+  - Linguagens de Computador
+    - Byte Code x Machine Code
+      - Metodo de execução do Python
 - GameDev
   - Introdução a GameDev
     - Objetos e Cenas
@@ -516,10 +535,6 @@ Esse indice pode mudar de acordo com o tempo
   - UrsinaEngine
     - Pong
     - SnakeGame
-- Documentação
-  - A Importancia da Documentação
-  - Comentario vs Documentação
-  - Clean Code
 
 ## Milestones
 

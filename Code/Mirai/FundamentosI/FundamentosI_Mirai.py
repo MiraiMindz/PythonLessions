@@ -90,9 +90,3 @@
 #print("Meu nome é %s, e eu tenho %s anos" % (nome, idade))
 
 #AULA 02B
-
-NomeVariavel = "Valor"
-
-print(NomeVariavel)
-
-
