@@ -10,7 +10,7 @@
 #PI = 3.14
 
 # 31hh5kjheqhkjeqh
-#dgkjagldkajlkgj
+# dgkjagldkajlkgj
 
 #print("Olá Mundo")
 #print(Nome3, Nome2, Nome)
@@ -47,7 +47,7 @@
 
 # newline = "esse\ntexto\ntem\nnovas\nlinha"
 
-#print(newline)
+# print(newline)
 
 # retrn1 = "Um\bTexto\bQualquer\b"
 
@@ -61,7 +61,6 @@
 # '''
 
 # print(multi)
-
 
 
 # nome = "Mirai"
@@ -89,4 +88,30 @@
 
 #print("Meu nome é %s, e eu tenho %s anos" % (nome, idade))
 
-#AULA 02B
+# AULA 02B
+
+# AULA 03C
+
+# print(6.5 + 3.7)
+# print((65 + 37)/10)
+
+#       BASE      OPERADOR    EXPOENTE
+# print(3            **              2)
+# print(type(True))
+# print(type(False))
+
+# print(True or True)
+# print(True or False)
+# print(False or True)
+# print(False or False)
+
+# print(not False)
+
+
+# A = True
+# B = False
+
+# print(B and A)
+# print(A or B)
+
+# comp_num = 100_000_000
