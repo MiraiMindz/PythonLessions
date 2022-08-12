@@ -115,3 +115,39 @@
 # print(A or B)
 
 # comp_num = 100_000_000
+
+
+# x = [1, 2, 3, 4]
+# print("TIPO:",x,"ENDEREÇO MEM:", hex(id(x)))
+# x.append(5)
+# print("TIPO:", x,"ENDEREÇO MEM:", hex(id(x)))
+
+
+# x, y = 1, 2
+# z = x, y
+# print("TIPO:", z, "ENDEREÇO MEM:", hex(id(z)))
+# z = x, y, 3
+# print("TIPO:", z, "ENDEREÇO MEM:", hex(id(z)))
+
+
+x, y = 1, 2 #! EXCETO DECLARAÇÂO DE MULTIPLAS VARIAVEIS
+
+# print(x)
+# print(y)
+
+cParent = (
+    1,
+    2,
+    3,
+    4
+)
+
+
+
+print(cParent)
+
+# sParent = 'a', 'b', 'c', 'd'
+# print(sParent, type(sParent))
+
+# tuple = ('a', 3, True, (1, 2, 3))
+# print(tuple)

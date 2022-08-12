@@ -85,3 +85,26 @@ NOT
 
 
 Curto Circuito - Diminuir o tempo em uma decisão
+
+# AULA 04A
+
+TC = Tipo Composto
+TC é qualquer tipo que tem mais de 1 Dado
+
+4 Tipos Compostos:
+ - Tuples (Tulipas)
+ - Listas
+ - Sets
+ - Dicionarios
+
+Mutabilidade: capacidade de um tipo ser alterado sem criar um novo.
+
+IMUTAVEIS
+
+2 modos de declaração
+
+()
+
+,
+
+DADOS HOMOGENEOS
