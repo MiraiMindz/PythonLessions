@@ -1,0 +1,7 @@
+{
+    "codesnap.transparentBackground": true,
+    "codesnap.shutterAction": "copy",
+    "codesnap.showWindowTitle": false,
+    "codesnap.containerPadding": "3em",
+    "codesnap.realLineNumbers": false
+}

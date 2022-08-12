@@ -17,3 +17,6 @@
 # s = num1 + num2
 
 # print(s)
+
+# lista = [1, 'Pastel', True]
+# print(lista)
