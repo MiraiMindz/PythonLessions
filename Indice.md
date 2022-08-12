@@ -79,6 +79,9 @@ Esse indice pode mudar de acordo com o tempo
         - Declaração
         - Sintaxe
         - Iteravéis
+    - Dicas de Performance em Loops
+      - `for` vs `while`
+      - builtIns
     - Desestruturação
         - `$var1, $var2 = val1, val2`
         - Desestruturação em `for` loops
@@ -103,7 +106,8 @@ Esse indice pode mudar de acordo com o tempo
     - Funções
         - Argumentos e Parametros
           - Parametros Padrões (Valores Padrões) e Argumentos Chave (Nomeados)
-          - `args*`, `kwargs**`
+          - `args*`, `kwargs**`, `*` (Keyword Only Arguments), `/` (Positional Only Arguments)
+          - Performance
         - DocStrings
         - `return`
     - Funções lambda
@@ -135,6 +139,7 @@ Esse indice pode mudar de acordo com o tempo
         - Identidade
             - `is`
             - `is not`
+            - Principio de Substituição de Liskov
         - Membros
             - `in`
             - `in not`
@@ -242,6 +247,8 @@ Esse indice pode mudar de acordo com o tempo
   - Logging
     - Introdução a Logging
     - Logging em Python
+    - `pprint()`
+    - `inspect()`
   - Funções de Alta Ordem
 - Web Scraping
   - Introdução a Web Scraping
@@ -306,6 +313,7 @@ Esse indice pode mudar de acordo com o tempo
   - Coletando Multiplas paginas de forma eficiente
   - Usando `async_timeout` para segurança
   - Tornando nosso scraper asyncrono
+    - httpx
 - Ambientes Virtuais (Virtual Envs)
   - Pipenv
   - Virtualenv
@@ -332,6 +340,7 @@ Esse indice pode mudar de acordo com o tempo
     - Funções de Alta Ordem em Python (Retorno)
   - Usando a sintaxe `@` (@syntax)
   - `functools` wraps
+    - `@cache`
   - Decorando funções com parametros
   - Decoradores com parametros
   - Funções que aceitam multiplos argumentos
@@ -339,6 +348,8 @@ Esse indice pode mudar de acordo com o tempo
 - Programação orientada a objetos avançada
   - Herança
     - Multipla Herança
+      - MRO (Method Resolution Order)
+      - Herança Coperativa (Cooperative Inheritance)
   - Abstração
   - Encapsulação
   - Polimorfismo
@@ -346,6 +357,7 @@ Esse indice pode mudar de acordo com o tempo
     - Ultilidade do ABC
     - A Relação entre ABC e Interfaces
   - O Configurador de propriedade (Property Setter)
+  - DataClasses (`@dataclass`)
 - Milestone 5
   - Um bot pro discord usando o `discord.py`
 - desenvolvimento GUI com Tkinter
@@ -411,10 +423,21 @@ Esse indice pode mudar de acordo com o tempo
     - O que são?
     - Pylint
     - Yapf
+    - Flake8
+      - AST Parsing e Flake8 Custom Plugin
+        - Syntax Abstract Tree
   - Enviando Emails
     - Usando smtplib
     - Usando Mailgun
     - Criando uma Biblioteca Re-ultilizavel do Mailgun
+- Documentação e Boas Praticas
+  - A Importancia da Documentação
+  - Comentario vs Documentação
+  - Clean Code
+  - Profiling
+  - PEP8
+    - Consistencia
+  - Import Loops
 - Redes e Soquetes
   - Redes
     - Endereços MAC, IPv4 e IPv6
@@ -481,10 +504,24 @@ Esse indice pode mudar de acordo com o tempo
       - Bruteforcing Senhas em Redes Wifi
       - Bruteforcing GMAIL
       - Bruteforcing Paginas de Login
+      - Timing Attack
       - Dicionarios Escondidos
       - Descobrindo Sub-Dominios
       - Alterando Header HTTP
       - Ransomware
+- Noções Avançadas de Programação (BÀSICO)
+  - Introdução/Explicação
+  - Pointers
+  - Chars
+    - UTF-8 Code Pointers
+  - Stack
+  - Registers
+    - Intel 8086 (iAPX 86)
+    - x86_64 (AMD64) vs x86 (i386) Archetures
+  - Arrays
+  - Linguagens de Computador
+    - Byte Code x Machine Code
+      - Metodo de execução do Python
 - GameDev
   - Introdução a GameDev
     - Objetos e Cenas
@@ -498,10 +535,6 @@ Esse indice pode mudar de acordo com o tempo
   - UrsinaEngine
     - Pong
     - SnakeGame
-- Documentação
-  - A Importancia da Documentação
-  - Comentario vs Documentação
-  - Clean Code
 
 ## Milestones
 

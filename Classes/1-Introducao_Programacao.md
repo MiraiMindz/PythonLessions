@@ -46,7 +46,7 @@ As linguagens podem ser classificadas de acordo com seus paradigmas, método de 
 
 Uma pequena introdução aos conceitos mais comuns:
 
-- Linguagens Matriz: A matriz de uma linguagem define sua utilidade principal, são 3 tipos, Programação (Logica), Marcação (Documentação), Estilo (Design)
+- Linguagem de Computação (Matriz): A matriz de uma linguagem define sua utilidade principal, são 3 tipos, Programação (Logica), Marcação (Documentação), Estilo (Design)
 
   - Programação (Logica): As linguagens de Programação são marcadas por funções e comandos, elas trabalham a logica de maquina, alguns exemplos são, Python e BASH.
 
