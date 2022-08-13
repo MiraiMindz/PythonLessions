@@ -1,4 +1,4 @@
-'''Script feito para padronizar e automatizar a criação de arquivos pertinentes as aulas
+'''Script feito para padronizar e automatizar a criação de arquivos pertinentes as milestones [igual ao arquivo das aulas]
 
 Notas: Talvez precise de refact mas funciona por agora então mais tarde eu faço'''
 
@@ -10,22 +10,22 @@ from sys import argv
 from getopt import getopt
 
 help_msg = '''Uso:
-\tpython3 GenFile.py [-h] [-n] [-c] name cap_num
+\tpython3 GenMilestones.py [-h] [-n] [-c] name cap_num
 
-Um script feito para automatizar/padronizar a criação de arquivos pertinentes as aulas.
+Um script feito para automatizar/padronizar a criação de arquivos pertinentes as milestones.
 
 Options:
 \t-h, --help\t\tExibe esta ajuda
 \t-n, --name\t\tEspecifica o nome
-\t-n, --cap_num\t\tEspecifica o numero do capitulo
+\t-n, --cap_num\t\tEspecifica o numero da milestone
 
-As opções [-n] e [-c] são opcionais, você pode omiti-las caso insira o nome e o numero do capitulo seguindo a ordem
+As opções [-n] e [-c] são opcionais, você pode omiti-las caso insira o nome e o numero da milestone seguindo a ordem
 Caso nenhum argumento seja provido você será perguntado dentro do script
 
 Exemplos de Uso:
-\t1.\tpython3 GenFile.py -n Mirai -c 1
-\t2.\tpython3 GenFile.py Mirai 1
-\t3.\tpython3 GenFile.py\n'''
+\t1.\tpython3 GenMilestones.py -n Mirai -c 1
+\t2.\tpython3 GenMilestones.py Mirai 1
+\t3.\tpython3 GenMilestones.py\n'''
 
 
 
@@ -46,71 +46,37 @@ def get_cap(capnum: int) -> str:
     """Get the lessions chapter"""
     match capnum:
         case 1:
-            capname = "IntroProgramacao"
+            milename = "FilmLibrary"
         case 2:
-            capname = "FundamentosI"
+            milename = "BookLibrary"
         case 3:
-            capname = "FundamentosII"
+            milename = "QuoteScraper"
         case 4:
-            capname = "OrientacaoObjetoBase"
+            milename = "BookScraper"
         case 5:
-            capname = "Erros"
+            milename = "DiscordBot"
         case 6:
-            capname = "Arquivos"
+            milename = "TextEditor"
         case 7:
-            capname = "Databases"
+            milename = "PaintApp"
         case 8:
-            capname = "TypeHint"
+            milename = "Perceptron"
         case 9:
-            capname = "FuncNativasAvancadas"
+            milename = "TCPChatRoom"
         case 10:
-            capname = "DesenvAvancado"
+            milename = "SecureTCPChatRoom"
         case 11:
-            capname = "WebScraping"
-        case 12:
-            capname = "AutomacaoSelenium"
-        case 13:
-            capname = "AsyncDev"
-        case 14:
-            capname = "VirtualEnv"
-        case 15:
-            capname = "WebDev"
-        case 16:
-            capname = "APIs"
-        case 17:
-            capname = "Decorators"
-        case 18:
-            capname = "OrientacaoObjetoAvancada"
-        case 19:
-            capname = "UnitTests"
-        case 20:
-            capname = "CienciaDados"
-        case 21:
-            capname = "AlgoritmosEstruturaDadosMachineLearning"
-        case 22:
-            capname = "Bibliotecas"
-        case 23:
-            capname = "DocumentacaoBoasPraticas"
-        case 24:
-            capname = "RedesSoquetes"
-        case 25:
-            capname = "Criptografia"
-        case 26:
-            capname = "CyberSecHackingEtico"
-        case 27:
-            capname = "ProgramacaoAvancada"
-        case 28:
-            capname = "GameDev"
+            milename = "TorrentClient"
         case _:
             print("Cap name out of range")
-            capname = input("Insira o numero do capitulo: ")
-    return capname
+            milename = input("Insira o numero da milestone: ")
+    return milename
 
 
 def get_user_values() -> str:
     """Get user Values"""
     nm = input("Insira seu nome(Nickname): ")
-    _cp = input("Insira o numero do capitulo: ")
+    _cp = input("Insira o numero da milestone: ")
     cp = get_cap(int(_cp))
     return nm, cp
 
