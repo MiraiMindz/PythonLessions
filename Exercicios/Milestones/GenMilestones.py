@@ -10,14 +10,14 @@ from sys import argv
 from getopt import getopt
 
 help_msg = '''Uso:
-\tpython3 GenMilestones.py [-h] [-n] [-c] name cap_num
+\tpython3 GenMilestones.py [-h] [-n] [-c] name milestone_num
 
 Um script feito para automatizar/padronizar a criação de arquivos pertinentes as milestones.
 
 Options:
 \t-h, --help\t\tExibe esta ajuda
 \t-n, --name\t\tEspecifica o nome
-\t-n, --cap_num\t\tEspecifica o numero da milestone
+\t-c, --milestone_num\tEspecifica o numero da milestone
 
 As opções [-n] e [-c] são opcionais, você pode omiti-las caso insira o nome e o numero da milestone seguindo a ordem
 Caso nenhum argumento seja provido você será perguntado dentro do script

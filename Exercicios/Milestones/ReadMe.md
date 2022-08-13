@@ -24,14 +24,14 @@ Você também pode usar o script `GenMilestones.py` para gerar essa estrutura.
 
 ```
 Uso:
-        python3 GenMilestones.py [-h] [-n] [-c] name cap_num
+        python3 GenMilestones.py [-h] [-n] [-c] name milestone_num
 
 Um script feito para automatizar/padronizar a criação de arquivos pertinentes as milestones.
 
 Options:
         -h, --help              Exibe esta ajuda
         -n, --name              Especifica o nome
-        -n, --cap_num           Especifica o numero da milestone
+        -n, --milestone_num     Especifica o numero da milestone
 
 As opções [-n] e [-c] são opcionais, você pode omiti-las caso insira o nome e o numero da milestone seguindo a ordem
 Caso nenhum argumento seja provido você será perguntado dentro do script

@@ -17,7 +17,7 @@ Um script feito para automatizar/padronizar a criação de arquivos pertinentes 
 Options:
 \t-h, --help\t\tExibe esta ajuda
 \t-n, --name\t\tEspecifica o nome
-\t-n, --cap_num\t\tEspecifica o numero do capitulo
+\t-c, --cap_num\t\tEspecifica o numero do capitulo
 
 As opções [-n] e [-c] são opcionais, você pode omiti-las caso insira o nome e o numero do capitulo seguindo a ordem
 Caso nenhum argumento seja provido você será perguntado dentro do script
