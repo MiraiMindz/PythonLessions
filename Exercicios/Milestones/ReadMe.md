@@ -42,6 +42,8 @@ Exemplos de Uso:
         3.      python3 GenMilestones.py
 ```
 
+## Lista de Milestones
+
 - Milestone 1
   - Criar a Biblioteca de Filmes
 - Milestone 2
