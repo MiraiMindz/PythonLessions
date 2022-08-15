@@ -55,7 +55,7 @@ da um aperto nas memórias registradores e esses negócios
 
 -------------------------------------------------====================------------------------------------------------------
 
-! [nome_imagem] (C: > user > Downloads > unknaaaaaaaawn) para colocar imagens
+![nome_imagem](../../../Classes/images/BITMASKED_LEFT_SHIFT.gif) para colocar imagens
 
 o módulo é o resto da divisão ele serve para retornar 6 % 2 vai dar 0 não vai dar exato 
 
@@ -67,3 +67,17 @@ print(3                  **                    2)
 Booleano = conjunto de lógica combinatória
 
 curto circuito -> Diminuir o tempo em uma decisão
+
+TC = Tipo composto
+TC é qualquer tipo que tem mais de 1 dado
+pode guarda 2 números, 4 palavras e etc...
+- Tuples (Tulipas)
+- Listas
+- Sets
+- Dicionarios
+
+Mutabilidade: capacidade de um tipo ser alterado sem criar um novo.
+
+Imultaveis
+
+2 modos de declaração com () e ,

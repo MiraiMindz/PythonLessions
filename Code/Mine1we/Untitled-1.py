@@ -1,15 +1,29 @@
 
 
-prompt = "insira algo -> "
+from decimal import localcontext
 
 
-texto = input(prompt)
+# prompt = "insira algo -> "
 
-print("você disse:", texto)
 
-print('''
+# texto = input(prompt)
 
-aaaaaa 
+# print("você disse:", texto)
 
-''')
+# print('''
 
+# aaaaaa 
+
+# ''')
+
+cparentesamigo = (
+
+            "ta voando",                                   
+
+                 "faz certo",                
+                                        "loco", 
+
+                            "é"
+)
+
+print(cparentesamigo)
