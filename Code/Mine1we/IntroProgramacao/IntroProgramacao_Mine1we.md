@@ -32,13 +32,12 @@ Tipagem estática: não funfa, precisa especificar se não da ruim.Define o tipo
 ⠀⠀⠀⡟⡾⣿⢿⢿⢵⣽⣾⣼⣘⢸⢸⣞⡟⠀
 ⠀⠀⠀⠀⠁⠇⠡⠩⡫⢿⣝⡻⡮⣒⢽⠋
 
-<<<<<<< HEAD
-Variável -> pode variar 
+Variável -> pode variar
 Constante --> não muda
 
-Depois da # tudo vai ser ignorado,para ser um comentário 
+Depois da # tudo vai ser ignorado,para ser um comentário
 
-int -> 300 12 
+int -> 300 12
 float -> 3.14
 
 mas se eu mostrar o print (número1.type(número1))
@@ -58,9 +57,9 @@ da um aperto nas memórias registradores e esses negócios
 
 ![nome_imagem](../../../Classes/images/BITMASKED_LEFT_SHIFT.gif) para colocar imagens
 
-o módulo é o resto da divisão ele serve para retornar 6 % 2 vai dar 0 não vai dar exato 
+o módulo é o resto da divisão ele serve para retornar 6 % 2 vai dar 0 não vai dar exato
 
-Potência é exponesiado "**" 
+Potência é exponesiado "**"
 
 #    BASE             OPERADOR             EXPOENTE
 print(3                  **                    2)
@@ -82,5 +81,4 @@ Mutabilidade: capacidade de um tipo ser alterado sem criar um novo.
 Imultaveis
 
 2 modos de declaração com () e ,
-=======
->>>>>>> a87c62d6263198fdc5014121f6a6090df459c432
+
