@@ -17,7 +17,7 @@ Tipagem dinâmica: eu posso simplesmente somar "a = 2". resumindo linguaguem din
 
 Tipagem estática: não funfa, precisa especificar se não da ruim.Define o tipo das variáveis em tempo de compilação e o tipo deve ser espicificada em código.
  para abrir o python no terminal é só digitar " python3 " e pra sair é só colcar " exit() "
-                                      
+
 ⣞⢽⢪⢣⢣⢣⢫⡺⡵⣝⡮⣗⢷⢽⢽⢽⣮⡷⡽⣜⣜⢮⢺⣜⢷⢽⢝⡽⣝
 ⠸⡸⠜⠕⠕⠁⢁⢇⢏⢽⢺⣪⡳⡝⣎⣏⢯⢞⡿⣟⣷⣳⢯⡷⣽⢽⢯⣳⣫⠇
 ⠀⠀⢀⢀⢄⢬⢪⡪⡎⣆⡈⠚⠜⠕⠇⠗⠝⢕⢯⢫⣞⣯⣿⣻⡽⣏⢗⣗⠏
@@ -32,6 +32,7 @@ Tipagem estática: não funfa, precisa especificar se não da ruim.Define o tipo
 ⠀⠀⠀⡟⡾⣿⢿⢿⢵⣽⣾⣼⣘⢸⢸⣞⡟⠀
 ⠀⠀⠀⠀⠁⠇⠡⠩⡫⢿⣝⡻⡮⣒⢽⠋
 
+<<<<<<< HEAD
 Variável -> pode variar 
 Constante --> não muda
 
@@ -81,3 +82,5 @@ Mutabilidade: capacidade de um tipo ser alterado sem criar um novo.
 Imultaveis
 
 2 modos de declaração com () e ,
+=======
+>>>>>>> a87c62d6263198fdc5014121f6a6090df459c432
