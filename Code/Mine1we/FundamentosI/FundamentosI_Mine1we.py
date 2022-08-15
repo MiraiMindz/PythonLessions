@@ -9,7 +9,7 @@ print("você disse:", texto)
 
 print('''
 
-aaaaaa 
+aaaaaa
 
 ''')
 
