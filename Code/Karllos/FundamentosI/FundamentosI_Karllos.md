@@ -78,7 +78,7 @@ not - not true / !true = false
 Composite type is a type that holds more than one piece of data,
 need a simple type to coexist
 ======================
-mutability: ability of a type to be changed without creating a new one
+mutability: ability of a type to be changed without creating a new one 
 ======================
 Tuples
 ⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄
