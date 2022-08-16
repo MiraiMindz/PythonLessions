@@ -108,3 +108,47 @@ IMUTAVEIS
 ,
 
 DADOS HOMOGENEOS
+
+
+# AULA 04B
+
+
+
+Olá meu nome é [NOME] e eu tenho [IDADE] anos
+
+fString
+
+Estilo de formatação printF
+
+ - 'd' Signed integer decimal.
+ - 'i' Signed integer decimal.
+ - 'o' Signed octal value.
+ - 'u' Obsolete type – it is identical to 'd'.
+ - 'x' Signed hexadecimal (lowercase).
+ - 'X' Signed hexadecimal (uppercase).
+ - 'e' Floating point exponential format (lowercase).
+ - 'E' Floating point exponential format (uppercase).
+ - 'f' Floating point decimal format.
+ - 'F' Floating point decimal format.
+ - 'g' Floating point format. Uses lowercase exponential format if exponent is less than -4 or not less than precision, decimal format otherwise.
+ - 'G' Floating point format. Uses uppercase exponential format if exponent is less than -4 or not less than precision, decimal format otherwise.
+ - 'c' Single character (accepts integer or single character string).
+ - 'r' String (converts any Python object using repr()).
+ - 's' String (converts any Python object using str()).
+ - 'a' String (converts any Python object using ascii()).
+ - '%' No argument is converted, results in a '%' character in the result.
+
+'#' The value conversion will use the “alternate form” (where defined below).
+'0' The conversion will be zero padded for numeric values.
+'-' The converted value is left adjusted (overrides the '0' conversion if both are given).
+' ' (a space) A blank should be left before a positive number (or empty string) produced by a signed conversion.
+'+' A sign character ('+' or '-') will precede the conversion (overrides a “space” flag).
+
+4 Tipos Compostos:
+ - Tuples (Tulipas)
+ - Listas
+ - Sets
+ - Dicionarios
+
+MUTABILIDADE
+
