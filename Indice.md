@@ -34,7 +34,15 @@ Esse indice pode mudar de acordo com o tempo
         - Curto Circuito
           - `or` performance
           - `and` performance
+    - Curiosidades sobre os tipos básicos
+      - float
+        - `inf` e `NaN`
+      - string
+        - `r''` -> raw
   - Tipos Compostos
+  - Tuples
+    - Declaração e Dados Homogêneos ` , || ( , )`, `tuple()`
+    - Adição de elementos e reassociação (associação recursiva)
   - Listas
     - Declaração e Dados Homogêneos `[]`, `list()`
     - Indexes[]
@@ -43,9 +51,6 @@ Esse indice pode mudar de acordo com o tempo
     - `list.pop()`
     - `list.insert()`
     - Matrizes (Listas Multi-dimensionais)
-  - Tuples
-    - Declaração e Dados Homogêneos ` , || ( , )`, `tuple()`
-    - Adição de elementos e reassociação (associação recursiva)
   - Sets
     - Declaração e Dados Homogêneos `{}` `set()`
     - `set.add()`
@@ -60,7 +65,7 @@ Esse indice pode mudar de acordo com o tempo
   - `sum()` & `len()`
     - quiz de caso de uso `sum()` & `len()`
   - Conversão e Coerção
-  - EXTRAS: `bin` e `complex`
+  - EXTRAS: `bin()`, `complex()`
 - Fundamentos do Python - II
     - Tipos de Controle de Flow e Escopo (SIMPLES)
         - Condicional `if`, `switch`
@@ -120,6 +125,7 @@ Esse indice pode mudar de acordo com o tempo
             - mais `+`
             - menos `-`
             - muliplicação `*`
+            - multiplicação de matrizes `@`
             - divisão `/`
             - modulo (resto) `%`
             - potencia `**`
@@ -165,7 +171,8 @@ Esse indice pode mudar de acordo com o tempo
             - XOR-Igual `^=` (Bitwise)
             - RightShift-Igual `>>=` (Bitwise)
             - LeftShift-Igual `<<=` (Bitwise)
-            - Walrus Operator
+            - Associação de expressão `:=` (Walrus Operator)
+        - Precedencia de Operadores
 - Milestone 1
   - Criar a Biblioteca de Filmes
 - Programação Orientada a Objetos
@@ -188,6 +195,8 @@ Esse indice pode mudar de acordo com o tempo
   - On-Success e Re-Elevando Errors
   - Lidando Com os Erros do Usuário
   - Depuração (Debugging)
+    - `assert` keyword
+    - função `breakpoint()`
 - Arquivos
   - Introdução a Arquivos
   - Copiando Arquivos
@@ -314,9 +323,13 @@ Esse indice pode mudar de acordo com o tempo
   - Usando `async_timeout` para segurança
   - Tornando nosso scraper asyncrono
     - httpx
-- Ambientes Virtuais (Virtual Envs)
-  - Pipenv
-  - Virtualenv
+- Virtualização
+  - O que é virtualização ?
+  - Ambientes Virtuais (Virtual Envs)
+    - Pipenv
+    - Virtualenv
+  - "Conteinerização"
+    - Docker
 - Webdev Flask
   - Configurando nosso projeto com Pipenv
   - Flask Endpoint
@@ -366,6 +379,13 @@ Esse indice pode mudar de acordo com o tempo
   - Rotulos e campos
   - Agrupando componentes
   - Usando molduras para diferentes layouts
+- Desenvolvimento de Interfaces Graficas
+  - TUI vs GUI
+  - TUI
+    - NCurses
+  - GUI
+    - Tkinter
+    - PyQt5
 - Milestone 6
   - Criando um Editor de Texto
   - Notebooks do Tkinter e criação de arquivos
@@ -514,6 +534,7 @@ Esse indice pode mudar de acordo com o tempo
   - Pointers
   - Chars
     - UTF-8 Code Pointers
+    - `chr()` e `ord()`
   - Stack
   - Registers
     - Intel 8086 (iAPX 86)
@@ -522,6 +543,7 @@ Esse indice pode mudar de acordo com o tempo
   - Linguagens de Computador
     - Byte Code x Machine Code
       - Metodo de execução do Python
+      - `compile()` keyword
 - GameDev
   - Introdução a GameDev
     - Objetos e Cenas
