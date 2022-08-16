@@ -1,10 +1,10 @@
 ##################################################################################
-# This is the default PyLint configuration file.                                 #
-# This file has te porpouse to be a template for future configuration files      #
-# so be kind and don't edit this file.                                           #
+# This is the default PyLint configuration file.                                   #
+# This file has te porpouse to be a template for future configuration files         #
+# so be kind and don't edit this file.                                            #
 #                                                                                #
 # If you want to edit it, copy it or generate another with the following command #
-#     python3.10 -m pylint --generate-rcfile >> .pylintrc                        #
+#     python3.10 -m pylint --generate-rcfile >> .pylintrc                         #
 #                                                                                #
 # NOTE: It uses the UNIX Shell standard redirect operator                        #
 #       so I don't know if it will work on Windows Machines                      #
