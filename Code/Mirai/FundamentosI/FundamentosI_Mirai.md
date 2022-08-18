@@ -1,5 +1,6 @@
 # TEXTO
 
+<!--#region OldCode -->
 ## AULA 01C
 Variaveis, Comentários, print() e input()
 
@@ -152,3 +153,11 @@ Estilo de formatação printF
 
 MUTABILIDADE
 
+<!--#endregion -->
+# AULA 05C
+
+As Listas são mutaveis, então eu posso adicionar elementos
+
+INDEX
+
+uma matriz essencialmente é uma lista de listas
