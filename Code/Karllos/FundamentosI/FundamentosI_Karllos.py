@@ -20,3 +20,36 @@
 
 # lista = [1, 'Pastel', True]
 # print(lista)
+
+#! Index
+#**           0        1       2        3        4
+#FundamentosI_Karllos
+#* Reverse Index
+#?           -5       -4      -3       -2       -1
+#friends = ['Mirai', 'Mine', 'Ramon', 'Kaal', 'Kanddrex']
+
+# print(friends)
+# print(friends[0])
+# print(friends[-5])
+
+# friends.append('Beto')
+
+# print(friends)
+
+# friends.insert(0, 'Pão de batata')
+
+# print(friends)
+
+# friends.pop(1)
+# friends.remove('Kanddrex')
+
+# print(friends)
+
+# matriz = [
+# #X          0                   1                   2            Y
+#     ['farinha de trigo', 'farinha de leite', 'farinha de mesa'],  #0
+#     ['carne grelhada', 'carne bem passada', 'carne mau passada'], #1
+#     ['bolo', 'pudim', 'sorvete']                                  #2
+# ]
+
+# print(matriz[1][1])
