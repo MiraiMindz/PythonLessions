@@ -130,24 +130,50 @@
 # print("TIPO:", z, "ENDEREÇO MEM:", hex(id(z)))
 
 
-x, y = 1, 2 #! EXCETO DECLARAÇÂO DE MULTIPLAS VARIAVEIS
+# x, y = 1, 2 #! EXCETO DECLARAÇÂO DE MULTIPLAS VARIAVEIS
 
-# print(x)
-# print(y)
+# # print(x)
+# # print(y)
 
-cParent = (
-    1,
-    2,
-    3,
-    4
-)
+# cParent = (
+#     1,
+#     2,
+#     3,
+#     4
+# )
 
 
 
-print(cParent)
+# print(cParent)
 
 # sParent = 'a', 'b', 'c', 'd'
 # print(sParent, type(sParent))
 
 # tuple = ('a', 3, True, (1, 2, 3))
 # print(tuple)
+
+# AULA 04B
+
+# idade = 17
+# nome = 'Mirai'
+
+# template_string = f'Olá meu nome é {nome} e eu tenho {idade} anos'
+
+# # print(template_string)
+
+
+# multiline_fstring = f"""
+
+# """
+
+# texto = "Meu nome é %s e eu tenho %05d"
+
+# print(texto % (nome, idade))
+
+# x, y = 1, 2
+# tulipa = x, y
+# print("VARIAVEL:", tulipa, "\tENDEREÇO MEM:", hex(id(tulipa)))
+# tulipa = x, y, 3
+# print("VARIAVEL:", tulipa, "\tENDEREÇO MEM:", hex(id(tulipa)))
+
+

@@ -112,6 +112,7 @@ Esse indice pode mudar de acordo com o tempo
         - Argumentos e Parametros
           - Parametros Padrões (Valores Padrões) e Argumentos Chave (Nomeados)
           - `args*`, `kwargs**`, `*` (Keyword Only Arguments), `/` (Positional Only Arguments)
+          - Precedencia
           - Performance
         - DocStrings
         - `return`
@@ -130,6 +131,7 @@ Esse indice pode mudar de acordo com o tempo
             - modulo (resto) `%`
             - potencia `**`
             - TrueDiv (divisão exclusiva) `//`
+            - NumPy Matrix Multiplicator `@`
         - Lógicos
             - `and`
             - `or`
@@ -145,7 +147,6 @@ Esse indice pode mudar de acordo com o tempo
         - Identidade
             - `is`
             - `is not`
-            - Principio de Substituição de Liskov
         - Membros
             - `in`
             - `in not`
@@ -363,6 +364,7 @@ Esse indice pode mudar de acordo com o tempo
     - Multipla Herança
       - MRO (Method Resolution Order)
       - Herança Coperativa (Cooperative Inheritance)
+  - Principio de Substituição de Liskov
   - Abstração
   - Encapsulação
   - Polimorfismo
