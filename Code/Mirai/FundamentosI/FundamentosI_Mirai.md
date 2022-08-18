@@ -1,5 +1,6 @@
 # TEXTO
 
+<!--#region OldCode -->
 ## AULA 01C
 Variaveis, Comentários, print() e input()
 
@@ -35,7 +36,7 @@ multi-line string
 
 "Olá meu nome é Joaquim  eu tenho 17 anos e programo em Python"
 
-"Olá meu nome é [Nome]  eu tenho [idade] anos e programo em [Linguagem]"
+"Olá meu nome é {Nome} eu tenho {idade} anos e programo em {Linguagem}"
 
 
 			   CASA 1		CASA 2				  CASA 3	   PESS 1	 PESS 2		PESS 3
@@ -114,7 +115,7 @@ DADOS HOMOGENEOS
 
 
 
-Olá meu nome é [NOME] e eu tenho [IDADE] anos
+Olá meu nome é {NOME} e eu tenho {IDADE} anos
 
 fString
 
@@ -152,3 +153,11 @@ Estilo de formatação printF
 
 MUTABILIDADE
 
+<!--#endregion -->
+# AULA 05C
+
+As Listas são mutaveis, então eu posso adicionar elementos
+
+INDEX
+
+uma matriz essencialmente é uma lista de listas

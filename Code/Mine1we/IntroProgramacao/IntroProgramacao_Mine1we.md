@@ -82,3 +82,7 @@ Imultaveis
 
 2 modos de declaração com () e ,
 
+As listas são multáveis, então eu posso adicionar elementos
+
+INDEX
+Index é um número que representa 

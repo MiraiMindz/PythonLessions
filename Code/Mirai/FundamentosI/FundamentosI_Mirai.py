@@ -1,5 +1,6 @@
 #!/usr/bin/env python3.10
 
+#region OldCode
 # AULA 01C
 
 # CODIGO
@@ -176,4 +177,46 @@
 # tulipa = x, y, 3
 # print("VARIAVEL:", tulipa, "\tENDEREÇO MEM:", hex(id(tulipa)))
 
+#endregion
 
+
+# print(f'LISTA_BASE:\t{lista_de_amigos}')
+
+# lista_de_amigos.append('Joaquim')
+# print(f'APPEND:\t\t{lista_de_amigos}')
+
+# lista_de_amigos.insert(1, 'Mirai')
+
+# print(f'INSERT:\t\t{lista_de_amigos}')
+
+#? ADICIONAR:
+#* [x] list.append()
+#* [x] list.insert()
+#? REMOVER:
+#! [x] list.pop()
+#! [x] list.remove()
+
+# #[ INDEX:            0       1          2          3
+# #? REVERSE-INDEX:   -4      -3         -2         -1
+# lista_de_amigos = ['Kaal', 'Mine', 'Kannddrex', 'Ramon']
+
+# # lista_de_amigos.pop()
+# # print(f'POP ULTIMO:\t\t{lista_de_amigos}')
+# # lista_de_amigos.pop(1)
+# # print(f'POP INDEX:\t\t{lista_de_amigos}')
+
+# lista_de_amigos.remove('Mine')
+# print(f'POP REMOVE \'Mine\':\t{lista_de_amigos}')
+
+#+ Matrizes ou Listas Multi-dimensionais
+
+
+matriz_compras = [
+#+ X    0                       1                       2                Y
+    ['farinha de trigo',    'farinha de rosca',    'farinha de mesa'],#+ 0
+    ['queijo',              'manteiga',            'requeijão'],      #+ 1
+    ['picanha',             'linguiça',            'contra-filé']     #+ 2
+]
+
+
+#? nome_da_matriz[Y][X]
