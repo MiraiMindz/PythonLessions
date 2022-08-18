@@ -127,14 +127,14 @@ def main(args=None) -> None:
     basename_dir = path_leaf(_curr_pwd)
 
     if (system() == "Linux"):
-        if (basename_dir != "Code"):
-            code_wd = f"{_curr_pwd}/Code"
+        if (basename_dir != "Milestones"):
+            code_wd = f"{_curr_pwd}/Exercicios/Milestones"
         else:
             code_wd = _curr_pwd
         usr_dir = f"{code_wd}/{name}"
     elif (system() == "Windows"):
-        if (basename_dir != "Code"):
-            code_wd = f"{_curr_pwd}\\Code"
+        if (basename_dir != "Milestones"):
+            code_wd = f"{_curr_pwd}\\Exercicios\\Milestones"
         else:
             code_wd = _curr_pwd
         usr_dir = f"{code_wd}\\{name}"
