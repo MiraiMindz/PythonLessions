@@ -177,9 +177,6 @@
 # tulipa = x, y, 3
 # print("VARIAVEL:", tulipa, "\tENDEREÇO MEM:", hex(id(tulipa)))
 
-#endregion
-
-
 # print(f'LISTA_BASE:\t{lista_de_amigos}')
 
 # lista_de_amigos.append('Joaquim')
@@ -211,12 +208,78 @@
 #+ Matrizes ou Listas Multi-dimensionais
 
 
-matriz_compras = [
-#+ X    0                       1                       2                Y
-    ['farinha de trigo',    'farinha de rosca',    'farinha de mesa'],#+ 0
-    ['queijo',              'manteiga',            'requeijão'],      #+ 1
-    ['picanha',             'linguiça',            'contra-filé']     #+ 2
-]
+# matriz_compras = [
+# #+ X    0                       1                       2                Y
+#     ['farinha de trigo',    'farinha de rosca',    'farinha de mesa'],#+ 0
+#     ['queijo',              'manteiga',            'requeijão'],      #+ 1
+#     ['picanha',             'linguiça',            'contra-filé']     #+ 2
+# ]
 
 
 #? nome_da_matriz[Y][X]
+
+# print(f'Antes de adicionar o Beto:\t{Alunos_de_Ciencias}')
+# Alunos_de_Ciencias.add('Beto')
+# print(f'Depois de adicionar o Beto:\t{Alunos_de_Ciencias}')
+
+# print(f'Antes de remover o Mine:\t{Alunos_de_Ciencias}')
+# Alunos_de_Ciencias.remove('Mine')
+# print(f'Antes de remover o Mine:\t{Alunos_de_Ciencias}')
+
+
+# Alunos_de_Matematica = {'Mirai', 'Luis', 'Ramon'}
+# Alunos_de_Portugues  = {'Kaal', 'Ramon', 'Mine'}
+# Alunos_de_Ciencias   = {'Mirai', 'Mine', 'Ramon'}
+
+# sets_difference = Alunos_de_Matematica.difference(Alunos_de_Portugues)
+# sets_symmetric_difference = Alunos_de_Matematica.symmetric_difference(Alunos_de_Portugues)
+# sets_intersection = Alunos_de_Matematica.intersection(Alunos_de_Portugues)
+# sets_union = Alunos_de_Matematica.union(Alunos_de_Portugues)
+
+
+# print(f'Diferença entre Alunos de Matematica e Português:\n\t{sets_difference}')
+# print(f'Diferença simétrica entre Alunos de Matematica e Português:\n\t{sets_symmetric_difference}')
+# print(f'Interseção entre Alunos de Matematica e Português:\n\t{sets_intersection}')
+# print(f'União entre Alunos de Matematica e Português:\n\t{sets_union}')
+
+#endregion
+
+
+# valor1, valor2, chave1, chave2 = "valor1", "valor2", "chave1", "chave2"
+
+# dicionario = {
+#     chave1: valor1,
+#     chave2: valor2
+# }
+
+# pessoa = {
+#     'nome': 'Jacinto Pinto',
+#     'idade': 18,
+#     'profissao': 'Pedreiro',
+#     'esta_desempregado': True
+# }
+
+# print(pessoa)
+# print(pessoa['nome'])
+
+# pessoa['nome'] = 'Jorge Amado'
+# print(pessoa)
+# print(pessoa['nome'])
+
+# pessoa['esta_morto'] = True
+# print(pessoa)
+# print(pessoa['esta_morto'])
+
+# pessoa.pop('profissao')
+# print(pessoa)
+
+# x = '3'
+# print(x, type(x))
+# x_int = int(x)
+# print(x_int, type(x_int))
+
+
+# notas = [60, 75, 40, 35, 100, 80, 90]
+# media = sum(notas) / len(notas)
+# print(f'{media:.2f}')
+

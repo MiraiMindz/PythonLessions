@@ -153,7 +153,6 @@ Estilo de formatação printF
 
 MUTABILIDADE
 
-<!--#endregion -->
 # AULA 05C
 
 As Listas são mutaveis, então eu posso adicionar elementos
@@ -161,3 +160,32 @@ As Listas são mutaveis, então eu posso adicionar elementos
 INDEX
 
 uma matriz essencialmente é uma lista de listas
+
+
+<!--#endregion -->
+
+Sets -> Conjuntos
+
+Alunos de Matematica
+Alunos de Portugues
+Alunos de Ciencias
+
+
+
+
+
+Conversão | Coerção
+
+Conversão -> EXPLICITA
+Coerção -> IMPLICITA
+
+
+
+str()   -> converte para string
+int()   -> converte para int
+float() -> converte para float
+bool()  -> converte para booleano
+tuple() -> converte para tuple
+list()  -> converte para lista
+set()   -> converte para set
+dict()  -> converte para dicionario
