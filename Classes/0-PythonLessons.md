@@ -1426,9 +1426,9 @@ Em Python nós usamos `:` (dois-pontos) e a indentação (geralmente de 4 espaç
 
 A desestruturação em Python consiste em assimilar aos valores de um iterável a variaveis.
 
-por exemplo se voce lembra da [aula sobre variaveis](./2-VariaveisPrintInput_Aula1.ipynb#variaveis) certamente lembrará que podemos associar multiplas variaveis a multiplos valores em uma unica linha
+por exemplo se voce lembra da [aula sobre variaveis](./3-Fundamentos_Python-II.ipynb#variaveis) certamente lembrará que podemos associar multiplas variaveis a multiplos valores em uma unica linha
 
-O que eu não lhe contei naquele momento é que isto é um exemplo de `unpacking`, nós estamos associando os valores de uma [tuple](./3-TipoDados.ipynb#tuples) a variaveis correspondentes, pois se você lembra, parenteses são opcionais, então ao fazermos:
+O que eu não lhe contei naquele momento é que isto é um exemplo de `unpacking`, nós estamos associando os valores de uma [tuple](./3-Fundamentos_Python-II.ipynb#tuples) a variaveis correspondentes, pois se você lembra, parenteses são opcionais, então ao fazermos:
 
 ```py
 x, y = 1, 2
