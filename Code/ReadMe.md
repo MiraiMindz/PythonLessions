@@ -28,20 +28,20 @@ Você também pode usar o script `GenFile.py` para gerar essa estrutura.
 
 ```
 Uso:
-    python3 GenFile.py [-h] [-n] [-c] name cap_num
+    python3 generate_files.py [-h] [-n] [-c] name cap_num
 
 Um script feito para automatizar/padronizar a criação de arquivos pertinentes as aulas.
 
 Options:
-    -h, --help          Exibe esta ajuda
-    -n, --name          Especifica o nome
-    -n, --cap_num       Especifica o numero do capitulo
+    -h, --help              Exibe esta ajuda
+    -n, --name              Especifica o nome
+    -c, --cap_num           Especifica o numero do capitulo
 
 As opções [-n] e [-c] são opcionais, você pode omiti-las caso insira o nome e o numero do capitulo seguindo a ordem
 Caso nenhum argumento seja provido você será perguntado dentro do script
 
 Exemplos de Uso:
-    1.      python3 GenFile.py -n Mirai -c 1
-    2.      python3 GenFile.py Mirai 1
-    3.      python3 GenFile.py
+    1.      python3 generate_files.py -n Mirai -c 1
+    2.      python3 generate_files.py Mirai 1
+    3.      python3 generate_files.py
 ```

@@ -24,22 +24,22 @@ Você também pode usar o script `GenMilestones.py` para gerar essa estrutura.
 
 ```
 Uso:
-        python3 GenMilestones.py [-h] [-n] [-c] name milestone_num
+    python3 generate_milestones.py [-h] [-n] [-c] name milestone_num
 
 Um script feito para automatizar/padronizar a criação de arquivos pertinentes as milestones.
 
 Options:
-        -h, --help              Exibe esta ajuda
-        -n, --name              Especifica o nome
-        -n, --milestone_num     Especifica o numero da milestone
+    -h, --help              Exibe esta ajuda
+    -n, --name              Especifica o nome
+    -c, --milestone_num     Especifica o numero da milestone
 
 As opções [-n] e [-c] são opcionais, você pode omiti-las caso insira o nome e o numero da milestone seguindo a ordem
 Caso nenhum argumento seja provido você será perguntado dentro do script
 
 Exemplos de Uso:
-        1.      python3 GenMilestones.py -n Mirai -c 1
-        2.      python3 GenMilestones.py Mirai 1
-        3.      python3 GenMilestones.py
+    1.      python3 generate_milestones.py -n Mirai -c 1
+    2.      python3 generate_milestones.py Mirai 1
+    3.      python3 generate_milestones.py
 ```
 
 ## Lista de Milestones
