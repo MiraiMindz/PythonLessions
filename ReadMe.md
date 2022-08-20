@@ -24,6 +24,8 @@ Notas:
 
 ## TODOs
 
+- Consertar a explicação dos Sets nos fundamentos I
 - Melhorar o Final do Cap 4
 - Escrever o Cap 5
 - \[TALVEZ\] Fazer um Scraper para coletar desafios do CodeWars
+- Atualizar o 0-PythonLessons
