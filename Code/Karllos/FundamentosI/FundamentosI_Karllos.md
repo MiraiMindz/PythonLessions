@@ -70,3 +70,10 @@ Tuples
 arrays are mutable
 append, insert, pop, remove
 index is a number of the array item making it possible for us to get the item by index
+
+Sets = Conjuntos
+
+difference
+symmetric_difference
+intersection
+union

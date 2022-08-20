@@ -53,3 +53,7 @@
 # ]
 
 # print(matriz[1][1])
+
+# conjunto = {'Kaal', 'Mirai', 'Ramon'}
+
+# print(conjunto)
