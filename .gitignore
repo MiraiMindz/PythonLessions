@@ -1,2 +1,4 @@
 .vscode/
 .pre-commit-config.yaml
+
+# Não remova esses arquivos, eles são referentes a configurações de usuário.
