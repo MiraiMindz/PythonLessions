@@ -2,6 +2,8 @@
 
 Esse curso foi feito para ajudar uns amigos a entrarem nesse mundo de tecnologia e também como uma forma de armazenar meu conhecimento na area.
 
+**Todos os códigos (que não são de lives nem de tutelagens de mal-código) nesse repositório são escritos seguindo o [PyLint](https://github.com/PyCQA/pylint), passam por um pre-commit e são formatados usando o [black](https://github.com/psf/black)**
+
 Até o presente momento, você construirá 11 projetos (pode variar no futuro):
 
 - Milestone 1: Criar uma Biblioteca de Filmes
@@ -28,4 +30,4 @@ Notas:
 - Melhorar o Final do Cap 4
 - Escrever o Cap 5
 - \[TALVEZ\] Fazer um Scraper para coletar desafios do CodeWars
-- Atualizar o 0-PythonLessons
+- Atualizar o 0-PythonLessons.md
