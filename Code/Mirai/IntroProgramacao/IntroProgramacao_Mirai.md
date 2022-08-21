@@ -179,3 +179,61 @@
 
     Python é uma linguagem de programação de alto nível, interpretada de script, imperativa, orientada a objetos, funcional, de tipagem dinâmica e forte.
 -->
+
+Resolver problemas aplicandos conceitos
+
+                  Programação       -          Comunicação
+HABILIDADES:     Escreve Codigo     |             Fala
+LINGUAGENS:      Python, C, Go      |       PT,   Eng,   Rus
+CONCEITOS:       If, Funções        |      Carro, Car,   автомобиль
+
+Programação é sobre resolver problemas aplicando conceitos usando a habilidade de escrever codigo.
+
+Escrever Código = Fala
+Liguagens = Idiomas
+Conceitos = Ao mundo a nossa volta
+
+Programador x Escritor de Código
+
+Linguagens e suas clasificações:
+
+Linguagem de Computação (Matriz):
+
+Programação (Lógica)        -> funções e comandos
+Marcação    (Documentação)  -> *Italico*, **Negrito**
+Estilo      (Design)        -> background-color, size
+
+Pradigma -> uma serie de métodos, dogmas, regras e conceitos que guiam o código fonte
+
+Imperativa -> sequenciais, de cima a baixo
+
+são ordens que devem ser ESTRITAMENTE seguidas
+
+Funcional -> as etapas são divididas em blocos de código chamados funções e são executados de acordo com a sua chamada.
+
+Orientada a Objetos -> pequenos blocos chamados de classe, independentes entre si
+
+Tipagem -> define como o programa lida com os tipos e variaveis
+
+- Força: -> volatilidade da variavel na memoria
+  - Fraca:  mudam de acordo com a situação
+  - Forte:  tipo e valor mantido na memoria
+  -
+- Estilo: -> forma de declaração e execução
+  - Estatico: tipos especificados no codigo fonte, e definidos em tempo de compilação
+
+  - Dinamico: tipos omitidos no codigo fonte, e definidos em tempo de execução
+
+
+
+Execução: a execução define a forma como o programa é executado
+
+Linguagens Interpretadas: As linguagens interpretadas tem seu codigo executado em tempo real através do interpretador.
+
+Linguagens Compiladas: As linguagens compiladas tem seu codigo executado após a conversão para um executavel através do compilador
+
+Nivel:
+
+Baixo Nivel:
+
+Alto Nivel:

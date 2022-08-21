@@ -161,18 +161,11 @@ INDEX
 
 uma matriz essencialmente é uma lista de listas
 
-
-<!--#endregion -->
-
 Sets -> Conjuntos
 
 Alunos de Matematica
 Alunos de Portugues
 Alunos de Ciencias
-
-
-
-
 
 Conversão | Coerção
 
@@ -189,3 +182,75 @@ tuple() -> converte para tuple
 list()  -> converte para lista
 set()   -> converte para set
 dict()  -> converte para dicionario
+
+Variaveis, comentarios, input() e print()
+
+print -> exibe
+
+SheBang
+
+input() -> coleta
+
+Tipos de Dado:
+
+Eles são divididos entre Primitivos (ou Simples, ou Básicos) e Compostos (ou Agrupados, ou Complexos)
+
+Dados Simples:
+
+- Strings (Texto)
+  - [x] - declaração
+  - [x] - multi-line
+  - [x] - format
+- Ints & Floats (Numeros)
+- Booleano (Verdadeiro e Falso)
+
+fString
+
+Int -> Numero Inteiro
+Float -> Numero decimal
+
++ -> soma
+- -> subtração
+** -> potencia
+* -> mutiplicação
+/ -> divisão
+// -> "divisão verdadeira"
+% -> modulo
+
+Verdadeiros:
+- True
+- qualquer string que não esteja vazia
+- qualquer numero diferente de 0
+- qualquer outro tipo de dado que não esteja vazio
+Falsos:
+- False
+- Strings vazias ("" ou '')
+- 0
+- qualquer outro tipo de dado vazio
+
+and, or, not
+
+Tipos Compostos:
+- Tuples
+- Listas
+- Sets
+- Dicionarios
+
+Mutabilidade: define a capacidade de um tipo ser alterado sem que se seja criado um novo.
+
+CHAVE:VALOR
+
+<!--#endregion -->
+
+str() -> converte para string
+int() -> converte para int
+float() -> converte para float
+bool() -> converte para booleano
+tuple() -> converte para tuple
+list() -> converte para lista
+set() -> converte para set
+dict() -> converte para dicionario
+
+sum() & len()
+
+bin() & complex()

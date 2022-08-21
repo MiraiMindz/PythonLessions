@@ -60,7 +60,7 @@ Uma pequena introdução aos conceitos mais comuns:
 
   - os 3 paradigmas mais comuns são:
 
-    - Imperativa: as etapas são sequenciadas, normalmente de cima abaixo, e os comandos são imperativos, informalmente falando, são ordem que devem ser estritamente seguidas. Linguagens de *scripting* são os melhores exemplos para se descrever Imperatividade, um exemplo com a linguagem BASH:
+    - Imperativa: as etapas são sequenciadas, normalmente de cima abaixo, e os comandos são imperativos, informalmente falando, são ordens que devem ser estritamente seguidas. Linguagens de *scripting* são os melhores exemplos para se descrever Imperatividade, um exemplo com a linguagem BASH:
 
       - ```shell
         str="Movendo Arquivo1"            # Primeira Instrução
@@ -117,7 +117,7 @@ Uma pequena introdução aos conceitos mais comuns:
 
     - Estático: Linguagens Estaticamente Tipadas, tem o tipo de suas variáveis definido em tempo de compilação, uma diferença nítida é o tipo da variável sendo especificado no código fonte (vide Java)
 
-    - Dinâmico: Linguagens Dinamicamente Tipoadas, tem o tipo de suas variáveis definido em tempo de execução, uma diferença seria o tipo da variável sendo omitida no código fonte (vide Python)
+    - Dinâmico: Linguagens Dinamicamente Tipadas, tem o tipo de suas variáveis definido em tempo de execução, uma diferença seria o tipo da variável sendo omitida no código fonte (vide Python)
 
       - Exemplo de Estilo:
 
