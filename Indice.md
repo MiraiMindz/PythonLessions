@@ -120,6 +120,7 @@ Esse indice pode mudar de acordo com o tempo
     - Funções de Primeira Classe e Alta Ordem em Python
         - Escopo
         - `global` e `nonlocal`
+        - shadowing
     - Expressões e Afirmações
     - Operadores
         - Aritméticos
