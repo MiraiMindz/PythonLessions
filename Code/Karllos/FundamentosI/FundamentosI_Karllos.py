@@ -57,3 +57,27 @@
 # conjunto = {'Kaal', 'Mirai', 'Ramon'}
 
 # print(conjunto)
+
+# print(f'Antes de adicionar o Beto:\t{Alunos_de_Ciencias}')
+# Alunos_de_Ciencias.add('Beto')
+# print(f'Depois de adicionar o Beto:\t{Alunos_de_Ciencias}')
+
+# print(f'Antes de remover o Mine:\t{Alunos_de_Ciencias}')
+# Alunos_de_Ciencias.remove('Mine')
+# print(f'Antes de remover o Mine:\t{Alunos_de_Ciencias}')
+
+
+# Alunos_de_Matematica = {'Mirai', 'Luis', 'Ramon'}
+# Alunos_de_Portugues  = {'Kaal', 'Ramon', 'Mine'}
+# Alunos_de_Ciencias   = {'Mirai', 'Mine', 'Ramon'}
+
+# sets_difference = Alunos_de_Matematica.difference(Alunos_de_Portugues)
+# sets_symmetric_difference = Alunos_de_Matematica.symmetric_difference(Alunos_de_Portugues)
+# sets_intersection = Alunos_de_Matematica.intersection(Alunos_de_Portugues)
+# sets_union = Alunos_de_Matematica.union(Alunos_de_Portugues)
+
+
+# print(f'Diferença entre Alunos de Matematica e Português:\n\t{sets_difference}')
+# print(f'Diferença simétrica entre Alunos de Matematica e Português:\n\t{sets_symmetric_difference}')
+# print(f'Interseção entre Alunos de Matematica e Português:\n\t{sets_intersection}')
+# print(f'União entre Alunos de Matematica e Português:\n\t{sets_union}')
