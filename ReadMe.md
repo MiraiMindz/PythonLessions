@@ -31,4 +31,4 @@ Notas:
 - [ ] Melhorar o Final do Cap 4
 - [ ] Escrever o Cap 5
 - [ ] \[TALVEZ\] Fazer um Scraper para coletar desafios do CodeWars
-- [ ] Atualizar o 0-PythonLessons.md
+- [x] Atualizar o 0-PythonLessons.md
