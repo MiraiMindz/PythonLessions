@@ -1854,9 +1854,9 @@ Em Python nós usamos `:` (dois-pontos) e a indentação (geralmente de 4 espaç
 
 A desestruturação em Python consiste em assimilar aos valores de um iterável a variaveis.
 
-por exemplo se voce lembra da [aula sobre variaveis](./2-VariaveisPrintInput_Aula1.ipynb#variaveis) certamente lembrará que podemos associar multiplas variaveis a multiplos valores em uma unica linha
+por exemplo se voce lembra da [aula sobre variaveis](./2-Fundamentos_Python-I.ipynb#variaveis-comentários-print-e-input) certamente lembrará que podemos associar multiplas variaveis a multiplos valores em uma unica linha
 
-O que eu não lhe contei naquele momento é que isto é um exemplo de `unpacking`, nós estamos associando os valores de uma [tuple](./3-TipoDados.ipynb#tuples) a variaveis correspondentes, pois se você lembra, parenteses são opcionais, então ao fazermos:
+O que eu não lhe contei naquele momento é que isto é um exemplo de `unpacking`, nós estamos associando os valores de uma [tuple](./2-Fundamentos_Python-I.ipynb#tuples) a variaveis correspondentes, pois se você lembra, parenteses são opcionais, então ao fazermos:
 
 ```py
 x, y = 1, 2
@@ -3480,7 +3480,7 @@ O Python segue uma precedencia de operadores especifica, eis aqui a lista:
 | Precedencia 	|                        Operador                       	|                                    Descrição                                    	|
 |:-----------:	|:-----------------------------------------------------:	|:-------------------------------------------------------------------------------:	|
 |      1      	|                      (), [] ou {}                     	|             Parenteses, Exibição de listas, dicionários e conjuntos             	|
-|      2      	| x[index], x[index:index] x(arguments...), x.attribute 	|                   atributos, fatiamentos e chamada de funções                   	|
+|      2      	| x\[index\], x\[index:index\] x(arguments...), x.attribute 	|                   atributos, fatiamentos e chamada de funções                   	|
 |      3      	|                         await                         	|                                 espera asycrona                                 	|
 |      4      	|                           **                          	|                                  exponenciação                                  	|
 |      5      	|                        +, -, ~                        	|                         Positivo, negativo e bitwise NOT                        	|
