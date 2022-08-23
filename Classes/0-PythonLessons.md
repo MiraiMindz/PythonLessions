@@ -1,11 +1,11 @@
-# Python Lessions
+# 0. Python Lessions
 
 Esse arquivo vai conter todas as explicações (meio que um arquivo só com o curso todo) em markdown pois ele é renderizado nos celulares, assim você pode ler em qualquer lugar.
 
-## Tabela de Conteudos
+## 0.1. Tabela de Conteudos
 
-- [Python Lessions](#python-lessions)
-  - [Tabela de Conteudos](#tabela-de-conteudos)
+- [0. Python Lessions](#0-python-lessions)
+  - [0.1. Tabela de Conteudos](#01-tabela-de-conteudos)
 - [1. Introdução a Programação](#1-introdução-a-programação)
   - [1.1. O que é programação?](#11-o-que-é-programação)
   - [1.2. Linguagens de programação e suas classificações](#12-linguagens-de-programação-e-suas-classificações)
@@ -25,8 +25,7 @@ Esse arquivo vai conter todas as explicações (meio que um arquivo só com o cu
         - [2.2.2.1.1. Declaração](#22211-declaração)
         - [2.2.2.1.2. Multi-Line](#22212-multi-line)
         - [2.2.2.1.3. fStrings (Formatted Strings)](#22213-fstrings-formatted-strings)
-        - [2.2.2.1.4. fStrings como em C](#22214-fstrings-como-em-c)
-        - [2.2.2.1.5. Concatenação](#22215-concatenação)
+        - [2.2.2.1.4. Concatenação](#22214-concatenação)
       - [2.2.2.2. Numeros (Ints & Floats) e Operações Aritméticas](#2222-numeros-ints--floats-e-operações-aritméticas)
         - [2.2.2.2.1. Ints](#22221-ints)
         - [2.2.2.2.2. Floats](#22222-floats)
@@ -39,6 +38,15 @@ Esse arquivo vai conter todas as explicações (meio que um arquivo só com o cu
       - [2.2.2.4. Boolean](#2224-boolean)
         - [2.2.2.4.1. Operadores Lógicos](#22241-operadores-lógicos)
         - [2.2.2.4.2. Curto Circuito](#22242-curto-circuito)
+      - [2.2.2.5. Curiosidades](#2225-curiosidades)
+        - [2.2.2.5.1. Floats](#22251-floats)
+        - [2.2.2.5.2. Strings](#22252-strings)
+        - [2.2.2.5.3. Prefixos](#22253-prefixos)
+        - [2.2.2.5.4. Sequencias de escapagem](#22254-sequencias-de-escapagem)
+        - [2.2.2.5.5. Templates](#22255-templates)
+        - [2.2.2.5.6. Conversores](#22256-conversores)
+        - [2.2.2.5.7. Especificações da Mini-linguagem de formatação](#22257-especificações-da-mini-linguagem-de-formatação)
+        - [2.2.2.5.8. Depuração e padrão printf](#22258-depuração-e-padrão-printf)
     - [2.2.3. Tipos Compostos](#223-tipos-compostos)
       - [2.2.3.1. Mutabilidade](#2231-mutabilidade)
       - [2.2.3.2. Tuples](#2232-tuples)
@@ -56,52 +64,58 @@ Esse arquivo vai conter todas as explicações (meio que um arquivo só com o cu
       - [3.1.1.1. Sequencial](#3111-sequencial)
       - [3.1.1.2. Decisivo](#3112-decisivo)
       - [3.1.1.3. Repetitivo (Recursivo)](#3113-repetitivo-recursivo)
-    - [3.1.2. Escopo](#312-escopo)
-    - [3.1.3. Desestruturação (Packing & Unpacking)](#313-desestruturação-packing--unpacking)
-    - [3.1.4. Desestruturação em `for` loops](#314-desestruturação-em-for-loops)
-    - [3.1.5. Iteração em dicionários](#315-iteração-em-dicionários)
-    - [3.1.6. `break`, `continue` e `else` em `for` loops](#316-break-continue-e-else-em-for-loops)
-    - [3.1.7. Numeros Primos e FizzBuzz](#317-numeros-primos-e-fizzbuzz)
-    - [3.1.8. Fatiamento de Listas](#318-fatiamento-de-listas)
-      - [3.1.8.1. Ordem Natural](#3181-ordem-natural)
-      - [3.1.8.2. Ordem Reversa](#3182-ordem-reversa)
-    - [3.1.9. Compreensões (Comprehensions)](#319-compreensões-comprehensions)
-      - [3.1.9.1. Listas](#3191-listas)
-      - [3.1.9.2. Listas Condicional](#3192-listas-condicional)
-      - [3.1.9.3. Sets](#3193-sets)
-      - [3.1.9.4. Dicionários](#3194-dicionários)
-    - [3.1.10. A função `zip()`](#3110-a-função-zip)
-    - [3.1.11. Funções](#3111-funções)
-      - [3.1.11.1. Argumentos e Parametros](#31111-argumentos-e-parametros)
-        - [3.1.11.1.1. Parametros Padrões (Valores Padrões)](#311111-parametros-padrões-valores-padrões)
-        - [3.1.11.1.2. Argumentos Chave (Nomeados)](#311112-argumentos-chave-nomeados)
-        - [3.1.11.1.3. `*args` e `**kwargs`](#311113-args-e-kwargs)
-      - [3.1.11.2. DocStrings](#31112-docstrings)
-      - [3.1.11.3. `return`](#31113-return)
-      - [3.1.11.4. Funções lambda](#31114-funções-lambda)
-      - [3.1.11.5. Funções de Primeira Classe e Alta Ordem em Python](#31115-funções-de-primeira-classe-e-alta-ordem-em-python)
-        - [3.1.11.5.1. Funções de Primeira Classe](#311151-funções-de-primeira-classe)
-        - [3.1.11.5.2. Funções de Alta Ordem](#311152-funções-de-alta-ordem)
-      - [3.1.11.6. `global` e `nonlocal`](#31116-global-e-nonlocal)
-      - [3.1.11.7. `global`](#31117-global)
-      - [3.1.11.8. `nonlocal`](#31118-nonlocal)
-      - [3.1.11.9. Operadores](#31119-operadores)
-        - [3.1.11.9.1. Lógicos](#311191-lógicos)
-        - [3.1.11.9.2. Comparativos](#311192-comparativos)
-        - [3.1.11.9.3. Indentidade](#311193-indentidade)
-        - [3.1.11.9.4. Membro](#311194-membro)
-        - [3.1.11.9.5. Bitwise](#311195-bitwise)
-        - [3.1.11.9.6. AND](#311196-and)
-        - [3.1.11.9.7. OR](#311197-or)
-        - [3.1.11.9.8. XOR](#311198-xor)
-        - [3.1.11.9.9. NOT](#311199-not)
-        - [3.1.11.9.10. LeftShift](#3111910-leftshift)
-        - [3.1.11.9.11. RightShift](#3111911-rightshift)
-        - [3.1.11.9.12. Bitwise Masking](#3111912-bitwise-masking)
-        - [3.1.11.9.13. Associativos](#3111913-associativos)
-        - [3.1.11.9.14. Igual](#3111914-igual)
-        - [3.1.11.9.15. Mais-Igual](#3111915-mais-igual)
-        - [3.1.11.9.16. Walrus Operator](#3111916-walrus-operator)
+    - [3.1.2. Performance em Loops](#312-performance-em-loops)
+      - [3.1.2.1. While Loops](#3121-while-loops)
+      - [3.1.2.2. For Loops](#3122-for-loops)
+    - [3.1.3. Escopo](#313-escopo)
+    - [3.1.4. Desestruturação (Packing & Unpacking)](#314-desestruturação-packing--unpacking)
+    - [3.1.5. Desestruturação em `for` loops](#315-desestruturação-em-for-loops)
+    - [3.1.6. Iteração em dicionários](#316-iteração-em-dicionários)
+    - [3.1.7. `break`, `continue` e `else` em `for` loops](#317-break-continue-e-else-em-for-loops)
+    - [3.1.8. Numeros Primos e FizzBuzz](#318-numeros-primos-e-fizzbuzz)
+    - [3.1.9. Fatiamento de Listas](#319-fatiamento-de-listas)
+      - [3.1.9.1. Ordem Natural](#3191-ordem-natural)
+      - [3.1.9.2. Ordem Reversa](#3192-ordem-reversa)
+    - [3.1.10. Compreensões (Comprehensions)](#3110-compreensões-comprehensions)
+      - [3.1.10.1. Listas](#31101-listas)
+      - [3.1.10.2. Listas Condicional](#31102-listas-condicional)
+      - [3.1.10.3. Sets](#31103-sets)
+      - [3.1.10.4. Dicionários](#31104-dicionários)
+    - [3.1.11. A função `zip()`](#3111-a-função-zip)
+    - [3.1.12. Funções](#3112-funções)
+      - [3.1.12.1. Argumentos e Parametros](#31121-argumentos-e-parametros)
+        - [3.1.12.1.1. Parametros Padrões (Valores Padrões)](#311211-parametros-padrões-valores-padrões)
+        - [3.1.12.1.2. Argumentos Chave (Nomeados)](#311212-argumentos-chave-nomeados)
+        - [3.1.12.1.3. `*args`, `**kwargs`, `*` (Keyword Only Arguments) e `/` (Positional Only Arguments)](#311213-args-kwargs--keyword-only-arguments-e--positional-only-arguments)
+      - [3.1.12.2. DocStrings](#31122-docstrings)
+      - [3.1.12.3. `return`](#31123-return)
+      - [3.1.12.4. Funções lambda](#31124-funções-lambda)
+      - [3.1.12.5. Funções de Primeira Classe e Alta Ordem em Python](#31125-funções-de-primeira-classe-e-alta-ordem-em-python)
+        - [3.1.12.5.1. Funções de Primeira Classe](#311251-funções-de-primeira-classe)
+        - [3.1.12.5.2. Funções de Alta Ordem](#311252-funções-de-alta-ordem)
+      - [3.1.12.6. `global` e `nonlocal`](#31126-global-e-nonlocal)
+      - [3.1.12.7. `global`](#31127-global)
+      - [3.1.12.8. `nonlocal`](#31128-nonlocal)
+      - [3.1.12.9. Sombra de variaveis (Variable Shadowing)](#31129-sombra-de-variaveis-variable-shadowing)
+      - [3.1.12.10. Operadores](#311210-operadores)
+        - [3.1.12.10.1. Aritméticos](#3112101-aritméticos)
+        - [3.1.12.10.2. Lógicos](#3112102-lógicos)
+        - [3.1.12.10.3. Comparativos](#3112103-comparativos)
+        - [3.1.12.10.4. Indentidade](#3112104-indentidade)
+        - [3.1.12.10.5. Membro](#3112105-membro)
+        - [3.1.12.10.6. Bitwise](#3112106-bitwise)
+        - [3.1.12.10.7. AND](#3112107-and)
+        - [3.1.12.10.8. OR](#3112108-or)
+        - [3.1.12.10.9. XOR](#3112109-xor)
+        - [3.1.12.10.10. NOT](#31121010-not)
+        - [3.1.12.10.11. LeftShift](#31121011-leftshift)
+        - [3.1.12.10.12. RightShift](#31121012-rightshift)
+        - [3.1.12.10.13. Bitwise Masking](#31121013-bitwise-masking)
+        - [3.1.12.10.14. Associativos](#31121014-associativos)
+        - [3.1.12.10.15. Igual](#31121015-igual)
+        - [3.1.12.10.16. Mais-Igual](#31121016-mais-igual)
+        - [3.1.12.10.17. Associação de expressão (Walrus Operator)](#31121017-associação-de-expressão-walrus-operator)
+        - [3.1.12.10.18. Precedencia de Operadores Geral](#31121018-precedencia-de-operadores-geral)
 - [4. Programação Orientada a Objetos Básica](#4-programação-orientada-a-objetos-básica)
   - [4.1. Classe, Objetos e Instancias](#41-classe-objetos-e-instancias)
     - [4.1.1. Classes](#411-classes)
@@ -170,7 +184,7 @@ As linguagens podem ser classificadas de acordo com seus paradigmas, método de 
 
 Uma pequena introdução aos conceitos mais comuns:
 
-- Linguagens Matriz: A matriz de uma linguagem define sua utilidade principal, são 3 tipos, Programação (Logica), Marcação (Documentação), Estilo (Design)
+- Linguagem de Computação (Matriz): A matriz de uma linguagem define sua utilidade principal, são 3 tipos, Programação (Logica), Marcação (Documentação), Estilo (Design)
 
   - Programação (Logica): As linguagens de Programação são marcadas por funções e comandos, elas trabalham a logica de maquina, alguns exemplos são, Python e BASH.
 
@@ -286,7 +300,6 @@ Uma pequena introdução aos conceitos mais comuns:
 
 Essas classificações simplificam nossa compreensão das linguagens.
 
-
 # 2. Fundamentos Python I
 
 ## 2.1. Variaveis, Comentários, print() e input()
@@ -338,7 +351,7 @@ em Python, os comentários começam com `#`, após isso, tudo será ignorado
 
 ```python
 # Podemos escrever qualquer coisa que ela não será executada
-nome = "Mirai" # Os comentários não precisam estar no inicio da linha, mas perceba, mesmo que coloquemos um codigo aqui, ele será ignorado
+nome = "Mirai"  # Os comentários não precisam estar no inicio da linha, mas perceba, mesmo que coloquemos um codigo aqui, ele será ignorado
 ```
 
 Uma das ultilidades dos comentários é, além de comentar e adicionar informações ao codigo, a de "salvar" um codigo, frequentemente você irá se deparar com a seguinte situação:
@@ -370,11 +383,13 @@ a função `print()` é usada quando queremos mostrar algo ao usuário, um exemp
 
 
 ```python
-print("Olá Mundo") # Aqui Mostramos a mensagem "Olá Mundo"
+print("Olá Mundo")  # Aqui Mostramos a mensagem "Olá Mundo"
 
 mensagem = "Tambem funciona com variaveis"
 
-print(mensagem) # após temos associado a um valor a variavel `mensagem` nós a exibimos ao usuário
+print(
+    mensagem
+)  # após temos associado a um valor a variavel `mensagem` nós a exibimos ao usuário
 ```
 
     Olá Mundo
@@ -387,8 +402,10 @@ A função `input()`, de certa forma é "oposta" a função `print()`, o `input(
 
 
 ```python
-input() # ao executar este bloco, o programa irá esperar que o usuário aperte a tecla ENTER para enviar a informação digitada
-input("Insira seu nome: ") # Ao adicionarmos um texto dentro dos parenteses, este texto será exibido antes do cursor do usuário
+input()  # ao executar este bloco, o programa irá esperar que o usuário aperte a tecla ENTER para enviar a informação digitada
+input(
+    "Insira seu nome: "
+)  # Ao adicionarmos um texto dentro dos parenteses, este texto será exibido antes do cursor do usuário
 ```
 
 
@@ -452,7 +469,7 @@ As Strings representam os textos, sua declaração é feita através de aspas du
 
 ```python
 nome = "Mirai"
-linguagem = 'Python'
+linguagem = "Python"
 print(nome, linguagem)
 ```
 
@@ -465,8 +482,8 @@ nós podemos dentro da string usar a aspa que não foi usada durante a declaraç
 
 
 ```python
-apresentacao = "Hi, my name is Mirai, I'm a Developer" # Note o uso das aspas unicas dentro da string
-citacao = 'Pois então ela disse, "Não se dirija mais a mim"...' # Note o uso das aspas duplas dentro da string
+apresentacao = "Hi, my name is Mirai, I'm a Developer"  # Note o uso das aspas unicas dentro da string
+citacao = 'Pois então ela disse, "Não se dirija mais a mim"...'  # Note o uso das aspas duplas dentro da string
 
 # repare que envolta do texto usamos o mesmo tipo de aspas
 print(apresentacao, citacao)
@@ -479,8 +496,8 @@ porém, nos podemos sim usar o mesmo tipo de aspas dentro e fora da string, bast
 
 
 ```python
-apresentacao = 'Hi, my name is Mirai, I\'m a Developer'
-citacao = "Pois então ela disse, \"Não se dirija mais a mim\"..."
+apresentacao = "Hi, my name is Mirai, I'm a Developer"
+citacao = 'Pois então ela disse, "Não se dirija mais a mim"...'
 print(apresentacao, citacao)
 ```
 
@@ -500,12 +517,12 @@ multi_line1 = """Olá, eu sou um texto de multiplas linhasl, eu fui declarado us
     eba
 """
 
-multi_line2 = '''Olá, eu sou um texto de multiplas linhas, eu fui declarado usando aspas unicas \'\'
+multi_line2 = """Olá, eu sou um texto de multiplas linhas, eu fui declarado usando aspas unicas \'\'
 
   eu preservo os espaços
 
     eba
-'''
+"""
 
 print(multi_line1)
 print(multi_line2)
@@ -534,7 +551,9 @@ as fStrings, são strings formatadas, isto é, strings que contém codigo, sua d
 nome = "Mirai"
 linguagem = "Python"
 idade = 17
-apresentacao = f"Olá, meu nome é {nome}, eu tenho {idade} anos e sei programar em {linguagem}"
+apresentacao = (
+    f"Olá, meu nome é {nome}, eu tenho {idade} anos e sei programar em {linguagem}"
+)
 print(apresentacao)
 ```
 
@@ -550,7 +569,7 @@ Eis aqui um exemplo:
 nome = "Mirai"
 linguagem = "Python"
 idade = 17
-apresentacao = f'Olá, meu nome é {nome.upper()}, eu nasci em {2022 - idade} e sei programar em {linguagem}'
+apresentacao = f"Olá, meu nome é {nome.upper()}, eu nasci em {2022 - idade} e sei programar em {linguagem}"
 print(apresentacao)
 ```
 
@@ -563,7 +582,7 @@ elas tambem podem ser feitas através do string.format(), este metodo pega os ar
 
 
 ```python
-apresentacao = 'Olá, meu nome é {}, eu nasci em {} e sei programar em {}'
+apresentacao = "Olá, meu nome é {}, eu nasci em {} e sei programar em {}"
 nome = "Mirai"
 linguagem = "Python"
 idade = 17
@@ -573,21 +592,7 @@ print(apresentacao.format(nome, idade, linguagem))
     Olá, meu nome é Mirai, eu nasci em 17 e sei programar em Python
 
 
-##### 2.2.2.1.4. fStrings como em C
-
-Uma pequena curiosidade que eu descobri enquanto escrevia essas aulas é que podemos fazer fStrings como em C, por exemplo:
-
-
-```python
-print("meu nome é %s e eu tenho %d anos" % ("Mirai", 17))
-```
-
-    meu nome é Mirai e eu tenho 17 anos
-
-
-basta colocar os place-holders de C, e "modular" com uma tuple contendo os valores necessários.
-
-##### 2.2.2.1.5. Concatenação
+##### 2.2.2.1.4. Concatenação
 
 Concatenação é o ato de juntar duas Strings, veja o mesmo exemplo anterior porém concatenado
 
@@ -596,7 +601,14 @@ Concatenação é o ato de juntar duas Strings, veja o mesmo exemplo anterior po
 nome = "Mirai"
 linguagem = "Python"
 idade = 17
-apresentacao = "Olá, meu nome é " + nome + ", eu tenho " + str(idade) + " anos e sei programar em " + linguagem
+apresentacao = (
+    "Olá, meu nome é "
+    + nome
+    + ", eu tenho "
+    + str(idade)
+    + " anos e sei programar em "
+    + linguagem
+)
 print(apresentacao)
 ```
 
@@ -649,13 +661,12 @@ Em Python se é possivel exercer operações aritméticas, eis aqui uma lista da
 
 Python segue sua própria ordem de precedencia baseada nos metodos BODMAS e PEMDAS, eis aqui sua ordem:
 
-- 1 - PARENTESES ((())) -> DE DENTRO PRA FORA
-- 2 - POTENCIA
-- 3 - RAIZES
-- 4 - MUTIPLICAÇÃO
-- 5 - DIVISÃO
-- 6 - SOMA
-- 7 - SUBTRAÇÃO
+- 1 - Parenteses () -> em sequencia, ou seja, externos primeiro
+- 2 - Exponenciação, -> **
+- 4 - Mutilicativos, -> *, @
+- 5 - Divisivos, -> /, // e %
+- 6 - Adição -> +
+- 7 - Subtração -> -
 
 As operações aritméticas são as mesmas aprendidas na escola, porém irei ressaltar 3, divisão, "divisão verdadeira" e modulo
 
@@ -665,8 +676,8 @@ Em Python uma Divisão sempre resultará em um float, mesmo que o resultado seja
 
 
 ```python
-print(4/2, type(4/2))
-print(1/3, type(1/3))
+print(4 / 2, type(4 / 2))
+print(1 / 3, type(1 / 3))
 ```
 
     2.0 <class 'float'>
@@ -683,8 +694,8 @@ o que ela essencialmente faz é cortar os numeros após o ponto, "arredondando" 
 
 
 ```python
-print(4//2, type(4//2))
-print(1//3, type(1//3))
+print(4 // 2, type(4 // 2))
+print(1 // 3, type(1 // 3))
 ```
 
     2 <class 'int'>
@@ -794,6 +805,350 @@ por exemplo, com o `and`, se você tem algum valor que provavelmente retornará 
 
 com o `or`, se é exatamente o oposto, colocamos um valor que provavelmente retornará `True` na frente, pois assim a expressão já é validada, retornando `True`, e o Python por sua vez irá ignorar o resto da expressão, pois o `or` retorna `True` caso um dos valores seja verdadeiro
 
+#### 2.2.2.5. Curiosidades
+
+pequenas curiosidades sobre alguns tipos básicos
+
+##### 2.2.2.5.1. Floats
+
+nos floats nós podemos converter as string `inf` e `NaN` (Not a Number), para números, sendo `inf` a representação de um numero infinito e `NaN` a representação de algo que não é um numero.
+
+
+
+```python
+snan = "NaN"
+fnan = float(snan)
+print(fnan, type(fnan))
+
+sinf = "inf"
+finf = float(sinf)
+print(finf, type(finf))
+```
+
+    nan <class 'float'>
+    inf <class 'float'>
+
+
+##### 2.2.2.5.2. Strings
+
+As string são muito mais que apenas simples textos, elas contem uma serie de operadores especiais, são divididos em 5 grupos:
+
+- Prefixos
+- Sequencias de escapagem
+- Templates
+- Conversores
+- Especificações da Mini-linguagem de formatação
+- Depuração e padrão printf
+
+##### 2.2.2.5.3. Prefixos
+
+os prefixos são os seguintes:
+
+- `r` ou `R` -> raw strings (rString)
+- `u` ou `U` -> unicode strings (uString)
+- `f` ou `F` -> format strings (fString)
+- `fr` ou `Fr` ou `fR` ou `FR` ou `rf` ou `rF` ou `Rf` ou `RF` -> raw-format strings  (frString ou rfString)
+
+raw strings: não escapam nenhum caractere
+
+
+```python
+raw_string = r"Uma String\nLiteral com os\tcaracteres de escapagem\r"
+print(raw_string)
+```
+
+    Uma String\nLiteral com os\tcaracteres de escapagem\r
+
+
+unicode strings: aceitam escapagens de caracteres unicode
+
+
+```python
+unicode_string = "Runic F: \u5792"
+print(unicode_string)
+```
+
+    Runic F: 垒
+
+
+format strings: aceitam formatação de código
+
+
+```python
+format_string = f"2 + 2 = {2 + 2}"
+print(format_string)
+```
+
+    2 + 2 = 4
+
+
+raw-format strings: a união entre format strings e raw strings
+
+
+```python
+raw_format_string = rf"2 * 2 =\t{2 * 2}"
+print(raw_format_string)
+```
+
+    2 * 2 =\t4
+
+
+##### 2.2.2.5.4. Sequencias de escapagem
+
+caso não seja uma rString, esses são os caracteres de escape permitidos:
+
+| Sequencia de Escapagem 	|              Significado             	|
+|:----------------------:	|:------------------------------------:	|
+|           \\           	|             Backslash (\)            	|
+|           \'           	|           Aspas simples (')          	|
+|           \"           	|           Aspas duplas (")           	|
+|           \a           	|           Sino ASCII (BEL)           	|
+|           \b           	|     Backspace ASCII (BS) (apagar)    	|
+|           \f           	|          Formfeed ASCII (FF)         	|
+|           \n           	|   Linefeed ASCII (LF) (nova linha)   	|
+|           \r           	|  Carriage Return ASCII (CR) (enter)  	|
+|           \t           	|       Tab Horizontal ASCII (TAB)      |
+|           \v           	|        Tab Vertical ASCII (VT)        |
+|          \ooo          	|    Caractere com o valor octal OOO   	|
+|          \xhh          	| Caractere com o valor hexadecimal HH 	|
+|         \uXXXX         	|  Caractere Unicode com o valor XXXX  	|
+
+> NOTA: o \uXXXX só funciona caso seja uma uString
+
+
+```python
+print("\tTab\nNewline")
+uString = "Runic Ior: \u16E1"
+print(uString)
+```
+
+    	Tab
+    Newline
+    Runic Ior: ᛡ
+
+
+##### 2.2.2.5.5. Templates
+
+Template strings são strings que usam `$` para definir locais de substituição, para usa-las você deve importar a classe `Template` do modulo string, você verá mais sobre modulos e classes no futuro.
+
+
+```python
+from string import Template
+
+template_string = Template("Olá meu nome é $nome, e eu estou ${acao}ndo")
+print(template_string.substitute(nome="Mirai", acao="Programa"))
+```
+
+    Olá meu nome é Mirai, e eu estou Programando
+
+
+##### 2.2.2.5.6. Conversores
+
+os conversores são mais usados em processos de depuração, eles começam com `!`, são 3 conversores:
+
+- `!a` -> Representação ascii
+- `!r` -> o equivalente a `repr()`
+- `!s` -> o equivalente a `str()`
+
+
+```python
+variavel = "Runic Ior: ᛡ"
+conversor_a = f"{variavel!a}"
+conversor_r = f"{variavel!r}"
+conversor_s = f"{variavel!s}"
+
+print(f"Conversor !a:\t{conversor_a}")
+print(f"Conversor !r:\t{conversor_r}")
+print(f"Conversor !s:\t{conversor_s}")
+```
+
+    Conversor !a:	'Runic Ior: \u16e1'
+    Conversor !r:	'Runic Ior: ᛡ'
+    Conversor !s:	Runic Ior: ᛡ
+
+
+##### 2.2.2.5.7. Especificações da Mini-linguagem de formatação
+
+O Python contém uma mini-linguagem de formatação de strings, ela nos permite converter, alinhar, definir a precisão e separar.
+
+a o padrão de formatação geral é o seguinte:
+
+```
+especificação   ::=  [[preenchimento]alinhamento][sinal][#][0][largura][agrupamento][.precisão][tipo]
+preenchimento   ::=  <any character>
+alinhamento     ::=  "<" | ">" | "=" | "^"
+sinal           ::=  "+" | "-" | " "
+largura         ::=  digit+
+agrupamento     ::=  "_" | ","
+precisão        ::=  digit+
+tipo            ::=  "b" | "c" | "d" | "e" | "E" | "f" | "F" | "g" | "G" | "n" | "o" | "s" | "x" | "X" | "%"
+```
+
+eles começam com `:`, eis aqui uma lista:
+
+Opções de Alinhamento:
+
+| Sinal 	|                                                              Significado                                                             	|
+|:-----:	|:------------------------------------------------------------------------------------------------------------------------------------:	|
+|   >   	|                                  define que o campo deve estar alinhado a esquerda do espaço provido                                 	|
+|   <   	|                                  define que o campo deve estar alinhado a direita do espaço provido                                  	|
+|   =   	| define que o alinhamento deve estar entre o sinal (se houver) e o digito, essa opção de alinhamento só é valida para tipos numericos 	|
+|   ^   	|                                  define que o campo deve estar alinhado ao centro do espaço provido                                  	|
+
+Opções de Sinalização:
+
+|     Sinal    	|                                                      Significado                                                      	|
+|:------------:	|:---------------------------------------------------------------------------------------------------------------------:	|
+|       +      	|                    indica que o sinal deve ser usado tanto para numeros positivos quanto negativos                    	|
+|       -      	|                          indica que o sinal só deve ser usado para numeros negativos (padrão)                         	|
+| ' ' (espaço) 	| indica que espaços no inicio devem ser usados para numeros positivos e o sinal de menos deve ser usado para negativos 	|
+
+Alternadores e Separadores:
+
+O `#` (alternador) especifica que a forma alternativa deve ser usada na conversão, a forma alternativa é especificada de acordo com o tipo. Ela só é valida para numeros inteiros (ints), decimais (floats) e complexos (complex).
+
+para ints que usam as formatações hexadecimal, binária ou octal os prefixos `Ox` ou `0X`, `0b` e `0o` são usadas.
+
+para floats e numeros complexos, o alternador especifica que a conversão sempre deve conter as casas decimais, em adição ao 'g' e 'G', zeros insignificantes não são removidos.
+
+| Separador 	|                                                          Significado                                                          	|
+|:---------:	|:-----------------------------------------------------------------------------------------------------------------------------:	|
+|     ,     	|                                                separador para casa dos milhares                                               	|
+|     _     	| separador para a casa dos milhares, para as representações 'b', 'o', 'x' e 'X' esse separador será inserido a cada 4 espaços. 	|
+
+Representações de Strings:
+
+|       Tipo 	    |               Significado              	|
+|:-------------:	|:--------------------------------------:	|
+|  's' 	            | Converte para String, pode ser omitido 	|
+| None (Nenhum) 	|             O mesmo que 's'            	|
+
+Representações de Ints:
+
+|      Tipo     	|                                                   Significado                                                   	|
+|:-------------:	|:---------------------------------------------------------------------------------------------------------------:	|
+|      'b'      	|                                          Converte para binario, base 2                                          	|
+|      'c'      	|                        Converte um numero inteiro para o caractere unicode correspondente                       	|
+|      'd'      	|                                             Numero decimal, base 10                                             	|
+|      'o'      	|                                               Numero Octal, base 8                                              	|
+|      'x'      	|                                Numero hexadecimal, base 16, usa letras minusculas                               	|
+|      'X'      	|                                Numero hexadecimal, base 16, usa letras maiusculas                               	|
+|      'n'      	| o mesmo que 'd', exceto que usa a configuração atual de localidade para definir o separador de numeros correto. 	|
+| None (Nenhum) 	|                                                 O mesmo que 'd'                                                 	|
+
+Representações de Floats:
+
+|      Tipo     	|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 Significado                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 	|
+|:-------------:	|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:	|
+|      'e'      	|                                                                                                                                                                                                                                                                                                                                                                                                                                                          Notação Cientifica para uma dada precisão `p`, formata o numero em notação cientifica com a letra `e`, separando o coeficiente do expoente, o coeficiente tem 1 digito antes e `p` digitos decimais após o `e`, para um total de `p + 1` digitos significativos. Sem nenhuma precisão dada, se é usado uma precisão de 6 digitos para numeros decimais (floats) e usa uma precisão grande o bastante para mostrar todos os digitos do coeficiente para numeros inteiros/decimais. Se não existir nenhuma casa decimal, as casas decimais são removidas a menos que a opção `#` seja usada.                                                                                                                                                                                                                                                                                                                                                                                                                                                         	|
+|      'E'      	|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 O mesmo que 'e', porém com o delimitador `E`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                	|
+|      'f'      	|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           Notação de pontos fixos. para uma dada precisão `p`, formata o numero como um decimal com exatos `p` digitos após o ponto. Se nenhuma precisão for especificada, usa uma precisão de 6 digitos para as casas decimais (floats), e uma precisão grande o bastante para mostrar todos os numeros inteiros (ints). Se não existir nenhuma casa decimal, as casas decimais são removidas a menos que a opção `#` seja usada                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           	|
+|      'F'      	|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        O mesmo que 'f' porem converte `inf` em `INF` e `nan` em `NAN`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       	|
+|      'g'      	| Formatação Geral. Para uma dada precisão `p` >= 1, essa fortação arredonda o numero para `p` digitos significantes, e então formata o resultado para  notação cientifica ou notação de pontos fixos dependendo de sua magnitude. Uma precisão de 0 é tratada como uma precisão de 1.  **As regras de precisão são as seguintes**: Suponha um resultado formatado com notação cientifica e precisão `p - 1`, teria um expoente `exp`.  Então se `m` <= `exp` < `p`, onde `m` é -4 para numeros decimais (float) e -6 para inteiros (int), o numero é formatado usando a notação de pontos flutuantes com uma precisão `p - 1 - exp`. Caso contrário o numero é formatado usando notação cientifica e uma precisão `p - 1`. Em ambos os casos zeros insignificantes são removidos da parte inteira e o ponto decimal também é removido caso não haja nenhum ponto decimal, a menos que a opção `#` é usada.   Se nenhuma precisão for dada, usa uma precisão de 6 digitos significantes para numeros decimais (float). Para inteiros (int), o coeficiente do resultado é formado através dos digitos coeficientes do valor. Notação cientifica é usada para valores menores que `1e-6` em valores absolutos e para valores que a posição do ultimo digito significante é maior que 1, caso contrário a notação de pontos fixos é usada.  Infinito positivo e negativo, zero positivo e negativo, e nans, são formatados como `inf`, `-inf`, `0`, `-0` e `nan` respectivamente, independentemente da precisão. 	|
+|      'G'      	|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   O mesmo 'g', porém usa `E` se o numero ficar muito grante, `INF` e `NAN`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  	|
+|      'n'      	|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              Numero. O mesmo que 'g' exceto que usa a configuração de localização local para definir os separadores de numero.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              	|
+|      '%'      	|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                Porcentagem. Multiplica um numero por 100 e exibe ele com formato fixo 'f' seguido pelo sinal de porcentagem.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                	|
+| None (Nenhum) 	|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               Para decimais (floats) é o mesmo que 'g', exceto que quando a notação de pontos fixos é usada para formatar o resultado, sempre inclui ao menos um digito as casas decimais. A precisão usada é tão larga quanto necessária para representar o numero de forma fidedigna.  Para Inteiros (Ints) é mesmo que 'g' ou 'G' dependendo do contexto de maiusculas usado.  O efeito geral é tentar representar a saida de `str()` como se alterado por outros modificadores de formato.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              	|
+
+
+```python
+int_num = 78
+float_num = 3.14151617181920212223242526272829
+big_int = 1234567890987656543211
+string = "essa é uma string"
+
+print(f"int ({int_num})\tb:\t\t{int_num:b}")
+print(f"int ({int_num})\tc:\t\t{int_num:c}")
+print(f"int ({int_num})\tX:\t\t{int_num:X}")
+
+print(f"big_int\t\t(,):\t\t{big_int:,}")
+print(f"big_int\t\t(_):\t\t{big_int:_}")
+
+print(f"float\t\t.2f:\t\t{float_num:.2f}")
+print(f"float\t\t2%:\t\t{float_num:.4%}")
+print(f"float\t\tg:\t\t{float_num:.5g}")
+
+print(f"string \t\t(esquerda):\t{string:-<32}")
+print(f"string \t\t(centro):\t{string:-^32}")
+print(f"string \t\t(direita):\t{string:->32}")
+```
+
+    int (78)	b:		1001110
+    int (78)	c:		N
+    int (78)	X:		4E
+    big_int		(,):		1,234,567,890,987,656,543,211
+    big_int		(_):		1_234_567_890_987_656_543_211
+    float		.2f:		3.14
+    float		2%:		314.1516%
+    float		g:		3.1415
+    string 		(esquerda):	essa é uma string---------------
+    string 		(centro):	-------essa é uma string--------
+    string 		(direita):	---------------essa é uma string
+
+
+##### 2.2.2.5.8. Depuração e padrão printf
+
+em uma fString, se nós colocarmos um `=` a direita da variavel, exibimos o nome da variavel junto ao valor, isso é util para depurações, se nos colocarmos espaços, a saida ficará espaçada também.
+
+
+```python
+verdade_universal = 42
+
+print(f"{verdade_universal=}")
+print(f"{verdade_universal = }")
+print(f"{verdade_universal= }")
+print(f"{verdade_universal =}")
+```
+
+    verdade_universal=42
+    verdade_universal = 42
+    verdade_universal= 42
+    verdade_universal =42
+
+
+o padrão printf de formatação nos permite fazer fStrings como em C, os tipos devem ser precedidas de `%`, e nós devemos modular por uma tuple contendo as variaveis, você verá mais sobre tuples a frente, aqui vai a lista:
+
+|  Tipos  	|                                                             Significado                                                             	|
+|:-------:	|:-----------------------------------------------------------------------------------------------------------------------------------:	|
+|    %d   	|                                                       Numero inteiro com sinal                                                      	|
+|    %i   	|                                                       Numero inteiro com sinal                                                      	|
+|    %o   	|                                                        Numero octal com sinal                                                       	|
+|    %u   	|                                                      OBSOLETO, equivalente a %d                                                     	|
+|    %x   	|                                                Numero hexadecimal minusculo com sinal                                               	|
+|    %X   	|                                                Numero hexadecimal maiusculo com sinal                                               	|
+|    %e   	|                                                          expoente minusculo                                                         	|
+|    %E   	|                                                          expoente maiusculo                                                         	|
+| %f e %F 	|                                                     precisão de ponto flutuante                                                     	|
+|    %g   	| precisão de ponto flutuante. Usa notação exponecial minuscula caso o expoente é menor que -4, caso contrario usa o formado decimal. 	|
+|    %G   	| precisão de ponto flutuante. Usa notação exponecial maiuscula caso o expoente é menor que -4, caso contrario usa o formado decimal. 	|
+|    %c   	|                                                      converte para um caractere                                                     	|
+|    %r   	|                                               converte para o equivalente ao `repr()`                                               	|
+|    %s   	|                                                converte para o equivalente ao `str()`                                               	|
+|    %a   	|                                               converte para o equivalente ao `ascii()`                                              	|
+|    %%   	|                                                         uma % (porcentagem)                                                         	|
+
+modificadores:
+
+|  Modificador 	|                                     Significado                                    	|
+|:------------:	|:----------------------------------------------------------------------------------:	|
+|       #      	|                             define a forma alternativa                             	|
+|       0      	|        a conversão sera alinhada usando zeros (0) até um determinado tamanho       	|
+|       -      	|                        a conversão será alinhada a esquerda                        	|
+| ' ' (espaço) 	| um espaço a frente de numeros positivos, e o sinal de menos para numeros negativos 	|
+|       +      	|                      exibe um sinal para positivos e negativos                     	|
+
+
+```python
+nome = "Mirai"
+idade = 17
+
+texto = "meu nome é %s e eu tenho %+04d anos"
+
+print(texto % (nome, idade))
+```
+
+    meu nome é Mirai e eu tenho +017 anos
+
 
 ### 2.2.3. Tipos Compostos
 
@@ -822,7 +1177,6 @@ forma 1:
 - usamos parenteses `()`
 
 
-
 ```python
 tulipa1 = ("eba", "uma", "tuple")
 print(tulipa1, type(tulipa1))
@@ -847,9 +1201,9 @@ Para adicionarmos ou removermos elementos de uma tuple nós devemos criar uma no
 
 
 ```python
-x, y = 1, 2 # uma tuple com 2 valores
-z = 7 # valor que iremos adicionar
-tulipa_nova = x, + y, + z
+x, y = 1, 2  # uma tuple com 2 valores
+z = 7  # valor que iremos adicionar
+tulipa_nova = x, +y, +z
 print(tulipa_nova, type(tulipa_nova))
 ```
 
@@ -862,7 +1216,7 @@ Diferente das Tuples, as listas já podem ser alteradas, para declararmos uma li
 
 
 ```python
-amigos = ['amigo1', 'amigo2', 'amigo3']
+amigos = ["amigo1", "amigo2", "amigo3"]
 print(amigos, type(amigos))
 ```
 
@@ -879,14 +1233,14 @@ eis aqui um exemplo:
 
 
 ```python
-amigos = ['amigo1', 'amigo2', 'amigo3']
+amigos = ["amigo1", "amigo2", "amigo3"]
 print(amigos, type(amigos))
-print(amigos[0], type(amigos[0])) # mostraremos o amigo1
-print(amigos[2], type(amigos[1])) # mostraremos o amigo2
-print(amigos[1], type(amigos[2])) # mostraremos o amigo3
-print(amigos[-3], type(amigos[-3])) # mostraremos o amigo1
-print(amigos[-2], type(amigos[-2])) # mostraremos o amigo2
-print(amigos[-1], type(amigos[-1])) # mostraremos o amigo3
+print(amigos[0], type(amigos[0]))  # mostraremos o amigo1
+print(amigos[2], type(amigos[1]))  # mostraremos o amigo2
+print(amigos[1], type(amigos[2]))  # mostraremos o amigo3
+print(amigos[-3], type(amigos[-3]))  # mostraremos o amigo1
+print(amigos[-2], type(amigos[-2]))  # mostraremos o amigo2
+print(amigos[-1], type(amigos[-1]))  # mostraremos o amigo3
 ```
 
     ['amigo1', 'amigo2', 'amigo3'] <class 'list'>
@@ -904,9 +1258,9 @@ para adicionarmos um item a uma lista nós usamos o metodo `append`, sua sintaxe
 
 
 ```python
-amigos = ['amigo1', 'amigo2', 'amigo3']
+amigos = ["amigo1", "amigo2", "amigo3"]
 print(amigos, type(amigos))
-amigos.append('amigo4')
+amigos.append("amigo4")
 print(amigos, type(amigos))
 ```
 
@@ -918,9 +1272,9 @@ para adicionarmos um item em uma posição especifica nós usamos `lista.insert(
 
 
 ```python
-amigos = ['amigo1', 'amigo2', 'amigo3']
+amigos = ["amigo1", "amigo2", "amigo3"]
 print(amigos, type(amigos))
-amigos.insert(1, 'amigo4') # iremos adicionar o amigo4 na segunda posição
+amigos.insert(1, "amigo4")  # iremos adicionar o amigo4 na segunda posição
 print(amigos, type(amigos))
 ```
 
@@ -936,11 +1290,11 @@ o metodo `lista.remove(item)` remove o item especificado
 
 
 ```python
-amigos = ['amigo1', 'amigo2', 'amigo3']
+amigos = ["amigo1", "amigo2", "amigo3"]
 print(amigos, type(amigos))
 amigos.pop()
 print(amigos, type(amigos))
-amigos.remove('amigo1')
+amigos.remove("amigo1")
 print(amigos, type(amigos))
 ```
 
@@ -956,10 +1310,10 @@ Caso você se depare na situação de ter que criar uma matiz, em python isso po
 
 ```python
 matriz = [
-# X  0  1  2     Y
-    [1, 2, 3], # 0
-    [4, 5, 6], # 1
-    [7, 8, 9]  # 2
+    # X  0  1  2      Y
+    [1, 2, 3],  # 0
+    [4, 5, 6],  # 1
+    [7, 8, 9],  # 2
 ]
 print(matriz, type(matriz))
 # Eixos:     Y  X
@@ -974,44 +1328,73 @@ print(matriz[2][1])
 
 #### 2.2.3.4. Sets (Conjuntos)
 
-Sets são essencialmente conjuntos, são declarados através das chaves `{}`
+Sets são essencialmente conjuntos, são declarados através das chaves `{}`.
 
-as operações são, `set.add()`, `set.remove()`, `set.difference()`, `set.symmetric_difference()`, `set.intersection()`, `set.union()`
+Eles tem 2 caracteristicas peculiares:
 
-`set.add()` adiciona elementos ao set
+- não tem ordem
+- não possuem valores repetidos
 
-`set.remove()` remove elementos do set
-
-`set.difference()` retorna a diferença entre sets
-
-`set.symmetric_difference()` retorna todos os itens que não estão na interseção
-
-`set.intersection()` retorna a intersceção do set
-
-`set.union()` retorna a união do set
+irei começar pela ordem, tomaremos como exemplo um set com 3 nomes.
 
 
 ```python
-estudantes_matematica = {'aluno1', 'aluno2', 'aluno2', 'aluno3', 'aluno4', 'aluno5'}
-
-estudantes_portugues = {'aluno6', 'aluno2', 'aluno3', 'aluno7', 'aluno8'}
-
-estudantes_matematica.add('aluno9')
-print(f"ADD: {estudantes_matematica}")
-estudantes_matematica.remove('aluno5')
-print(f"REMOVE: {estudantes_matematica}")
-print(f"DIFFERENCE: {estudantes_portugues.difference(estudantes_matematica)}")
-print(f"SYMMETRIC_DIFFERENCE: {estudantes_portugues.symmetric_difference(estudantes_matematica)}")
-print(f"INTERSECTION: {estudantes_matematica.intersection(estudantes_portugues)}")
-print(f"UNION: {estudantes_matematica.union(estudantes_portugues)}")
+set_nomes = {"Joaquim", "Mirai", "Maria"}
+print(set_nomes)
 ```
 
-    ADD: {'aluno3', 'aluno1', 'aluno2', 'aluno9', 'aluno5', 'aluno4'}
-    REMOVE: {'aluno3', 'aluno1', 'aluno2', 'aluno9', 'aluno4'}
-    DIFFERENCE: {'aluno6', 'aluno8', 'aluno7'}
-    SYMMETRIC_DIFFERENCE: {'aluno8', 'aluno1', 'aluno7', 'aluno9', 'aluno6', 'aluno4'}
-    INTERSECTION: {'aluno3', 'aluno2'}
-    UNION: {'aluno3', 'aluno8', 'aluno6', 'aluno4', 'aluno1', 'aluno2', 'aluno7', 'aluno9'}
+    {'Mirai', 'Maria', 'Joaquim'}
+
+
+perceba que quando eu executei o código em minha máquina, o resultado foi `{'Mirai', 'Maria', 'Joaquim'}`, mesmo com a declaração sendo `{'Joaquim', 'Mirai', 'Maria'}`, isso ocorre porque os sets não tem ordem nenhuma, ou seja, se rodarmos denovo, teremos outra ordem.
+
+agora vamos aos valores, suponha novamente um set de nomes, porém agora com mais pessoas.
+
+
+```python
+set_nome_pessoas = {"Mirai", "Maria", "Ana", "José", "Joaquim", "Maria"}
+print(set_nome_pessoas)
+```
+
+    {'Maria', 'Mirai', 'José', 'Ana', 'Joaquim'}
+
+
+perceba que mesmo com nós especificando duas `'Maria'`s no codigo, só exibimos uma, isso ocorre pois os sets excluem todos os valores repetidos.
+
+agora vamos as operações elas são:
+
+- `set.add()` -> adiciona elementos ao set
+- `set.remove()` -> remove elementos do set
+- `set.difference()` -> retorna a diferença entre sets
+- `set.symmetric_difference()` -> retorna todos os itens que não estão na interseção
+- `set.intersection()` -> retorna a intersceção dos sets
+- `set.union()` -> retorna a união dos sets
+
+
+
+```python
+estudantes_matematica = {"aluno1", "aluno2", "aluno2", "aluno3", "aluno4", "aluno5"}
+
+estudantes_portugues = {"aluno6", "aluno2", "aluno3", "aluno7", "aluno8"}
+
+estudantes_matematica.add("aluno9")
+print(f"ADD:\t\t\t{estudantes_matematica}")
+estudantes_matematica.remove("aluno5")
+print(f"REMOVE:\t\t\t{estudantes_matematica}")
+print(f"DIFFERENCE:\t\t{estudantes_portugues.difference(estudantes_matematica)}")
+print(
+    f"SYMMETRIC_DIFFERENCE:\t{estudantes_portugues.symmetric_difference(estudantes_matematica)}"
+)
+print(f"INTERSECTION:\t\t{estudantes_matematica.intersection(estudantes_portugues)}")
+print(f"UNION:\t\t\t{estudantes_matematica.union(estudantes_portugues)}")
+```
+
+    ADD:			{'aluno1', 'aluno2', 'aluno4', 'aluno3', 'aluno5', 'aluno9'}
+    REMOVE:			{'aluno1', 'aluno2', 'aluno4', 'aluno3', 'aluno9'}
+    DIFFERENCE:		{'aluno7', 'aluno6', 'aluno8'}
+    SYMMETRIC_DIFFERENCE:	{'aluno1', 'aluno6', 'aluno4', 'aluno7', 'aluno8', 'aluno9'}
+    INTERSECTION:		{'aluno2', 'aluno3'}
+    UNION:			{'aluno2', 'aluno4', 'aluno7', 'aluno8', 'aluno1', 'aluno6', 'aluno3', 'aluno9'}
 
 
 #### 2.2.3.5. Dicionários
@@ -1037,10 +1420,7 @@ para fins de conveniencia e legibilidade, nós dividimos o dicionario entre linh
 ```python
 valor1, valor2, chave1, chave2 = "valor1", "valor2", "chave1", "chave2"
 
-dicionario = {
-    chave1: valor1,
-    chave2: valor2
-}
+dicionario = {chave1: valor1, chave2: valor2}
 print(dicionario, type(dicionario))
 ```
 
@@ -1053,10 +1433,7 @@ para acessarmos um valor especifico nós usamos sua chave, desta forma `dicionar
 ```python
 valor1, valor2, chave1, chave2 = "valor1", "valor2", "chave1", "chave2"
 
-dicionario = {
-    chave1: valor1,
-    chave2: valor2
-}
+dicionario = {chave1: valor1, chave2: valor2}
 print(dicionario[chave1], type(dicionario[chave1]))
 ```
 
@@ -1070,10 +1447,7 @@ para adicionarmos um valor, ou reassociarmos um valor, basta por `dicionario[cha
 valor1, valor2, valor3 = "valor1", "valor2", "valor3"
 chave1, chave2, chave3 = "chave1", "chave2", "chave3"
 
-dicionario = {
-    chave1: valor1,
-    chave2: valor2
-}
+dicionario = {chave1: valor1, chave2: valor2}
 
 dicionario[chave3] = valor3
 dicionario[chave1] = valor2
@@ -1099,7 +1473,7 @@ Conversão é quando essa alteração é explicita no codigo, por exemplo:
 ```python
 x = 3
 print(x, type(x))
-y = str(x) # converte 3 int em "3" string
+y = str(x)  # converte 3 int em "3" string
 print(y, type(y))
 ```
 
@@ -1168,7 +1542,7 @@ começarei pelas cadeias de `elif`s pois elas constituem a lógica básica de um
 
 a sintaxe de um `if statement` é a seguinte:
 
-```py
+```python
 if (condição):
     {codigo}
 ```
@@ -1194,7 +1568,7 @@ x, y = 2, 3
 if x == 2:
     print(f"x é igual a {x}")
 
-if (x != y):
+if x != y:
     print(f"x não é igual a y")
 ```
 
@@ -1209,7 +1583,7 @@ if x == 2:
 else:
     print(f"x não é igual a {x}")
 
-if (x != y):
+if x != y:
     print(f"x não é igual a {y}")
 else:
     print(f"x é igual a y")
@@ -1226,7 +1600,7 @@ x, y = 2, 2
 if x == 2:
     print(f"x é igual a {x}")
 else:
-    if (x != y):
+    if x != y:
         print(f"x não é igual a {y}")
     else:
         print(f"x é igual a y")
@@ -1240,17 +1614,16 @@ ela é usada entre o `if` e o `else` em uma especie de cadeia, veja o exemplo:
 ```python
 x = 1
 
-if (x == 1):
+if x == 1:
     print(f"x é igual a {x}")
-elif (x == 2):
+elif x == 2:
     print(f"x é igual a {x}")
-elif (x == 3):
+elif x == 3:
     print(f"x é igual a {x}")
-elif (x == 4):
+elif x == 4:
     print(f"x é igual a {x}")
 else:
     print(f"x é igual a {x}")
-
 ```
 
 em cadeias de `elif`s nós podemos ter quantos `elif` forem necessários, porém, devemos ter APENAS um `if` no inicio e um `else` no fim para termos a cadeia
@@ -1259,7 +1632,7 @@ tendo em vista o constante uso dessas cadeias em versões posteriores ao Python 
 
 a sintaxe de um `match-case` é a seguinte:
 
-```py
+```python
 match (variavel):
     case (opção):
         {codigo}
@@ -1307,11 +1680,11 @@ veja um exemplo:
 ```python
 x, y, z = 1, 2, 3
 
-if (x & y == 2):
+if x & y == 2:
     print(1)
-elif (z + y != 6):
+elif z + y != 6:
     print(2)
-elif (y > x):
+elif y > x:
     print(3)
 else:
     print(4)
@@ -1335,7 +1708,7 @@ o `while` serve para executar um codigo enquanto uma condição for verdadeira
 
 veja a sintaxe de um `while loop`:
 
-```py
+```python
 while (condição):
     {codigo}
 ```
@@ -1350,7 +1723,7 @@ veja o exemplo:
 ```python
 x = 0
 
-while (x < 10):
+while x < 10:
     print(f"valor de x: {x}")
     x += 1
 ```
@@ -1359,7 +1732,7 @@ enquanto `x` for menor que 10, exiba o valor de `x`, e incremente x por 1
 
 já o `for` serve para repetir em um "raio", de `x` a `y`, veja a sintaxe de um `for loop`:
 
-```py
+```python
 for {index} in (raio):
     {codigo}
 ```
@@ -1376,7 +1749,7 @@ veja o exemplo:
 
 
 ```python
-for i in (range(10)):
+for i in range(10):
     print(i)
 ```
 
@@ -1388,11 +1761,66 @@ essencialmente o `for` loop é um `while` delimitado, e ele é especialmente usa
 ```python
 lista_legal = ["a", "b", "c", "d"]
 
-for i in (lista_legal):
+for i in lista_legal:
     print(i)
 ```
 
-### 3.1.2. Escopo
+### 3.1.2. Performance em Loops
+
+suponhamos o seguinte, você quer exibir os numeros entre 1 e 100000000 usando um loop, mas quer fazer isso de forma eficiente, como você fará?
+
+para demonstrar o ponto, irei temporizar o código e usar sintaxes avançadas, como funções, módulos e type-hinting.
+
+#### 3.1.2.1. While Loops
+
+Usando `while` loops:
+
+
+```python
+from timeit import timeit
+
+
+def pure_while(n: int = 100000000) -> int:
+    i, x = 0, 0
+    while i < n:
+        x += i
+        i += 1
+    return x
+
+
+print(f"While Loop:\t{timeit(pure_while, number=1)} segundos")
+```
+
+    While Loop:	12.82263323100051 segundos
+
+
+#### 3.1.2.2. For Loops
+
+Usando `for` loops:
+
+
+```python
+from timeit import timeit
+
+
+def pure_for(n: int = 100000000) -> int:
+    x = 0
+    for i in range(n):
+        x += i
+    return x
+
+
+print(f"For Loop:\t{timeit(pure_for, number=1)} segundos")
+```
+
+    For Loop:	8.726445832999161 segundos
+
+
+como você pode perceber o `for` loop é consideravelmente mais rápido, isso se dá pelo fato das comparações serem executadas em C, a linguagem cujo a qual Python é baseado, enquanto no `while` as comparações são executadas diretamente em Python, que é substencialmente mais lento que C.
+
+de todo modo, recomendo que priorize `for` loops ao invés de `while` loops sempre que possivel, e só ultilize `while` quando estritamente necessário.
+
+### 3.1.3. Escopo
 
 Escopo é uma caracteristica de muitas linguagens de programação, ele exerce a função de separação do código em niveis, relativos entre si.
 
@@ -1422,13 +1850,13 @@ ou seja, seguindo nosso exemplo, qualquer codigo posto no escopo de A pode entra
 
 Em Python nós usamos `:` (dois-pontos) e a indentação (geralmente de 4 espaços, ou 1 tab) para limitar o escopo.
 
-### 3.1.3. Desestruturação (Packing & Unpacking)
+### 3.1.4. Desestruturação (Packing & Unpacking)
 
 A desestruturação em Python consiste em assimilar aos valores de um iterável a variaveis.
 
-por exemplo se voce lembra da [aula sobre variaveis](./3-Fundamentos_Python-II.ipynb#variaveis) certamente lembrará que podemos associar multiplas variaveis a multiplos valores em uma unica linha
+por exemplo se voce lembra da [aula sobre variaveis](./2-Fundamentos_Python-I.ipynb#variaveis-comentários-print-e-input) certamente lembrará que podemos associar multiplas variaveis a multiplos valores em uma unica linha
 
-O que eu não lhe contei naquele momento é que isto é um exemplo de `unpacking`, nós estamos associando os valores de uma [tuple](./3-Fundamentos_Python-II.ipynb#tuples) a variaveis correspondentes, pois se você lembra, parenteses são opcionais, então ao fazermos:
+O que eu não lhe contei naquele momento é que isto é um exemplo de `unpacking`, nós estamos associando os valores de uma [tuple](./2-Fundamentos_Python-I.ipynb#tuples) a variaveis correspondentes, pois se você lembra, parenteses são opcionais, então ao fazermos:
 
 ```py
 x, y = 1, 2
@@ -1446,7 +1874,7 @@ ou até mesmo:
 (x, y) = (1, 2)
 ```
 
-### 3.1.4. Desestruturação em `for` loops
+### 3.1.5. Desestruturação em `for` loops
 
 a desestruturação em `for` loops consiste em uma variavel de index e uma variavel de valor
 
@@ -1456,7 +1884,7 @@ veja um exemplo:
 
 
 ```python
-lista_amigos = ['amigo1', 'amigo2', 'amigo3']
+lista_amigos = ["amigo1", "amigo2", "amigo3"]
 
 for index, valor in enumerate(lista_amigos):
     print(f"O {valor} está na posição {index}")
@@ -1464,7 +1892,7 @@ for index, valor in enumerate(lista_amigos):
 
 a função `enumerate()` gera uma tuple de 2 valores para cada item do iteravel, um index e o valor propriamente dito
 
-### 3.1.5. Iteração em dicionários
+### 3.1.6. Iteração em dicionários
 
 Nós também podemos Iterar sob dicionarios
 
@@ -1474,9 +1902,9 @@ Para Iterar sob as chaves basta usar apenas o dicionário
 
 ```python
 dicionario_aleatorio = {
-    'Chave A': 'Valor 01',
-    'Chave B': 'Valor 02',
-    'Chave C': 'Valor 03'
+    "Chave A": "Valor 01",
+    "Chave B": "Valor 02",
+    "Chave C": "Valor 03",
 }
 
 for chave in dicionario_aleatorio:
@@ -1488,9 +1916,9 @@ Para iterar sobre os valores basta usar `dict.values()`
 
 ```python
 dicionario_aleatorio = {
-    'Chave A': 'Valor 01',
-    'Chave B': 'Valor 02',
-    'Chave C': 'Valor 03'
+    "Chave A": "Valor 01",
+    "Chave B": "Valor 02",
+    "Chave C": "Valor 03",
 }
 
 for chave in dicionario_aleatorio.values():
@@ -1502,16 +1930,16 @@ Para usar ambos, usamos `dict.item()` e desestruturação
 
 ```python
 dicionario_aleatorio = {
-    'Chave A': 'Valor 01',
-    'Chave B': 'Valor 02',
-    'Chave C': 'Valor 03'
+    "Chave A": "Valor 01",
+    "Chave B": "Valor 02",
+    "Chave C": "Valor 03",
 }
 
 for chave, valor in dicionario_aleatorio.items():
     print(chave, valor)
 ```
 
-### 3.1.6. `break`, `continue` e `else` em `for` loops
+### 3.1.7. `break`, `continue` e `else` em `for` loops
 
 `break`, `continue` e `else`, essas keywords tem como objetivo principal alterar o flow de `for` loops
 
@@ -1571,7 +1999,7 @@ else:
     print("não contem um numero par")
 ```
 
-### 3.1.7. Numeros Primos e FizzBuzz
+### 3.1.8. Numeros Primos e FizzBuzz
 
 Nós podemos usar `for` loops para acharmos numeros primos
 
@@ -1610,17 +2038,19 @@ for i in range(1, 21):
         print("Fizz")
     elif i % 5 == 0:
         print("Buzz")
-    elif i % 15 == 0: # 3 x 5 = 15, então qualquer numero divisivel por 15 também é divisivel por 3 e 5
+    elif (
+        i % 15 == 0
+    ):  # 3 x 5 = 15, então qualquer numero divisivel por 15 também é divisivel por 3 e 5
         print("FizzBuzz")
     else:
         print(i)
 ```
 
-### 3.1.8. Fatiamento de Listas
+### 3.1.9. Fatiamento de Listas
 
 "Fatiar" uma lista consiste em exibir apenas uma parte dela, por exemplo:
 
-#### 3.1.8.1. Ordem Natural
+#### 3.1.9.1. Ordem Natural
 
 Temos a lista `A = [1, 5, 4, 2, 3, 7, 0, 8, 6, 9]`, e se nós quisermos exibir apenas os numeros `3, 7, 0`?
 
@@ -1638,7 +2068,7 @@ print(A[4:7])
 
 porque `{index final+1}`? pois o valor será onde a lista acabará, e portanto, não se encontrará incluso, então para incluirmos ele, basta adicionar 1 ao index
 
-#### 3.1.8.2. Ordem Reversa
+#### 3.1.9.2. Ordem Reversa
 
 Suponhamos que você queira cortar a lista de trás a frente, para isso, basta usar os numeros negativos, exemplo:
 
@@ -1647,12 +2077,12 @@ Suponhamos que você queira cortar a lista de trás a frente, para isso, basta u
 ```python
 # Ordem Reversa
 #   -10, -9, -8, -7, -6, -5, -4, -3, -2, -1
-A = [ 1,  5,  4,  2,  3,  7,  0,  8,  6,  9]
+A = [1, 5, 4, 2, 3, 7, 0, 8, 6, 9]
 
 print(A[-6:-3])
 ```
 
-### 3.1.9. Compreensões (Comprehensions)
+### 3.1.10. Compreensões (Comprehensions)
 
 Compreensões consistem em gerar um novo elemento com base em um tipo de dado composto atráves de `if`s, `else`s e `for` loops, comumente dizemos ser uma geração dinamica.
 
@@ -1668,7 +2098,7 @@ Seguimos o seguinte esquema para as compreensões:
     - Base: `dict_resultado = {'chave':'valor' for '(chave, valor)' in 'iteravel'}`
     - Condicional: `dict_resultado = {'chave':'valor' for '(chave, valor)' in 'iteravel' if ('chave' satisfaz condição)}`
 
-#### 3.1.9.1. Listas
+#### 3.1.10.1. Listas
 
 Compreensões de listas consiste em gerar uma nova lista de forma dinamica.
 
@@ -1710,7 +2140,7 @@ e no exemplo de compreensão de lista estamos dizendo:
 e tambem tornamos a lógica em uma unica linha, compactando ela, essa prática de tornar o codigo em uma linha se chama _'One Liner'_, além é claro de termos eliminado a necessidade de inicialização de uma lista vazia.
 
 
-#### 3.1.9.2. Listas Condicional
+#### 3.1.10.2. Listas Condicional
 
 consiste no mesmo acima, porém com uma condição para a geração da lista
 
@@ -1750,7 +2180,7 @@ e no exemplo de compreensão de lista estamos dizendo:
 
 > _adicione 'i' para a lista 'lista_de_pares' caso o resto da divisão(modulo) por 2 for igual a 0 em um raio entre 1 e  11_
 
-#### 3.1.9.3. Sets
+#### 3.1.10.3. Sets
 
 Basicamente a mesma coisa que as compreensões de lista, a unica diferença é que as compreensões estão entre `{}` e não `[]`
 
@@ -1763,7 +2193,7 @@ print(set_de_pares)
     {2, 4, 6, 8, 10}
 
 
-#### 3.1.9.4. Dicionários
+#### 3.1.10.4. Dicionários
 
 Extendendo a lógica podemos gerar uma compreensão de dicionários.
 
@@ -1777,7 +2207,7 @@ res_dict = {}
 
 for i in range(1, 10):
     if i % 2 != 0:
-        res_dict[i] = i ** 3
+        res_dict[i] = i**3
 
 print(res_dict)
 ```
@@ -1789,14 +2219,14 @@ Agora a versão One Liner:
 
 
 ```python
-comp_dict = {i:i ** 3 for i in range(1, 10) if i % 2 != 0}
+comp_dict = {i: i**3 for i in range(1, 10) if i % 2 != 0}
 print(comp_dict)
 ```
 
     {1: 1, 3: 27, 5: 125, 7: 343, 9: 729}
 
 
-### 3.1.10. A função `zip()`
+### 3.1.11. A função `zip()`
 
 A função `zip()` junta elementos de multiplos iteráveis em tuples.
 
@@ -1805,9 +2235,9 @@ então podemos usar ela para por exemplo, juntar duas listas em um dicionário
 
 ```python
 lista_nums = [1, 2, 3, 4, 5]
-lista_chars = ['a', 'b', 'c', 'd', 'e']
+lista_chars = ["a", "b", "c", "d", "e"]
 
-zip_dict = {k:v for (k, v) in zip(lista_nums, lista_chars)}
+zip_dict = {k: v for (k, v) in zip(lista_nums, lista_chars)}
 print(zip_dict)
 ```
 
@@ -1816,7 +2246,7 @@ print(zip_dict)
 
 A diferença entre a função `zip()` e a função `enumerate()` é que a função `enumerate()` enumera um iterável, enquanto a função `zip()` junta multiplos iteráveis
 
-### 3.1.11. Funções
+### 3.1.12. Funções
 
 Funções são uma parte essencial da linguagem, nós viemos usando elas varias vezes até aqui, agora está na hora de aprender a definir (criar) suas próprias funções.
 
@@ -1842,13 +2272,14 @@ eis aqui um exemplo de função:
 def apresentar():
     print("Olá, eu sou a função apresentar()")
 
-apresentar() # Aqui chamamos a função
+
+apresentar()  # Aqui chamamos a função
 ```
 
     olá, eu sou a função apresentar()
 
 
-#### 3.1.11.1. Argumentos e Parametros
+#### 3.1.12.1. Argumentos e Parametros
 
 Na função acima, nós apenas a chamamos, mas e se nós quisessemos que ela mostrasse algum nome?
 
@@ -1858,6 +2289,7 @@ Bom, para isso nós usariamos argumentos e parametros, observe o exemplo:
 ```python
 def apresentar(nome):
     print(f"Olá meu nome é {nome}")
+
 
 apresentar("Mirai")
 ```
@@ -1878,6 +2310,7 @@ nós tambem podemos colocar multiplos argumentos, basta separa-los por `,` (virg
 def apresentar(nome, idade):
     print(f"Olá meu nome é {nome} e eu tenho {idade} anos")
 
+
 apresentar("Mirai", 17)
 ```
 
@@ -1886,7 +2319,7 @@ apresentar("Mirai", 17)
 
 A ordem em que passamos os argumentos deve condizer com os parametros.
 
-##### 3.1.11.1.1. Parametros Padrões (Valores Padrões)
+##### 3.1.12.1.1. Parametros Padrões (Valores Padrões)
 
 Parametros padrões (ou valores padrões) são usados quando nenhum outro argumento é passado ao parametro.
 
@@ -1899,7 +2332,8 @@ Veja o exemplo:
 def apresentar(nome="Python"):
     print(f"Olá meu nome é {nome}")
 
-apresentar() # Nenhum argumento passado
+
+apresentar()  # Nenhum argumento passado
 apresentar("Mirai")
 ```
 
@@ -1907,7 +2341,7 @@ apresentar("Mirai")
     Olá meu nome é Mirai
 
 
-##### 3.1.11.1.2. Argumentos Chave (Nomeados)
+##### 3.1.12.1.2. Argumentos Chave (Nomeados)
 
 Argumentos Chave (ou nomeados) são usados ao chamar uma função, essencialmente, você especifica qual argumento irá usar qual parametro.
 
@@ -1917,6 +2351,7 @@ veja o exemplo:
 ```python
 def apresentar(nome, idade):
     print(f"Olá meu nome é {nome} e eu tenho {idade} anos")
+
 
 apresentar(idade=17, nome="Mirai")
 ```
@@ -1931,15 +2366,16 @@ essa forma de associação permite que não sigamos a ordem de argumentos na def
 def apresentar(nome="cool_name", idade=99, local="place"):
     print(f"Olá meu nome é {nome} e eu tenho {idade} anos e moro em {local}")
 
+
 apresentar("Mirai", local="casa")
 ```
 
     Olá meu nome é Mirai e eu tenho 99 anos e moro em casa
 
 
-##### 3.1.11.1.3. `*args` e `**kwargs`
+##### 3.1.12.1.3. `*args`, `**kwargs`, `*` (Keyword Only Arguments) e `/` (Positional Only Arguments)
 
-Basicamente, esses parametros especiais nos permitem ter um numero indeterminado de argumentos.
+esses são parametros especiais, os `*args` e `**kwargs`  nos permitem ter um numero indeterminado de argumentos.
 
 o `*args` nos permite pegar indeterminados parametros passados de forma direta.
 
@@ -1948,6 +2384,7 @@ o `*args` nos permite pegar indeterminados parametros passados de forma direta.
 def multi_print(*args):
     for i in args:
         print(i)
+
 
 multi_print("ye", 20, "3", 4, [5])
 ```
@@ -1965,7 +2402,8 @@ já o `**kwargs` nos permite pegar indeterminados parametros-chave.
 ```python
 def multi_key_print(**kwargs):
     for k, v in kwargs.items():
-        print("%s, %s" % (k,v))
+        print("%s, %s" % (k, v))
+
 
 multi_key_print(a="yee", b="bbb", c="cccc")
 ```
@@ -1983,6 +2421,7 @@ def funcao_legal(*args, **kwargs):
     print(f"valores: {args}")
     print(f"valores com chave: {kwargs}")
 
+
 funcao_legal("ye", 20, "3", 4, [5], a="yee", b="bbb", c="cccc")
 ```
 
@@ -1990,7 +2429,131 @@ funcao_legal("ye", 20, "3", 4, [5], a="yee", b="bbb", c="cccc")
     valores com chave: {'a': 'yee', 'b': 'bbb', 'c': 'cccc'}
 
 
-#### 3.1.11.2. DocStrings
+O `/` (Positional Only Arguments) nos limita a ter apenas valores posicionais, isto é, aqueles que não são parametros-chave.
+
+
+```python
+def funcao_posicional(parametro_1, parametro_2, parametro_3, /):
+    print(f"parametro_1: {parametro_1}")
+    print(f"parametro_2: {parametro_2}")
+    print(f"parametro_3: {parametro_3}")
+
+
+funcao_posicional("Valor 1", "Valor 2", "Valor 3")
+```
+
+    parametro_1: Valor 1
+    parametro_2: Valor 2
+    parametro_3: Valor 3
+
+
+se nós tentarmos associar algum parametro antes do separador `/` usando parametro-chave, teremos um erro, pois este separador especifica que todos os parametros antes dele devem ser posicionais.
+
+
+```python
+def funcao_posicional(parametro_1, parametro_2, parametro_3, /):
+    print(f"parametro_1: {parametro_1}")
+    print(f"parametro_2: {parametro_2}")
+    print(f"parametro_3: {parametro_3}")
+
+funcao_posicional(parametro_1='Valor 1', 'Valor 2', 'Valor 3') # Retornará um erro
+```
+
+
+      Input In [21]
+        funcao_posicional(parametro_1='Valor 1', 'Valor 2', 'Valor 3') # Retornará um erro
+                                                                     ^
+    SyntaxError: positional argument follows keyword argument
+
+
+
+O `*` (Keyword Only Arguments) especifica que todos os argumentos após ele devem ser parametro-chave.
+
+ele não pode ser o primeiro parametro, então devemos ter um primeiro parametro obrigatório.
+
+
+```python
+def funcao_parametro_chave(
+    parametro_obrigatorio, *, parametro_1="", parametro_2="", parametro_3=""
+):
+    print(f"parametro_obrigatorio: {parametro_obrigatorio}")
+    print(f"parametro_1: {parametro_1}")
+    print(f"parametro_2: {parametro_2}")
+    print(f"parametro_3: {parametro_3}")
+
+
+funcao_parametro_chave(
+    "valor obrigatorio",
+    parametro_1="Valor 1",
+    parametro_2="Valor 2",
+    parametro_3="Valor 3",
+)
+```
+
+    parametro_obrigatorio: valor obrigatorio
+    parametro_1: Valor 1
+    parametro_2: Valor 2
+    parametro_3: Valor 3
+
+
+se tentarmos passar apenas argumentos posicionais, teremos um erro
+
+
+```python
+def funcao_parametro_chave(
+    parametro_obrigatorio, *, parametro_1="", parametro_2="", parametro_3=""
+):
+    print(f"parametro_obrigatorio: {parametro_obrigatorio}")
+    print(f"parametro_1: {parametro_1}")
+    print(f"parametro_2: {parametro_2}")
+    print(f"parametro_3: {parametro_3}")
+
+
+funcao_parametro_chave(
+    "valor obrigatorio", "Valor 1", "Valor 2", "Valor 3"
+)  # Retornará um erro
+```
+
+
+    ---------------------------------------------------------------------------
+
+    TypeError                                 Traceback (most recent call last)
+
+    /media/Arquivos/Programming/Lessions/PythonLessions/Classes/3-Fundamentos_Python-II.ipynb Cell 94 in <cell line: 7>()
+          <a href='vscode-notebook-cell:/media/Arquivos/Programming/Lessions/PythonLessions/Classes/3-Fundamentos_Python-II.ipynb#Y321sZmlsZQ%3D%3D?line=3'>4</a>     print(f"parametro_2: {parametro_2}")
+          <a href='vscode-notebook-cell:/media/Arquivos/Programming/Lessions/PythonLessions/Classes/3-Fundamentos_Python-II.ipynb#Y321sZmlsZQ%3D%3D?line=4'>5</a>     print(f"parametro_3: {parametro_3}")
+    ----> <a href='vscode-notebook-cell:/media/Arquivos/Programming/Lessions/PythonLessions/Classes/3-Fundamentos_Python-II.ipynb#Y321sZmlsZQ%3D%3D?line=6'>7</a> funcao_parametro_chave('valor obrigatorio', 'Valor 1', 'Valor 2', 'Valor 3')
+
+
+    TypeError: funcao_parametro_chave() takes 1 positional argument but 4 were given
+
+
+Se existe uma precedencia, argumentos posicionais devem sempre vir antes de argumentos parametro-chave, caso contrário resultará em um erro, por isso definimos `*args, **kwargs` e não `**kwargs, *args`.
+
+Com relação a performance, os argumentos posicionais são relativamente mais rapidos
+
+
+```python
+from timeit import timeit
+
+
+def func_test(a, b, c):
+    pass
+
+
+print(
+    f'Apenas Posicionais:\t\t{timeit("func_test(1, 2, 3)", number=10, globals={"func_test":func_test}):.8f} segundos'
+)
+print(
+    f'Apenas Parametros-Chave:\t{timeit("func_test(a=1, b=2, c=3)", number=10, globals={"func_test":func_test}):.8f} segundos'
+)
+```
+
+    Apenas Posicionais:		0.00000229 segundos
+    Apenas Parametros-Chave:	0.00000446 segundos
+
+
+#### 3.1.12.2. DocStrings
 
 Documentation Strings (Strings de Documentação), comumente abreviadas para DocStrings são strings especiais feitas para associar documentação ao codigo.
 
@@ -2003,9 +2566,10 @@ nós podemos acessa-la através do metodo especial `__doc__`
 
 ```python
 def funcao_legal(*args, **kwargs):
-    '''Função legal que mostra valores legais'''
+    """Função legal que mostra valores legais"""
     print(f"valores: {args}")
     print(f"valores com chave: {kwargs}")
+
 
 funcao_legal("ye", 20, "3", 4, [5], a="yee", b="bbb", c="cccc")
 print(funcao_legal.__doc__)
@@ -2022,13 +2586,13 @@ Eis aqui um exemplo que eu fiz quando estava aprendendo Python.
 
 
 ```python
-'''Apenas um arquivo que faz Nodes aleatorios e organiza eles em uma arvore binária.
-Temporiza, conta quantas vezes fez e salva tudo para um arquivo.'''
+"""Apenas um arquivo que faz Nodes aleatorios e organiza eles em uma arvore binária.
+Temporiza, conta quantas vezes fez e salva tudo para um arquivo."""
 
 # {codigo}...
 ```
 
-#### 3.1.11.3. `return`
+#### 3.1.12.3. `return`
 
 a keyword `return` serve para retornar um valor de dentro da função e terminar a função.
 
@@ -2037,7 +2601,8 @@ ao retornar um valor, nós podemos associa-lo a uma variavel.
 
 ```python
 def apresentar(nome="cool_name", idade=99, local="place"):
-        return f"Olá meu nome é {nome} e eu tenho {idade} anos e moro em {local}"
+    return f"Olá meu nome é {nome} e eu tenho {idade} anos e moro em {local}"
+
 
 texto = apresentar("Mirai", local="casa")
 print(texto)
@@ -2046,7 +2611,7 @@ print(texto)
     Olá meu nome é Mirai e eu tenho 99 anos e moro em casa
 
 
-#### 3.1.11.4. Funções lambda
+#### 3.1.12.4. Funções lambda
 
 as funções lambda são funções em uma linha e também nos possibilitam fazer funções anonimas.
 
@@ -2056,7 +2621,7 @@ de acordo com [documentação do Python](https://docs.python.org/3/faq/design.ht
 
 sua sintaxe é:
 
-```py
+```python
 lambda {argumentos} : {expressão}
 ```
 
@@ -2066,9 +2631,11 @@ escreverei uma função usando `def` e a mesma função usando `lambda` para dem
 ```python
 def add_num(x, y):
     return x + y
+
+
 print(add_num(3, 4))
 
-add_num_ = lambda x, y : x + y
+add_num_ = lambda x, y: x + y
 print(add_num_(5, 6))
 ```
 
@@ -2090,11 +2657,11 @@ print((lambda x, y: x + y)(2, 3))
 
 Eu sei que os exemplos aqui são bobos, mas em situações mais complexas, elas se fazem necessárias, tendo em vista que elas podem ir além do que simples operadores aritméticos.
 
-#### 3.1.11.5. Funções de Primeira Classe e Alta Ordem em Python
+#### 3.1.12.5. Funções de Primeira Classe e Alta Ordem em Python
 
 Esses conceitos são referentes a programação funcional, essencialmente ambos se referem a tratar funções como valores.
 
-##### 3.1.11.5.1. Funções de Primeira Classe
+##### 3.1.12.5.1. Funções de Primeira Classe
 
 Toda função em Python é uma função de primeira classe. Isso significa que nós podemos tratar qualquer função como se fosse uma variavel, ou seja, podemos reassociar e passar como argumento.
 
@@ -2102,6 +2669,7 @@ Toda função em Python é uma função de primeira classe. Isso significa que n
 ```python
 def greeting(nome):
     return f"Ola {nome}"
+
 
 gratificar = greeting
 print(gratificar("Mirai"))
@@ -2116,23 +2684,27 @@ Nós também podemos escrever uma função que recebe um argumento e passa-lo at
 
 
 ```python
-def func_sup(func, name):   # Tem o mesmo parametro
-    resp = func(name)       # Passamos o argumento provido para a função passada como argumento
+def func_sup(func, name):  # Tem o mesmo parametro
+    resp = func(
+        name
+    )  # Passamos o argumento provido para a função passada como argumento
     up_name = resp.upper()
     return up_name
 
 
-def hello_name(nome):       # Tem o parametro 'nome'
+def hello_name(nome):  # Tem o parametro 'nome'
     return f"Ola {nome}"
 
 
-print(func_sup(hello_name, "Mirai"))    # Passamos a função hello_name e o argumento "Mirai"
+print(
+    func_sup(hello_name, "Mirai")
+)  # Passamos a função hello_name e o argumento "Mirai"
 ```
 
     OLA MIRAI
 
 
-##### 3.1.11.5.2. Funções de Alta Ordem
+##### 3.1.12.5.2. Funções de Alta Ordem
 
 As funções de alta ordem são bem parecidas com as de primeira classe, todavia, elas tem a especificidade de retornar uma função.
 
@@ -2145,8 +2717,7 @@ def uppr_func(func):
         answ = func(name)
         return answ.upper()
 
-
-    return intrn_func # retornamos a função interna 'intrn_func'
+    return intrn_func  # retornamos a função interna 'intrn_func'
 
 
 def h_name(name):
@@ -2164,7 +2735,7 @@ nós podemos usar funções lambda para termos funções de alta ordem, veja o e
 
 ```python
 func_alta_ord = lambda x, func: x + func(x)
-print(func_alta_ord(2, lambda x: x ** 2))
+print(func_alta_ord(2, lambda x: x**2))
 ```
 
     6
@@ -2194,17 +2765,18 @@ para facilitar o entendimento eu irie formatar essas duas linhas (substitiuindo 
                                 2 + lambda x: 2 ** 2
      ```
 
-#### 3.1.11.6. `global` e `nonlocal`
+#### 3.1.12.6. `global` e `nonlocal`
 
 Essas keywords são referentes ao escopo, a `global` é usada quando queremos transformar uma variavel local em global, e a `nonlocal` serve para usar variaveis de escopos superiores quando temos funções aglomeradas (nested functions)
 
-#### 3.1.11.7. `global`
+#### 3.1.12.7. `global`
 
 Veja um exemplo:
 
 
 ```python
 x = "Escopo Global"
+
 
 def func_legal_var_local():
     x = "Escopo Local"
@@ -2215,17 +2787,17 @@ def func_legal_var_global():
     global x
     print(x)
 
+
 def alterar_global():
     global x
     x = "Alteramos a variavel global"
 
 
-print(x) # Escopo Global
-func_legal_var_local() # Escopo Local
-func_legal_var_global() # Escopo Global
+print(x)  # Escopo Global
+func_legal_var_local()  # Escopo Local
+func_legal_var_global()  # Escopo Global
 alterar_global()
-print(x) # Alteramos a variavel global
-
+print(x)  # Alteramos a variavel global
 ```
 
     Escopo Global
@@ -2234,7 +2806,7 @@ print(x) # Alteramos a variavel global
     Alteramos a variavel global
 
 
-#### 3.1.11.8. `nonlocal`
+#### 3.1.12.8. `nonlocal`
 
 Veja um exemplo:
 
@@ -2274,7 +2846,6 @@ def func_extern3():
     func_intern3()
 
 
-
 func_extern1()
 func_extern2()
 func_extern3()
@@ -2288,23 +2859,107 @@ func_extern3()
     Alteramos a variavel da Func Externa 3
 
 
-#### 3.1.11.9. Operadores
+#### 3.1.12.9. Sombra de variaveis (Variable Shadowing)
+
+*Variable Shadowing* ocorre quando uma variavel de um escopo interno tem o mesmo nome que uma variavel de um escopo externo, isso pode levar a erros e a comportamentos não esperados no código então deve ser evitado. O recomendado é declarar variaveis internas com outros nomes, ou melhor ainda, não usar variaveis globais.
+
+
+```python
+x = 0
+
+
+def externa():
+    x = 1
+
+    def interna():
+        x = 2
+        print("interna:", x)
+
+    def interna_nao_associada():
+        print("interna não associada:", x)
+
+    interna()
+    interna_nao_associada()
+    print("externa:", x)
+
+
+externa()
+print("global:", x)
+```
+
+    interna: 2
+    interna não associada: 1
+    externa: 1
+    global: 0
+
+
+perceba que mesmo não especificando a variavel `x` ainda sim temos um resultado, pois a mesma usou a variavel de escopo externo
+
+#### 3.1.12.10. Operadores
 
 Em Python, operadores são simbolos (ou "sintaxes") especiais que informam que uma operação deve ser feita.
 
 Nesse tópico eu irei dar uma visão mais detalhada dos operadores, já vimos alguns como os aritméticos e os lógicos (apenas as keywords), eis aqui uma lista com os grupos de operadores:
 
-- Aritméticos (já vimos)
-- Lógicos (irei mostrar apenas a versão 'operand')
+- Aritméticos (irei mostrar o ultimo)
+- Lógicos (irei mostrar o ultimo)
 - Comparativos
 - Bitwise
 - Associativos
 - Identidade
 - Membros
 
-Como nós já vimos os operadores aritméticos, eu partirei direto aos lógicos.
+##### 3.1.12.10.1. Aritméticos
 
-##### 3.1.11.9.1. Lógicos
+Resta apenas vermos o multiplicador de matrizes (`@`), para esse operador devemos usar um módulo conhecido como `NumPy`, você verá mais sobre ele no futuro.
+
+Esse operador multiplica os indices de duas matrizes entre si.
+
+
+```python
+from numpy import array
+
+matriz_1 = [[1, 2], [3, 4]]
+
+matriz_2 = [[5, 6], [7, 8]]
+
+produto_das_matrizes = array(matriz_1) @ array(matriz_2)
+
+print(produto_das_matrizes)
+```
+
+    [[19 22]
+     [43 50]]
+
+
+ele é o equivalente ao seguinte codigo em Python:
+
+
+```python
+A = [[1, 2], [3, 4]]
+
+
+B = [[5, 6], [7, 8]]
+
+N, M, P = len(A), len(A[0]), len(B[0])
+
+result = []
+for i in range(N):
+    row = [0] * P
+    result.append(row)
+
+for i in range(N):
+    for j in range(P):
+        for k in range(M):
+            result[i][j] += A[i][k] * B[k][j]
+
+print(result)
+```
+
+    [[19, 22], [43, 50]]
+
+
+##### 3.1.12.10.2. Lógicos
 
 Nós já vimos as funções de 3 dos 4 operadores lógicos (_sim eu omiti um operador no momento pois eu ainda não havia explicado conceitos necessários para seu entendimento_) eu estou falando do "Operador Ternário" (tambem chamado de operador condicional).
 
@@ -2322,8 +2977,8 @@ veja um exemplo:
 ```python
 a, b = 1, 2
 
-c = a if a < b else b # c = a
-d = a if a > b else b # d = b
+c = a if a < b else b  # c = a
+d = a if a > b else b  # d = b
 
 print("C: %d\tD: %d" % (c, d))
 ```
@@ -2331,7 +2986,7 @@ print("C: %d\tD: %d" % (c, d))
     C: 1	D: 2
 
 
-##### 3.1.11.9.2. Comparativos
+##### 3.1.12.10.3. Comparativos
 
 os comparativos são bastante usados nas estruturas de controle de flow, eles são os seguintes:
 
@@ -2358,7 +3013,7 @@ for i in range(10):
     o valor de i é 6
 
 
-##### 3.1.11.9.3. Indentidade
+##### 3.1.12.10.4. Indentidade
 
 eles são simples, eles trabalham comparando o id na memória, util quando iniciarmos multi-threading.
 
@@ -2413,7 +3068,7 @@ print(f"ID de C: {hex(id(c))}")
 
 Se você observar, os endereço de A e B são diferentes, já os endereços de A e C são identicos.
 
-##### 3.1.11.9.4. Membro
+##### 3.1.12.10.5. Membro
 
 esses operadores são um pouco simples, eles apenas chegam se `x` está ou não presente em `y`
 
@@ -2428,7 +3083,7 @@ vejam alguns exemplos:
 
 
 ```python
-print('h' in 'abcdefghijklmnopqrstuvwxyz')
+print("h" in "abcdefghijklmnopqrstuvwxyz")
 print(12 not in [1, 2, 3, 4, 5, 6, 7, 8, 9, 0])
 ```
 
@@ -2436,7 +3091,7 @@ print(12 not in [1, 2, 3, 4, 5, 6, 7, 8, 9, 0])
     True
 
 
-##### 3.1.11.9.5. Bitwise
+##### 3.1.12.10.6. Bitwise
 
 Esses operadores não são muito ultilizados mas suas aplicações são diversas.
 
@@ -2483,7 +3138,7 @@ Os numeros binários crescem da direita para a esquerda, começando pelo _**bit 
 
 Espero que tenha ficado minimamente claro, e que agora você tenha uma noção básica de binário vamos aos operadores.
 
-##### 3.1.11.9.6. AND
+##### 3.1.12.10.7. AND
 
 o `AND` performa a [conjunção lógica](https://pt.wikipedia.org/wiki/Conjunção_lógica), basicamente ele só retorna 1 se ambos os bits forem 1.
 
@@ -2515,7 +3170,7 @@ print(f"A & B ({a & b}) = {bin(a & b)}")
 
 o prefixo `0b` é uma conveção em representação de bases em programação, usamos `0b` para binário, `0x` para hexadecimal e `0o` para octeto
 
-##### 3.1.11.9.7. OR
+##### 3.1.12.10.8. OR
 
 o  `OR` performa a [disjunção lógica](https://pt.wikipedia.org/wiki/Disjunção_lógica), basicamente ele retorna 1 caso um ou todos os bits sejam 1 (ou se preferir, só retorna 0 se ambos forem iguais, essencialmente o oposto do `AND`)
 
@@ -2545,7 +3200,7 @@ print(f"A | B ({a | b}) = {bin(a | b)}")
     A | B (188) = 0b10111100
 
 
-##### 3.1.11.9.8. XOR
+##### 3.1.12.10.9. XOR
 
 O `XOR` performa a [Disjunção Exclusiva](https://pt.wikipedia.org/wiki/Ou_exclusivo), essencialmente, ele só retorna 1 se os bits forem opostos.
 
@@ -2575,7 +3230,7 @@ print(f"A ^ B ({a ^ b}) = {bin(a ^ b)}")
     A ^ B (168) = 0b10101000
 
 
-##### 3.1.11.9.9. NOT
+##### 3.1.12.10.10. NOT
 
 O `NOT` performa a [Negação Lógica](https://pt.wikipedia.org/wiki/Negação), basiamente, ele inverte os bits, ele recebe só um argumento, tornando ele o unico operador unário.
 
@@ -2607,7 +3262,7 @@ print(f"Sem Bit de Sinal: A ~ ({~a & 255}) = {bin(~a & 255)}")
     Sem Bit de Sinal: A ~ (99) = 0b1100011
 
 
-##### 3.1.11.9.10. LeftShift
+##### 3.1.12.10.11. LeftShift
 
 o operador de `LeftShift` move/desvia os bits para a esquerda preenchendo o espaço restante com 0.
 
@@ -2638,7 +3293,7 @@ print(f"A << 2 ({a << 2}) = {bin(a << 2)}")
     A << (156) = 0b10011100
 
 
-##### 3.1.11.9.11. RightShift
+##### 3.1.12.10.12. RightShift
 
 o operador de `RightShift` move/desvia os bits para a direita preenchendo o espaço restante com 0.
 
@@ -2672,7 +3327,7 @@ print(f"A >> 3 ({a >> 3}) = {bin(a >> 3)}")
     A >> 3 (19) = 0b10011
 
 
-##### 3.1.11.9.12. Bitwise Masking
+##### 3.1.12.10.13. Bitwise Masking
 
 Masking consiste em mascarar os bits, para fazer operações especificas nesses bits, um exemplo seriam os Shifts Limitados a uma janela de bits.
 
@@ -2692,7 +3347,7 @@ print(f"(A << 3) & 255 ({(A << 3) & 255}): {bin((A << 3) & 255)}")
     (A << 3) & 255 (56): 0b111000
 
 
-##### 3.1.11.9.13. Associativos
+##### 3.1.12.10.14. Associativos
 
 Os associativos são bem simples, eles funcionam como abreviação dos outros operadores, eles servem para performar uma ação e reassocia a mesma variavel, pois sua ordem de operação é da direita pra esquerda.
 
@@ -2711,19 +3366,19 @@ eles são os seguntes:
 - XOR-Igual `^=` (Bitwise)
 - RightShift-Igual `>>=` (Bitwise)
 - LeftShift-Igual `<<=` (Bitwise)
-- Walrus Operator `:=`
+- Associação de expressão (Walrus Operator) `:=`
 
 eu vou explicar apenas 3 operadores, entendendo eles você entende o resto.
 
-##### 3.1.11.9.14. Igual
+##### 3.1.12.10.15. Igual
 
 O igual `=`, é o operador associativo em si, é ele quem diz o que é o que.
 
 
 ```python
-x = 3       # x é igual a 3
-a = "ye"    # a é igual a "ye"
-v = True    # v é igual a True
+x = 3  # x é igual a 3
+a = "ye"  # a é igual a "ye"
+v = True  # v é igual a True
 
 print(x, a, v)
 ```
@@ -2731,7 +3386,7 @@ print(x, a, v)
     3 ye True
 
 
-##### 3.1.11.9.15. Mais-Igual
+##### 3.1.12.10.16. Mais-Igual
 
 A lógica usada aqui se aplica aos demais (menos ao Walrus Operator).
 
@@ -2756,9 +3411,9 @@ essencialmente, pegamos o valor inicial de `x`, somamos `33` e reassociamos o re
 - 3. `x = 9 + 33`
 - 4. `x = 42`
 
-##### 3.1.11.9.16. Walrus Operator
+##### 3.1.12.10.17. Associação de expressão (Walrus Operator)
 
-O `:=` (Walrus Operator) foi introduzindo no Python 3.8, seu uso é bastante peculiar.
+O operador de associação de expressão `:=` (Walrus Operator) foi introduzindo no Python 3.8, seu uso é bastante peculiar.
 
 ele permite executarmos e associarmos expressões em uma mesma linha.
 
@@ -2766,7 +3421,7 @@ por exemplo, veja o seguinte codigo:
 
 
 ```python
-2 + 4   # Uma expressão é executada
+2 + 4  # Uma expressão é executada
 ```
 
 
@@ -2780,7 +3435,9 @@ ao rodarmos o codigo recebemos o numero 6, pois, expressões são codigos que re
 
 
 ```python
-n = 2 + 5  # Uma expressão é  de soma executada e tem seu valor associado a uma variavel n
+n = (
+    2 + 5
+)  # Uma expressão é  de soma executada e tem seu valor associado a uma variavel n
 ```
 
 para vermos o valor, precisamos acessa-lo através de funções como a `print()`
@@ -2798,7 +3455,7 @@ se nós tentarmos acessar o valor e executar a expressão ao mesmo erro teremos 
 
 
 ```python
-print(n = 3 + 8)
+print(n=3 + 8)
 # TypeError: 'n' is an invalid keyword argument for print()
 ```
 
@@ -2815,6 +3472,31 @@ print(n)
 
 
 Ele nos permite acessar o valor enquanto ele esta sendo associado, e mais a frente podemos acessar a variavel contendo o valor.
+
+##### 3.1.12.10.18. Precedencia de Operadores Geral
+
+O Python segue uma precedencia de operadores especifica, eis aqui a lista:
+
+| Precedencia 	|                        Operador                       	|                                    Descrição                                    	|
+|:-----------:	|:-----------------------------------------------------:	|:-------------------------------------------------------------------------------:	|
+|      1      	|                      (), [] ou {}                     	|             Parenteses, Exibição de listas, dicionários e conjuntos             	|
+|      2      	| x\[index\], x\[index:index\] x(arguments...), x.attribute 	|                   atributos, fatiamentos e chamada de funções                   	|
+|      3      	|                         await                         	|                                 espera asycrona                                 	|
+|      4      	|                           **                          	|                                  exponenciação                                  	|
+|      5      	|                        +, -, ~                        	|                         Positivo, negativo e bitwise NOT                        	|
+|      6      	|                     *, @, /, //, %                    	| Multiplicação, multiplicação de matrizes, divisão, "divisão verdadeira", modulo 	|
+|      7      	|                          +, -                         	|                                 Soma e subtração                                	|
+|      8      	|                         <<, >>                        	|                                  Bitwise Shifts                                 	|
+|      9      	|                           &                           	|                                   Bitwise AND                                   	|
+|      10     	|                           ^                           	|                                   Bitwise XOR                                   	|
+|      11     	|                           \|                          	|                                    Bitwise OR                                   	|
+|      12     	|      in, not in, is, is not, <, <=, >, >=, !=, ==     	|                                   Comparadores                                  	|
+|      13     	|                         not x                         	|                                   NOT Booleano                                  	|
+|      14     	|                          and                          	|                                   AND Booleano                                  	|
+|      15     	|                           or                          	|                                   OR Booleano                                   	|
+|      16     	|                       if - else                       	|                              Expressão Condicional                              	|
+|      17     	|                         lambda                        	|                            Funções/Expressões Lambda                            	|
+|      18     	|                           :=                          	|                    Expressão de associação (Walrus Operator)                    	|
 
 # 4. Programação Orientada a Objetos Básica
 
@@ -2847,7 +3529,7 @@ nós poderiamos representar este estudante como um dicionário, e usar `sum() / 
 estudante = {
     "Nome": "Mirai",
     "Notas": [8.6, 9.3, 7.5, 8.8, 7],
-    "Profissao": "Estudante"
+    "Profissao": "Estudante",
 }
 
 media = sum(estudante["Notas"]) / len(estudante["Notas"])
@@ -2884,21 +3566,27 @@ vamos representar o nosso estudante como uma classe:
 
 ```python
 class Estudante:
-    profissao = "Estudante"         # esse é um Atributo de classe
+    profissao = "Estudante"  # esse é um Atributo de classe
+
     def __init__(self, nome, notas):
-        self.notas = notas          # esse é um Atributo de Instancia
-        self.nome = nome            # esse é um Atributo de Instancia
+        self.notas = notas  # esse é um Atributo de Instancia
+        self.nome = nome  # esse é um Atributo de Instancia
 
-
-    def calcular_media(self):       # esse é um metodo
+    def calcular_media(self):  # esse é um metodo
         self.media = sum(self.notas) / len(self.notas)
 
 
-estudante_mirai = Estudante("Mirai", [8.6, 9.3, 7.5, 8.8, 7]) # estudante_mirai é um objeto instanciado da classe Estudante
-estudante_joaquim = Estudante("Joaquim", [5.5, 3.8, 7.3, 4.5, 2.5]) # estudante_joaquim é um objeto instanciado da classe Estudante
+estudante_mirai = Estudante(
+    "Mirai", [8.6, 9.3, 7.5, 8.8, 7]
+)  # estudante_mirai é um objeto instanciado da classe Estudante
+estudante_joaquim = Estudante(
+    "Joaquim", [5.5, 3.8, 7.3, 4.5, 2.5]
+)  # estudante_joaquim é um objeto instanciado da classe Estudante
 
 estudante_mirai.calcular_media()
-print(f"O {estudante_mirai.profissao} {estudante_mirai.nome} tem a media {estudante_mirai.media}")
+print(
+    f"O {estudante_mirai.profissao} {estudante_mirai.nome} tem a media {estudante_mirai.media}"
+)
 ```
 
     O Estudante Mirai tem a media 8.24
@@ -2979,6 +3667,7 @@ class Estudante:
         self.notas = notas
         self.nome = nome
 
+
 estd = Estudante("Mirai", [1, 2, 3])
 
 print(estd.nome)
@@ -3001,9 +3690,10 @@ class Estudante:
     def __call__(self):
         print(f"o estudante {self.nome} tem {self.notas} notas")
 
+
 Estd_1 = Estudante("Mirai", [1, 2, 3])
 
-Estd_1() # __call__ é executado
+Estd_1()  # __call__ é executado
 ```
 
     o estudante Mirai tem [1, 2, 3] notas
@@ -3023,6 +3713,7 @@ class Estudante:
     def __init__(self, nome, notas):
         self.notas = notas
         self.nome = nome
+
 
 print(Estudante)
 print(Estudante.__name__)
@@ -3046,6 +3737,7 @@ class Estudante:
 
     def __name__(self):
         return self.__name__
+
 
 Estd_2 = Estudante("Mirai", [1, 2, 3])
 
@@ -3141,17 +3833,16 @@ para exemplificar criaremos uma classe `Pessoa` e faremos nossa classe `estudant
 
 
 ```python
-class Pessoa: # Classe Pai
+class Pessoa:  # Classe Pai
     def __init__(self, nome, idade):
         self.nome = nome
         self.idade = idade
-
 
     def apresentar(self):
         return f"Olá eu me chamo {self.nome} e tenho {self.idade} anos"
 
 
-class Estudante(Pessoa): # Classe Filha
+class Estudante(Pessoa):  # Classe Filha
     def __init__(self, nome, idade, medias):
         super().__init__(nome, idade)
         self.medias = medias
@@ -3160,14 +3851,16 @@ class Estudante(Pessoa): # Classe Filha
         return sum(self.medias) / len(self.medias)
 
 
-EstudanteA = Estudante("Mirai", 17, [8, 9, 7, 6, 8])    # EstudanteA é irmão de EstudanteB
-EstudanteB = Estudante("Joaquim", 16, [5, 7, 3, 6, 9])  # EstudanteB é irmão de EstudanteA
+EstudanteA = Estudante("Mirai", 17, [8, 9, 7, 6, 8])  # EstudanteA é irmão de EstudanteB
+EstudanteB = Estudante(
+    "Joaquim", 16, [5, 7, 3, 6, 9]
+)  # EstudanteB é irmão de EstudanteA
 
-print(EstudanteA.apresentar()) # Herdou da classe 'Pessoa'
-print(EstudanteA.calcular_medias()) # Definida na classe 'Estudante'
+print(EstudanteA.apresentar())  # Herdou da classe 'Pessoa'
+print(EstudanteA.calcular_medias())  # Definida na classe 'Estudante'
 
-print(EstudanteB.apresentar()) # Herdou da classe 'Pessoa'
-print(EstudanteB.calcular_medias()) # Definida na classe 'Estudante'
+print(EstudanteB.apresentar())  # Herdou da classe 'Pessoa'
+print(EstudanteB.calcular_medias())  # Definida na classe 'Estudante'
 ```
 
     Olá eu me chamo Mirai e tenho 17 anos
@@ -3206,13 +3899,16 @@ O `__new__` é usado para criar um novo objeto, veja um exemplo:
 
 
 ```python
-class Exemplo(object): # Herdamos a Classe base da hierarquia <object>
+class Exemplo(object):  # Herdamos a Classe base da hierarquia <object>
     def __new__(self):
         print("Criando Instancia (Instanciando)")
-        return super(Exemplo, self).__new__(self) # Usamos a classe base para criar um novo objeto
+        return super(Exemplo, self).__new__(
+            self
+        )  # Usamos a classe base para criar um novo objeto
 
     def __init__(self):
         print("Inicializando Instancia")
+
 
 Exemplo()
 ```
@@ -3264,7 +3960,6 @@ class Estudante:
         self.notas = notas
         self.nome = nome
 
-
     def media(self):
         return sum(self.notas) / len(self.notas)
 
@@ -3293,7 +3988,9 @@ class Estudante:
 
 EstudanteExemplo = Estudante("Mirai", [1, 2, 3, 4, 5, 6, 7, 8, 9])
 
-print(f"Media através do atributo: {EstudanteExemplo.media}") # Omitimos a chamada da função
+print(
+    f"Media através do atributo: {EstudanteExemplo.media}"
+)  # Omitimos a chamada da função
 ```
 
     Media através do atributo: 5.0
@@ -3346,6 +4043,7 @@ class Foo:
     def hi(cls):
         print(cls.__name__)
 
+
 objeto = Foo()
 
 objeto.hi()
@@ -3364,6 +4062,7 @@ class Bar:
     @staticmethod
     def apresentar():
         print("eu sou um metodo com @staticmethod")
+
 
 objeto_bar = Bar()
 
