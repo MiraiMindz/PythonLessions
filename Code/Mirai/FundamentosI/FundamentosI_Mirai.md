@@ -240,8 +240,6 @@ Mutabilidade: define a capacidade de um tipo ser alterado sem que se seja criado
 
 CHAVE:VALOR
 
-<!--#endregion -->
-
 str() -> converte para string
 int() -> converte para int
 float() -> converte para float
@@ -254,3 +252,58 @@ dict() -> converte para dicionario
 sum() & len()
 
 bin() & complex()
+
+- [x] Sets (Conjuntos)
+- [x] Dicionarios
+- [x] Conversão e Coerção
+- [x] sum() e len()
+- [x] Strings EXTRA
+
+
+1. Eles não tem ordem
+2. Eles não tem elemento repetido
+
+
+set.add() -> adiciona elementos ao set
+set.remove() -> remove elementos do set
+set.difference() -> retorna a diferença entre sets
+set.symmetric_difference() -> retorna todos os itens que não estão na interseção
+set.intersection() -> retorna a intersceção dos sets
+set.union() -> retorna a união dos sets
+
+
+listas `chave:valor`
+
+
+str() -> converte para string
+int() -> converte para int
+float() -> converte para float
+bool() -> converte para booleano
+tuple() -> converte para tuple
+list() -> converte para lista
+set() -> converte para set
+dict() -> converte para dicionario
+
+\	  Backslash ()
+'	  Aspas simples (')
+"	  Aspas duplas (")
+\a	Sino ASCII (BEL)
+\b	Backspace ASCII (BS) (apagar)
+\f	Formfeed ASCII (FF)
+\n	Linefeed ASCII (LF) (nova linha)
+\r	Carriage Return ASCII (CR) (enter)
+\t	Tab Horizontal ASCII (TAB)
+\v	Tab Vertical ASCII (VT)
+\ooo	Caractere com o valor octal OOO
+\xhh	Caractere com o valor hexadecimal HH
+\uXXXX	Caractere Unicode com o valor XXXX
+
+
+
+Sinal	Significado
+>	define que o campo deve estar alinhado a esquerda do espaço provido
+<	define que o campo deve estar alinhado a direita do espaço provido
+=	define que o alinhamento deve estar entre o sinal (se houver) e o digito, essa opção de alinhamento só é valida para tipos numericos
+^	define que o campo deve estar alinhado ao centro do espaço provido
+
+<!--#endregion -->
