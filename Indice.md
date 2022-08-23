@@ -534,6 +534,8 @@ Esse indice pode mudar de acordo com o tempo
       - Ransomware
 - Noções Avançadas de Programação (BÀSICO)
   - Introdução/Explicação
+  - Conceitos teóricos
+    - Estabilidade de tipos
   - Pointers
   - Chars
     - UTF-8 Code Pointers
@@ -547,6 +549,10 @@ Esse indice pode mudar de acordo com o tempo
     - Byte Code x Machine Code
       - Metodo de execução do Python
       - `compile()` keyword
+  - Outras Implementações de Python
+    - Cython (C)
+    - Jython (Java)
+    - IronPython (.NET)
 - GameDev
   - Introdução a GameDev
     - Objetos e Cenas
