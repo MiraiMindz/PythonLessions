@@ -1,3 +1,5 @@
+# print('hello world')
+
 # entrada = input
 # digite = print
 
@@ -81,3 +83,18 @@
 # print(f'Diferença simétrica entre Alunos de Matematica e Português:\n\t{sets_symmetric_difference}')
 # print(f'Interseção entre Alunos de Matematica e Português:\n\t{sets_intersection}')
 # print(f'União entre Alunos de Matematica e Português:\n\t{sets_union}')
+
+# notas = [6, 7, 5]
+# soma = sum(notas)
+# comprimento = len(notas)
+# media = (soma / comprimento)
+
+# print(f'o tipo da lista é claramente: {type(notas)}.')
+# print(f'a soma da lista é {soma}.')
+# print(f'o comprimento da lista é {comprimento}.')
+# print(f'a media é {media}.')
+
+# if(media >= 6):
+#     print('parabéns o aluno passou!')
+# else:
+#     print('reprovou fião, sinto muito')
