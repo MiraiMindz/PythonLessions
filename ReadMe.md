@@ -46,7 +46,7 @@ Notas:
 - [ ] 00. Python Lessons \[EM PROGRESSO\]
 - [x] 01. Introdução a Programação
 - [x] 02. Fundamentos do Python - I
-- [x] 03. Fundamentos do Python - Ii
+- [x] 03. Fundamentos do Python - II
 - [x] 04. Programação Orientada a Objetos
 - [ ] 05. Erros \[EM PROGRESSO\]
 - [ ] 06. Arquivos
