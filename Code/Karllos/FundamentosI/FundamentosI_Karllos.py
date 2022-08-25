@@ -98,3 +98,21 @@
 #     print('parabéns o aluno passou!')
 # else:
 #     print('reprovou fião, sinto muito')
+
+# from math import trunc
+
+# num = float(input('type a number:'))
+#* with import 
+# print(f'the int part of {num} is {trunc(num)}')
+
+# num = float(input('type a number:'))
+#? not import (better)
+# print(f'the int part of {num} is {int(num)}')
+
+# from math import sqrt
+
+# co = float(input('digite um valor pro cateto:'))
+# ca = float(input('agora um pro adjacente:'))
+# h = sqrt((co ** 2) + (ca ** 2))
+
+# print(f'a hipotenusa vai medir {hipotenusa:.2f}')
