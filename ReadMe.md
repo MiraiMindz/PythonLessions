@@ -36,10 +36,11 @@ Notas:
 
 ## TODOs
 
-- [ ] Melhorar o Final do Cap 4
+- [ ] Melhorar/Reescrever o Cap 4
 - [ ] Escrever o Cap 5
 - [ ] \[TALVEZ\] Fazer um Scraper para coletar desafios do CodeWars
-
+- [ ] Virtualizar o Repositorio
+- [ ] Criar testes para os exercicios e milestones
 
 ## Capitulos Escritos
 
@@ -48,7 +49,7 @@ Notas:
 - [x] 02. Fundamentos do Python - I
 - [x] 03. Fundamentos do Python - II
 - [x] 04. Programação Orientada a Objetos
-- [ ] 05. Erros \[EM PROGRESSO\]
+- [ ] 05. Erros
 - [ ] 06. Arquivos
 - [ ] 07. Databases
 - [ ] 08. Type-Hint
