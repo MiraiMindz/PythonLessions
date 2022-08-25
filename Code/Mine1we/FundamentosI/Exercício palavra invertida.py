@@ -1,2 +1,5 @@
-txt = "me falaram que era mentira" 
-print (def_invert[txt])
+import re
+
+m = re.findall(r"[^\-,.?!\s]+", "mentiras disseram verdades")[::-1]
+
+print(*m)
