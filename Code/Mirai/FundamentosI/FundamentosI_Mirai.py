@@ -310,4 +310,66 @@
 # print(media)
 # x = oct(18)
 # print(x)
+# estudantes_portugues = {'Mine', 'Kanddrex', 'Kaal', 'Joaquim'}
+# estudantes_matematica = {'1', '2', '3', '4'}
+# print(estudantes_matematica)
+# Alunos_de_Ciencias = {"Mirai", "Mine", "Ramon"}
+# print(f"Antes de adicionar o Beto:\t{Alunos_de_Ciencias}")
+# Alunos_de_Ciencias.add("Beto") #+ AQUI A GENTE ADICIONA O BETO
+# print(f"Depois de adicionar o Beto:\t{Alunos_de_Ciencias}")
+# print(f"Antes de remover o Mine:\t{Alunos_de_Ciencias}")
+# Alunos_de_Ciencias.remove("Mine") #+ AQUI A GENTE REMOVE O MINE
+# print(f"Antes de remover o Mine:\t{Alunos_de_Ciencias}")
+# Alunos_de_Matematica = {"Mirai", "Luis", "Ramon"}
+# Alunos_de_Portugues = {"Kaal", "Ramon", "Mine"}
+# sets_difference = Alunos_de_Matematica.difference(Alunos_de_Portugues)
+# sets_symmetric_difference = Alunos_de_Matematica.symmetric_difference(Alunos_de_Portugues)
+# sets_intersection = Alunos_de_Matematica.intersection(Alunos_de_Portugues)
+# sets_union = Alunos_de_Matematica.union(Alunos_de_Portugues)
+# print(f"Diferença entre Alunos de Matematica e Português:\n\t{sets_difference}")
+# print(f"Diferença simétrica entre Alunos de Matematica e Português:\n\t{sets_symmetric_difference}")
+# print(f"Interseção entre Alunos de Matematica e Português:\n\t{sets_intersection}")
+# print(f"União entre Alunos de Matematica e Português:\n\t{sets_union}")
+# pessoa = {
+#     'nome': 'Joaquim Souza',
+#     'idade': 18,
+#     'profissao': 'Pedreiro',
+# }
+# print(pessoa)
+# pessoa.pop
+# print(pessoa)
+# numero = 0
+# conversao = bool(numero)
+# print(numero, type(numero))
+# print(conversao, type(conversao))
+# notas = [80, 90, 100, 100]
+# print(notas)
+# soma = sum(notas)
+# comprimento = len(notas)
+# media = soma / comprimento
+# print(media)
+# print()
+# palavra = "nan"
+# x = float(palavra)
+# print(x)
 # endregion
+# nome = 'Mirai'
+# idade = 17
+# fString  =  f'meu nome é {nome} e eu tenho {idade}, nasci em {2022 - idade}' #+ Formated String
+# rString  =  r'essa string tem \ntabs e \t\tnewlines' #+ Raw String
+# uString  =  u'Runic Ansus: \u16A8' #+ Unicode String
+# rfString = rf'meu nome:\t{nome}' #+ Raw-Formated String
+# print(fString)
+# print(rString)
+# print(uString)
+# print(rfString)
+# from string import Template
+# template_string = Template("Olá meu nome é $nome, e eu estou ${acao}ndo")
+# print(template_string.substitute(nome="Joaquim", acao="Programa"))
+# carro = "Runic Ior: ᛡ"
+# print(f'{carro=}')
+# nome = 42 / 88
+# print(f'{nome:.2%}')
+# nome = 'Mirai'
+# idade = 17
+# print('meu nome é %s e eu tenho %d anos' % (nome, idade))
