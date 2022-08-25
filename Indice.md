@@ -325,13 +325,16 @@ Esse indice pode mudar de acordo com o tempo
   - Usando `async_timeout` para segurança
   - Tornando nosso scraper asyncrono
     - httpx
-- Virtualização
+- Virtualização e Sistema de Controle de Versão (SCV)
   - O que é virtualização ?
   - Ambientes Virtuais (Virtual Envs)
     - Pipenv
     - Virtualenv
   - "Conteinerização"
     - Docker
+  - Sistemas de Controle de Versão
+    - GIT
+    - Subversion
 - Webdev Flask
   - Configurando nosso projeto com Pipenv
   - Flask Endpoint
@@ -417,6 +420,7 @@ Esse indice pode mudar de acordo com o tempo
   - Testando Classes
   - Mais testes de exibição
   - Testando Bibliotecas Externas
+  - PyTest, Tox e Github Actions
 - Ciencia de Dados
   - NumPy
   - Matplotlib
@@ -535,7 +539,64 @@ Esse indice pode mudar de acordo com o tempo
 - Noções Avançadas de Programação (BÀSICO)
   - Introdução/Explicação
   - Conceitos teóricos
-    - Estabilidade de tipos
+    - Principios
+      - SOLID
+        - Responsabilidade Unica (Single responsibility)
+        - Aberto-Fechado (Open–closed)
+        - Principio de Liskov (Liskov substitution)
+        - Segregação de Interfaces (Interface segregation)
+        - Inversçao de Dependencias (Dependency inversion)
+      - Filosofia Unix
+      - Don't Repeat Yourself (DRY)
+      - Keep It Simple Stupid (KISS)
+      - Worse is Better
+      - Feature Creep
+      - Minimum Viable Product (MVP)
+    - Conceitos
+      - Estabilidade de tipos
+      - Behavioral subtyping
+      - Custo tecnico (Technical Debt)
+    - Paradigmas
+      - Declarativos
+        - Funcional
+        - Logico
+      - Imperativos
+        - Procedural
+        - Orientado a Objetos
+      - Scripting
+      - Metaprogramming
+      - Estruturados
+        - Orientado a Objetos
+        - Concurrent
+    - Design de Software
+      - Conceitos
+        - Abstração
+        - Refinement
+        - Modularidade
+        - Arquitetura de Software
+      - Considerações
+        - Compatilibidade
+        - Extensibilidade
+        - Modularidade
+        - 'Fault-Tolerance'
+        - Manutenção
+        - Durabildade
+        - Reusabilidade
+        - Robustness
+        - Segurança
+        - Usabilidade
+        - Performance
+        - Portabilidade
+        - Scalability
+      - Linguagem de Modelagem (Modeling Language)
+        - Flow Chart
+    - Processos de Desenvolvimento de Software
+      - Prototyping
+      - Desenvolvimento Adaptativo
+      - Desenvolvimento Rapido (RAD)
+      - Desenvolvimento em Cascata (Waterfall)
+      - 'Behaviour-Driven Development' (BDD)
+      - Design by contract (DbC)
   - Pointers
   - Chars
     - UTF-8 Code Pointers
@@ -566,6 +627,9 @@ Esse indice pode mudar de acordo com o tempo
   - UrsinaEngine
     - Pong
     - SnakeGame
+
+Menções:
+  - Python Ellipsis
 
 ## Milestones
 
