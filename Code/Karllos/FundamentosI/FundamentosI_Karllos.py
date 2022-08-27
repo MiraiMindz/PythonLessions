@@ -116,3 +116,26 @@
 # h = sqrt((co ** 2) + (ca ** 2))
 
 # print(f'a hipotenusa vai medir {hipotenusa:.2f}')
+
+# from random import choice, shuffle
+
+# stds = ['Kaal', 'Mine', 'Kanddrex', 'Betoo', 'Rick Astley bombado', 'Ramon']
+
+# print(f'the chosen student was {choice(stds)}')
+
+# shuffle(stds)
+
+# print(f'the order of presentation chosen was {stds}')
+
+
+# import pygame
+
+# pygame.mixer.init()
+# pygame.init()
+# pygame.mixer.music.load('lofi.mp3') #! não consigo pegar o caminho da pasta
+# pygame.mixer.music.play()
+# pygame.event.wait()
+
+# from playsound import playsound
+
+# playsound('./lofi.mp3/') #! eu vou chorar, tem algo errado com esses caminhos
