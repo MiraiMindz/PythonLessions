@@ -1,4 +1,11 @@
-.vscode/
-.pre-commit-config.yaml
+# Esses Arquivos são referentes as configurações locais da IDE, do Git e dos ambientes virtuais
+# Não edite ou remova esses arquivos a menos que você saiba o que esta fazendo
 
-# Não remova esses arquivos, eles são referentes a configurações de usuário.
+.vscode/
+lib/
+bin/
+Include/
+Lib/
+Scripts/
+pyvenv.cfg
+.pre-commit-config.yaml
