@@ -82,5 +82,5 @@ Notas:
 para ativar o VEnv em sistemas UNIX execute o comando `source ./bin/activate` na sessão atual do shell
 
 para sistemas Windows:
-- CMD: `.\bin\activate`
+- CMD: `.\Scripts\activate.bat`
 - PowerShell: `.\bin\Activate.ps1`
