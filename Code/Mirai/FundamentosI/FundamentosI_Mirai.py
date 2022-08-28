@@ -352,7 +352,6 @@
 # palavra = "nan"
 # x = float(palavra)
 # print(x)
-# endregion
 # nome = 'Mirai'
 # idade = 17
 # fString  =  f'meu nome é {nome} e eu tenho {idade}, nasci em {2022 - idade}' #+ Formated String
@@ -373,3 +372,4 @@
 # nome = 'Mirai'
 # idade = 17
 # print('meu nome é %s e eu tenho %d anos' % (nome, idade))
+# endregion
