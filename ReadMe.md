@@ -76,3 +76,11 @@ Notas:
 - [ ] 29. Cyber Segurança e Hacking Ético
 - [ ] 30. Noções Avançadas de Programação
 - [ ] 31. Game Dev
+
+## Notas
+
+para ativar o VEnv em sistemas UNIX execute o comando `source ./bin/activate` na sessão atual do shell
+
+para sistemas Windows:
+- CMD: `.\bin\activate`
+- PowerShell: `.\bin\Activate.ps1`
