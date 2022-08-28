@@ -306,4 +306,193 @@ Sinal	Significado
 =	define que o alinhamento deve estar entre o sinal (se houver) e o digito, essa opção de alinhamento só é valida para tipos numericos
 ^	define que o campo deve estar alinhado ao centro do espaço provido
 
+Variaveis, Comentários, print() e input()
+
+constante = nao muda
+variavel = muda
+
+SheBang -> Sistemas UNIX (Linux, MacOS, FreeBSD)
+
+print -> exibe
+input -> coleta
+
+Tipos de Dado:
+
+Dado é tudo que guarda informação, ela pode ou não fazer sentido.
+
+Eles são divididos entre:
+Primitivos (ou Simples, ou Básicos)
+Compostos (ou Agrupados, ou Complexos)
+
+(Jargões)
+
+Primitivos -> Guardam apenas uma informação, 3 categorias, 4 tipos.
+- String (str) -> Texto
+- Booleano (bool) -> Verdadeiro ou Falso
+- Numericos (int & float) -> Inteiros e Decimais
+
+str -> qualquer texto
+
+\ -> caractere de escapagem
+
+Multi-line String
+
+Olá, meu nome é Mirai, eu tenho 17 anos e sei programar em Python
+
+contatenação é o ato de juntar duas strings
+
+format
+
+fString -> formatted-string
+
+2 tipos numeros:
+- Ints -> Inteiros
+- Floats -> Decimais
+
+float -> floating point numbers -> numeros de ponto flutuante
+
++ -> soma
+- -> subtração
+** -> potencia
+* -> mutiplicação
+/ -> divisão
+// -> "divisão verdadeira"
+% -> modulo
+
+1 - Parenteses () -> em sequencia, ou seja, externos primeiro
+2 - Exponenciação, -> **
+4 - Mutilicativos, -> *, @
+5 - Divisivos, -> /, // e %
+6 - Adição -> +
+7 - Subtração -> -
+
+
+a divisão SEMPRE retorna um float, mesmo com o resultado sendo inteiro.
+
+a "divisão verdadeira", retorna um int.
+
+Modulo -> resto da divisão
+
+
+
+perfomance - bit-overflow
+
+
+booleano é Verdadeiro ou Falso
+
+Verdadeiros:
+- True
+- qualquer string que não esteja vazia
+- qualquer numero diferente de 0
+- qualquer outro tipo de dado que não esteja vazio
+Falsos:
+- False
+- Strings vazias ("" ou '')
+- 0
+- qualquer outro tipo de dado vazio
+
+
+and, or, not
+
+
+"NaN" -> Not A Number
+"inf"
+
+- [x] Prefixos
+- [x] Sequencias de escapagem
+- [x] Templates
+- [x] Conversores
+- [x] Especificações da Mini-linguagem de formatação
+- [x] Depuração e padrão printf
+
+
+r ou R -> raw strings (rString)
+u ou U -> unicode strings (uString)
+f ou F -> format strings (fString)
+
+fr ou Fr ou fR ou FR ou rf ou rF ou Rf ou RF -> raw-format strings (frString ou rfString)
+
+
+\\	Backslash (\\)
+'	Aspas simples (')
+"	Aspas duplas (")
+\a	Sino ASCII (BEL)
+\b	Backspace ASCII (BS) (apagar)
+\f	Formfeed ASCII (FF)
+\n	Linefeed ASCII (LF) (nova linha)
+\r	Carriage Return ASCII (CR) (enter)
+\t	Tab Horizontal ASCII (TAB)
+\v	Tab Vertical ASCII (VT)
+\ooo	Caractere com o valor octal OOO
+\xhh	Caractere com o valor hexadecimal HH
+\uXXXX	Caractere Unicode com o valor XXXX
+
+
+!a -> Representação ascii
+!r -> o equivalente a repr()
+!s -> o equivalente a str()
+
+especificação   ::=  [[preenchimento]alinhamento][sinal][#][0][largura][agrupamento][.precisão][tipo]
+preenchimento   ::=  <any character>
+alinhamento     ::=  "<" | ">" | "=" | "^"
+sinal           ::=  "+" | "-" | " "
+largura         ::=  digit+
+agrupamento     ::=  "_" | ","
+precisão        ::=  digit+
+tipo            ::=  "b" | "c" | "d" | "e" | "E" | "f" | "F" | "g" | "G" | "n" | "o" | "s" | "x" | "X" | "%"
+
+%d	Numero inteiro com sinal
+%i	Numero inteiro com sinal
+%o	Numero octal com sinal
+%u	OBSOLETO, equivalente a %d
+%x	Numero hexadecimal minusculo com sinal
+%X	Numero hexadecimal maiusculo com sinal
+%e	expoente minusculo
+%E	expoente maiusculo
+%f e %F	precisão de ponto flutuante
+%g	precisão de ponto flutuante. Usa notação exponecial minuscula caso o expoente é menor que -4, caso contrario usa o formado decimal.
+%G	precisão de ponto flutuante. Usa notação exponecial maiuscula caso o expoente é menor que -4, caso contrario usa o formado decimal.
+%c	converte para um caractere
+%r	converte para o equivalente ao repr()
+%s	converte para o equivalente ao str()
+%a	converte para o equivalente ao ascii()
+%%	uma % (porcentagem)
+
 <!--#endregion -->
+
+Tipo Compostos
+- [x] Tuples
+- [x] Listas
+- [x] Sets
+- [x] Dicionarios
+
+Mutabilidade -> a capacidade de um tipo, ser alterado, sem criar um novo.
+
+As tuples (tulipas), são imutaveis.
+
+()
+,
+
+Matrizes (Lista Multi-Dimensional)
+
+
+
+Set -> Conjunto
+
+
+eles não tem ordem
+eles não tem valor repetido.
+
+lista chave:valor
+
+
+Conversão & Coerção, `sum()` & `len()`
+
+str()   -> converte para string
+int()   -> converte para int
+float() -> converte para float
+bool()  -> converte para booleano
+tuple() -> converte para tuple
+list()  -> converte para lista
+set()   -> converte para set
+dict()  -> converte para dicionario

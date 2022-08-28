@@ -372,4 +372,132 @@
 # nome = 'Mirai'
 # idade = 17
 # print('meu nome é %s e eu tenho %d anos' % (nome, idade))
+# nome, idade = "Mirai", 17
+# PI = 3.14
+# PI = 4
+# mensagem = "Ola mundo"
+# print(mensagem)
+# variavel = input("Insira algo: ")
+# print(variavel)
+# multiline = """ela preserva
+# novas linhas
+#     e espaços"""
+# print(multiline)
+# nome = "Mirai"
+# linguagem = "Python"
+# idade = 17
+# apresentacao = 'Olá, meu nome é ' + nome + ', eu tenho ' + str(idade) + ' anos e sei programar em ' + linguagem
+# apresentacao = 'Olá, meu nome é {}, eu tenho {} anos e sei programar em {}'.format(nome, idade, linguagem)
+# apresentacao = f'Olá, meu nome é {nome}, eu tenho {linguagem} anos e sei programar em {idade}'
+# print(apresentacao)
+# div1 = 4 / 2
+# div2 = 1 / 3
+# div_verd1 = 4 // 2
+# div_verd2 = 1 // 3
+# print(div_verd1, type(div_verd1))
+# print(div_verd2, type(div_verd2))
+# div1 = 5 // 2
+# mod1 = 4 % 2
+# print(mod1)
+# print(0.1 + 0.2)
+# print((1 + 2) / 10)
+# print("Falsos:")
+# print(False)
+# print(bool(''))
+# print(bool(0))
+# print(f"True and True: {True and True}")
+# print(f"False and True: {False and True}")
+# print(f"True and False: {True and False}")
+# print(f"False and False: {False and False}")
+#
+# print(f"True or True: {True or True}")
+# print(f"False or True: {False or True}")
+# print(f"True or False: {True or False}")
+# print(f"False or False: {False or False}")
+# print(f"not False: {not False}")
+# print(f"not True: {not True}")
+# x = True
+# y = False
+# y and x #
+# x or y
+# snan = "NaN"
+# fnan = float(snan)
+# print(fnan, type(fnan))
+# sinf = "inf"
+# finf = float(sinf)
+# print(finf, type(finf))
+# raw_string = r"Uma String\nLiteral com os\tcaracteres de escapagem\r"
+# print(raw_string)
+# unicode_string = u"Runic Ior: \u16E1"
+# print(unicode_string)
+# format_string = f"2 + 2 = {2 + 2}"
+# print(format_string)
+# raw_format_string = rf"2 * 2 =\t{2 * 2}"
+# print(raw_format_string)
+# print("\tTab\nNewline")
+# variavel = "Runic Ior: ᛡ"
+# conversor_a = f"{variavel!a}"
+# conversor_r = f"{variavel!r}"
+# conversor_s = f"{variavel!s}"
+# print(f"Conversor !a:\t{conversor_a}")
+# print(f"Conversor !r:\t{conversor_r}")
+# print(f"Conversor !s:\t{conversor_s}")
+# string = 18 / 25
+# print(f"{string:%}")
+# x = 4
+# y = True
+# print(f"{y = }")
+# nome = "Mirai"
+# idade = 17
+# print("meu nome é %s e eu tenho %+04d anos" % (nome, idade))
+# x = (1, 2, 3)
+# print(x, type(x))
+# x, y = 1, 2
+# tulipa = x, y
+# print("VARIAVEL:", tulipa, "\tENDEREÇO MEM:", hex(id(tulipa)))
+# tulipa = x, y, 3
+# print("VARIAVEL:", tulipa, "\tENDEREÇO MEM:", hex(id(tulipa)))
+# (x, y) = (1, 2)
+# print(f'{x=}')
+# #? REVERSE-INDEX      -4        -3       -2       -1
+# #+ INDEX               0         1        2        3
+# lista =             ['Kaal', 'Zezinho', 'Mine', 'Mirai']
+# print(lista)
+# * ADICIONAR:
+# *  [x] list.append()
+# *  [x] list.insert()
+#! REMOVER:
+#!  [x] list.pop()
+#!  [x] list.remove()
+# lista.remove('Kaal')
+# print(lista)
+# matriz = [
+# #+ X 0  1  2     Y
+#     [1, 2, 3],#+ 0
+#     [4, 5, 6],#+ 1
+#     [7, 8, 9]#+  2
+# ]
+# #+           Y  X
+# print(matriz[0][2])
+# Alunos_de_Matematica = {'Mirai', 'Luis', 'Ramon'}
+# Alunos_de_Portugues  = {'Kaal', 'Ramon', 'Mine'}
+# sets_difference             = Alunos_de_Matematica.difference(Alunos_de_Portugues)
+# sets_symmetric_difference   = Alunos_de_Matematica.symmetric_difference(Alunos_de_Portugues)
+# sets_intersection           = Alunos_de_Matematica.intersection(Alunos_de_Portugues)
+# sets_union                  = Alunos_de_Matematica.union(Alunos_de_Portugues)
+# #print(f'Diferença entre Alunos de Matematica e Português:\n\t{sets_difference}')
+# #print(f'Diferença simétrica entre Alunos de Matematica e Português:\n\t{sets_symmetric_difference}')
+# #print(f'Interseção entre Alunos de Matematica e Português:\n\t{sets_intersection}')
+# #print(f'União entre Alunos de Matematica e Português:\n\t{sets_union}')
+# pessoa = {
+#     "nome": "Mirai",
+#     "idade": 17,
+#     "sexo": "masculino",
+# }
+# print(pessoa)
+# pessoa.pop("sexo")
+# print(pessoa)
 # endregion
+# medias = [70, 80, 100, 100, 90, 70]
+# media = sum(medias) / len(medias)
+# print(media / 10)
