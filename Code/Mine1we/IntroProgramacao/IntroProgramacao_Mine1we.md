@@ -76,7 +76,7 @@ pode guarda 2 números, 4 palavras e etc...
 - Sets
 - Dicionarios
 
-Mutabilidade: capacidade de um tipo ser alterado sem criar um novo.
+Mutabilidade: capacidade de um tipo ser alterado, sem criar um novo.
 
 Imultaveis
 
