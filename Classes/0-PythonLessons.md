@@ -63,6 +63,7 @@ Esse arquivo vai conter todas as explicações (meio que um arquivo só com o cu
     - [3.1.1. Controle de Fluxo (Control Flow) e Escopo](#311-controle-de-fluxo-control-flow-e-escopo)
       - [3.1.1.1. Sequencial](#3111-sequencial)
       - [3.1.1.2. Decisivo](#3112-decisivo)
+        - [3.1.1.2.1. Match-Case](#31121-match-case)
       - [3.1.1.3. Repetitivo (Recursivo)](#3113-repetitivo-recursivo)
     - [3.1.2. Performance em Loops](#312-performance-em-loops)
       - [3.1.2.1. While Loops](#3121-while-loops)
@@ -1626,9 +1627,11 @@ else:
     print(f"x é igual a {x}")
 ```
 
-em cadeias de `elif`s nós podemos ter quantos `elif` forem necessários, porém, devemos ter APENAS um `if` no inicio e um `else` no fim para termos a cadeia
+em cadeias de `elif`s nós podemos ter quantos `elif` forem necessários, porém, devemos ter APENAS um `if` no inicio e um `else` no fim para termos a cadeia.
 
-tendo em vista o constante uso dessas cadeias em versões posteriores ao Python 3.10 nós temos a adição de duas keywords para este fim, `match` e `case`
+##### 3.1.1.2.1. Match-Case
+
+o `match-case` foi introduzido no Python 3.10, essencialmente ele introduz a correspondencia de padrões, essencialmente, você compara um caso a um padrão desejavel de tokens.
 
 a sintaxe de um `match-case` é a seguinte:
 
@@ -1653,52 +1656,61 @@ match (variavel):
 
 
 ```python
-x = 3
+#pessoas = ['João'] # Retorna: 'Apenas um valor: João'
+pessoas = ['João', 'Mateus', 'Caio', 'Nicolas', 'Ivan'] # Retorna: Mais que tres itens: João, Mateus, Caio, e também: ['Nicolas', 'Ivan']
 
-match x:
-    case 1:
-        print(f"x é igual a {x}")
-    case 2:
-        print(f"x é igual a {x}")
-    case 3:
-        print(f"x é igual a {x}")
-    case 4:
-        print(f"x é igual a {x}")
+match pessoas:
+    case [a]:
+        print(f'Apenas um valor: {a}')
+    case [a, b]:
+        print(f'Dois itens: {a}, {b}')
+    case [a, b, c]:
+        print(f'Três itens: {a}, {b}, e {c}')
+    case [a, b, c, *rest]:
+        print(f'Mais que três itens: {a}, {b}, {c}, e também: {rest}')
     case _:
-        print(f"x é igual a {x}")
+        print('Valor incorreto')
 ```
+
+    Mais que três itens: João, Mateus, Caio, e também: ['Nicolas', 'Ivan']
+
+
+> NOTA: Você pode tentar descomentar a linha 1 e comentar a linha 2 para testar outras combinações
 
 então qual a diferença entre cadeias de `elif` e `match-case`?
 
-veja bem, o `match-case` está restrito aos valores de uma unica variavel, enquanto os `elif`s estão restritos a lógica booleana, ou seja, logicas que retornam verdadeiro ou falso
+veja bem, o `match-case` serve para padrões estruturados de código, enquanto as cadeias de `elif` servem para tomar decisões, veja um exemplo:
 
-basicamente, `elif`s são independentes entre si e podem ter lógicas complexas, enquanto `match-case` não
-
-veja um exemplo:
+> NOTA: Você pode usar o match-case para tomar decisões baseadas em uma única variavel, mas se é recomendado o uso de cadeias de `elif`.
 
 
 ```python
-x, y, z = 1, 2, 3
+amigos = ['amigo1', 'amigo2', 'amigo3']
 
-if x & y == 2:
-    print(1)
-elif z + y != 6:
-    print(2)
-elif y > x:
-    print(3)
-else:
-    print(4)
-
-match x:
-    case 1:
-        print("a")
-    case 2:
-        print("b")
-    case 3:
-        print("c")
+match amigos:
+    case [a]:
+        print(f'Você tem apenas um amigo: {a}')
+    case [a, b]:
+        print(f'Você tem dois amigos: {a}, {b}')
+    case [a, b, c]:
+        print(f'Você tem três amigos: {a}, {b}, e {c}')
+    case [a, b, c, *rest]:
+        print(f'Você tem mais que três amigos: {a}, {b}, {c}, e também: {rest}')
     case _:
-        print("d")
+        print('Valor incorreto')
+
+
+if amigos[1] == 'amigo2':
+    print("O nome do seu segundo amigo é 'amigo2'")
+elif amigos[1] == 'amigo88':
+    print("O nome do seu segundo amigo é 'amigo88'")
+else:
+    print('Seu amigo tem nome?')
 ```
+
+    Você tem três amigos: amigo1, amigo2, e amigo3
+    O nome do seu segundo amigo é 'amigo2'
+
 
 #### 3.1.1.3. Repetitivo (Recursivo)
 
@@ -3480,7 +3492,7 @@ O Python segue uma precedencia de operadores especifica, eis aqui a lista:
 | Precedencia 	|                        Operador                       	|                                    Descrição                                    	|
 |:-----------:	|:-----------------------------------------------------:	|:-------------------------------------------------------------------------------:	|
 |      1      	|                      (), [] ou {}                     	|             Parenteses, Exibição de listas, dicionários e conjuntos             	|
-|      2      	| x\[index\], x\[index:index\] x(arguments...), x.attribute 	|                   atributos, fatiamentos e chamada de funções                   	|
+|      2      	| x[index], x[index:index] x(arguments...), x.attribute 	|                   atributos, fatiamentos e chamada de funções                   	|
 |      3      	|                         await                         	|                                 espera asycrona                                 	|
 |      4      	|                           **                          	|                                  exponenciação                                  	|
 |      5      	|                        +, -, ~                        	|                         Positivo, negativo e bitwise NOT                        	|
