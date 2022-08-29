@@ -3492,7 +3492,7 @@ O Python segue uma precedencia de operadores especifica, eis aqui a lista:
 | Precedencia 	|                        Operador                       	|                                    Descrição                                    	|
 |:-----------:	|:-----------------------------------------------------:	|:-------------------------------------------------------------------------------:	|
 |      1      	|                      (), [] ou {}                     	|             Parenteses, Exibição de listas, dicionários e conjuntos             	|
-|      2      	| x[index], x[index:index] x(arguments...), x.attribute 	|                   atributos, fatiamentos e chamada de funções                   	|
+|      2      	| x\[index\], x\[index:index\] x(arguments...), x.attribute 	|                   atributos, fatiamentos e chamada de funções                   	|
 |      3      	|                         await                         	|                                 espera asycrona                                 	|
 |      4      	|                           **                          	|                                  exponenciação                                  	|
 |      5      	|                        +, -, ~                        	|                         Positivo, negativo e bitwise NOT                        	|
