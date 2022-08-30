@@ -131,6 +131,70 @@ lista=[
 ]
 
 
+Controle de Fluxo (Control Flow) e Escopo
+(x) Sequencial
+(x) Decisivo
+( ) Repetitivo
+( ) Funcional
+
+se e se não
+
+se {nome} estiver em {lista_amigos} exibir "Ola amigo", caso contrário, exibir "Ola estranho"
+
+`if` e o `else`
+
+if {condição}:
+    {codigo} # SE FOR SIM
+else:
+    {codigo} # SE FOR NÃO
+
+
+== -> é igual?
+
+x == y -> x é igual a y?
+
+!= -> não igual/diferente
+
+ESCOPO
+
+O Escopo é sempre de fora para dentro, nunca de dentro para fora.
+
+1. Global
+2. A
+3. B
+4. C
+
+GLOBAL {
+x = 3
+    A {
+        print(x)
+        B {
+            print(x)
+            C {
+                print(x)
+            }
+        }
+    }
+}
+
+GLOBAL
+x = 3
+    A
+        print(x)
+        B
+            print(x)
+            C
+                print(x)
+
+match {variavel}:
+    case {possivel valor}:
+        {codigo}
+    case {possivel valor}:
+        {codigo}
+    case {possivel valor}:
+        {codigo}
+    case _:
+        {codigo}
 
 
 <!-- #endregion -->
