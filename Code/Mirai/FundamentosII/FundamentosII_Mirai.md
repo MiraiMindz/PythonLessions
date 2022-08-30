@@ -12,7 +12,7 @@ Funcional: o código é dividido e executado em forma de funções (veremos mais
 
 
 (x) Sequencial
-( ) Decisivo
+(x) Decisivo
 ( ) Repetitivo
 ( ) Funcional
 
