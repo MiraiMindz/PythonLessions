@@ -140,15 +140,14 @@
 
 # playsound('/sounds/lofi.mp3/')
 
-name = input('type your name:')
+# name = input('type your name:')
 
-friends = ['Mirai', 'Kaal', 'Kanddrex', 'Betoo', 'Joseph']
-Mine =    ['Mine']
+# friends = ['Mirai', 'Kaal', 'Kanddrex', 'Betoo', 'Joseph']
+# Mine =    ['Mine']
 
-if(name in friends):
-    print('Welcome back!')
-elif(name in Mine):
-    print('Hello Minecraft')
-else:
-    print("Hello stranger '-'")    
-
+# if(name in friends):
+#     print('Welcome back!')
+# elif(name in Mine):
+#     print('Hello Minecraft')
+# else:
+#     print("Hello stranger '-'")    

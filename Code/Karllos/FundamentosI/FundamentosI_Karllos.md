@@ -118,3 +118,51 @@ intersection
 union
 
 =======================================================================
+
+## 5.0 if else statements and match case
+
+=======================================================================
+
+The if/else statement executes a block of code if a specified condition is true. If the condition is false, another block of code can be executed. The if/else statement is a part of JavaScript's "Conditional" Statements, which are used to perform different actions based on different conditions.
+
+ex:. if(1 == 1):
+       print(True)
+     else:  
+       print(False)
+
+As a modern programming language, Python evolves constantly. It’s sometimes challenging, but necessary, to stay up-to-date on the latest innovations and features. One of the language’s most recent additions is the match-case statement. Introduced in Python 3.10, it allows you to evaluate an expression against a list of values.
+
+Dictionary Mapping
+Another possibility is to create a dictionary to store key-value pairs for testing and outputting. The code snippet below demonstrate how this works with a dictionary that stores the different possible cases:
+
+create a function with a dictionary
+def switch(CPU):
+
+definition of the dictionary
+cputester = {
+
+case 1
+"celeron": "Forget about it and play Minesweeper instead...",
+
+case 2
+"core i3": "Good luck with that ;)",
+
+case 3
+"core i5": "Yeah, you should be fine.",
+
+case 4
+"core i7": "Have fun!",
+
+case 5
+"core i9": "Our teams designed nice loading screens... too bad you won't see them..."
+
+}
+
+if not found, return message
+return cputester.get(CPU, "Is that even a thing?")
+
+ask the player about their CPU
+cpuModel = str.lower(input("Please enter your CPU model: "))
+
+call and print the function
+print(switch(cpuModel))
