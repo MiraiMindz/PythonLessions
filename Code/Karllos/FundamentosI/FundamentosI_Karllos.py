@@ -132,10 +132,23 @@
 
 # pygame.mixer.init()
 # pygame.init()
-# pygame.mixer.music.load('lofi.mp3') #! não consigo pegar o caminho da pasta
+# pygame.mixer.music.load('sounds/lofi.mp3')
 # pygame.mixer.music.play()
 # pygame.event.wait()
 
 # from playsound import playsound
 
-# playsound('./lofi.mp3/') #! eu vou chorar, tem algo errado com esses caminhos
+# playsound('/sounds/lofi.mp3/')
+
+name = input('type your name:')
+
+friends = ['Mirai', 'Kaal', 'Kanddrex', 'Betoo', 'Joseph']
+Mine =    ['Mine']
+
+if(name in friends):
+    print('Welcome back!')
+elif(name in Mine):
+    print('Hello Minecraft')
+else:
+    print("Hello stranger '-'")    
+
