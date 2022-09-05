@@ -54,3 +54,12 @@ match {variavel}:
         {codigo}
     case _:
         {codigo}
+
+
+While --> ENQUANTO for verdade executar isso.Ou quando o x for menor que 10,execute o códigoi abaixo:
+    print(f"valor de x: {x}") -->
+
+for --> PARA
+
+for {index} in {raio}:
+    {código}
