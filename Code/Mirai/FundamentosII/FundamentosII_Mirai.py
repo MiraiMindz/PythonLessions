@@ -141,4 +141,84 @@
 # if __name__ == '__main__':
 #     main()
 # endregion
+# variavel = ''
+# if variavel:
+#     print("é verdade")
+# else:
+#     print("é falso")
+# nome = input('Insira seu nome: ')
+# if nome == 'Mine':
+#     print(f"'{nome}' é igual a 'Mine'")
+# elif nome == 'Mirai':
+#     print(f"'{nome}' é igual a 'Mirai'")
+# elif nome == 'Kanddrex':
+#     print(f"'{nome}' é igual a 'Kanddrex'")
+# else:
+#     print(f'{nome} é um estranho')
+# os_malucolá = ['Mira!', 'Mirai' , 'Kaal' , 'Zezinho' , 'Ramon' ]
+# nome = input('Insira seu nome: ')
+# if nome == 'Mirai':
+#     print("'{nome}' é igual a 'Mine'")
+# else:
+#     print("'{nome}' não é igual a 'Mine'")
+# x = 1 #+ GLOBAL
+# def A():
+#     y = 5 #* ESCOPO DE A
+#     print(f"ESCOPO A: {x=}")
+#     print(f"ESCOPO A: {y=}")
+#     print(f"ESCOPO A: {z=}")
+#     def B():
+#             z = 3 #! ESCOPO DE B
+#             print(f"ESCOPO B: {z=}")
+#         print(f"ESCOPO B: {x=}")
+#         print(f"ESCOPO B: {y=}")
+#     B()
+# A()
+# dicionario = {
+#     'nome': 'Mirai',
+#     'idade': 17,
+#     'cor': 'azul'
+# }
+# match dicionario:
+#     case {'nome': _, 'idade': _}:
+#         print('tem nome e idade')
+#     case {'nome': _, 'cor': _}:
+#         print('tem nome e cor')
+#     case _:
+#         print('não é igual a caso nenhum')
+# match action:
+#     case {"text": str(message), "color": str(c)}:
+#         ui.set_text_color(c)
+#         ui.display(message)
+#     case {"sleep": float(duration)}:
+#         ui.wait(duration)
+#     case {"sound": str(url), "format": "ogg"}:
+#         ui.play(url)
+#     case {"sound": _, "format": _}:
+#         warning("Unsupported audio format")
+# print('(1) - jogar')
+# print('(2) - opções')
+# print('(3) - ajuda')
+# print('(0) - sair')
+# resposta = input('> ')
+# match resposta:
+#     case '1':
+#         jogar()
+#     case '2':
+#         opcoes()
+#     case '3':
+#         ajuda()
+#     case _:
+#         sair()
+# if resposta == '1':
+#     jogar()
+# elif resposta == '2':
+#     opcoes()
+# elif resposta == '3':
+#     ajuda()
+# else:
+#     sair()
+# x = 3
+# if x != 2:
+#     print('3 é diferente de 2')
 # endregion
