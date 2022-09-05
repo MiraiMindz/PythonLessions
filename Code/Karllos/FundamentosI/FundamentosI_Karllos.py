@@ -151,3 +151,10 @@
 #     print('Hello Minecraft')
 # else:
 #     print("Hello stranger '-'")    
+
+# number = int(input("type a number to find out if it is even or odd:"))
+
+# if( number % 2 == 0):
+#     print('even')
+# else:
+#     print('odd')
