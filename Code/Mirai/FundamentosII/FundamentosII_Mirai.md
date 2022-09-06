@@ -49,10 +49,10 @@ ESCOPO:
 2. Escopos Internos
 
 
-1. Global
-2. A
-3. B
-4. C
+3. Global
+4. A
+5. B
+6. C
 
 GLOBAL
 A {
@@ -198,3 +198,39 @@ match {variavel}:
 
 
 <!-- #endregion -->
+
+- [x] Sequencial
+- [x] Decisivo
+- [ ] Repetitivo
+- [ ] Funcional
+
+== é igual?
+!= não é igual? / diferente
+
+2 keyword
+
+while -> ENQUANTO algo for verdade executar isso.
+
+x = 0 -> incialize a variavel x com o valor 0
+while x < 10: -> enquanto x for menor que 10, execute o código abaixo
+    print(f"valor de x: {x}") -> exiba a string "valor de x: {x}"
+    x += 1 -> aumente x por 1 unidade
+
+for -> PARA
+
+for {index} in {raio}:
+    {codigo}
+
+
+*PERFORMANCE*
+suponhamos o seguinte, você quer exibir os numeros entre 1 e 100000000 usando um loop, mas quer fazer isso de forma eficiente, como você fará?
+
+A desestruturação em Python consiste em assimilar os valores de um iterável a variaveis
+
+`break`, `continue` e `else` em for loops
+
+x = 1
+
+== é igual?
+
+Escrevam um programa que retorna 'Fizz' caso o numero seja divisivel por 3, 'Buzz' caso ele seja divisivel por 5 e 'FizzBuzz' caso ele seja divisivel por 3 e 5 em um raio de 100 numeros.
