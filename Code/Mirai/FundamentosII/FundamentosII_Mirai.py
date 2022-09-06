@@ -222,3 +222,61 @@
 # if x != 2:
 #     print('3 é diferente de 2')
 # endregion
+# x = 0
+# while x < 10: #? x é menor que 10?
+#     print(f"valor de x: {x}")
+#     x += 1 #+ x = x + 1
+# for i in range(10):
+#     print(i)
+
+lista_amigos = [
+    "Kaal",
+    "Mine",
+    "Kanddrex",
+    "Mirai",
+    "Joaquim",
+]
+
+# for i, v in enumerate(lista_amigos):
+#     print(f"{v} está na posição {i}")
+
+# for i in range(len(lista_amigos)):
+#     print(f"{lista_amigos[i]} está na posição {i}")
+
+# dicionario_aleatorio = {
+#     "Chave A": "Valor 01",
+#     "Chave B": "Valor 02",
+#     "Chave C": "Valor 03",
+# }
+
+# print('CHAVES:')
+# for chave in dicionario_aleatorio:
+#     print(chave)
+
+# print('VALORES:')
+# for valor in dicionario_aleatorio.values():
+#     print(valor)
+
+# print('CHAVES e VALORES:')
+# for chave, valor in dicionario_aleatorio.items():
+#     print(chave, valor)
+
+# lista_num1 = [1, 3, 4, 7, 9]
+# lista_num2 = [1, 3, 5, 7, 9]
+
+# print("Teste 01")
+# for i in lista_num1:
+#     if i % 2 == 0:
+#         print("contem um numero par")
+#         break
+# else:
+#     print("não contem um numero par")
+
+
+# print("Teste 02")
+# for i in lista_num2:
+#     if i % 2 == 0:
+#         print("contem um numero par")
+#         break
+# else:
+#     print("não contem um numero par")

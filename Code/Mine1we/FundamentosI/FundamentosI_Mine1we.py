@@ -1,6 +1,6 @@
 
 
-from decimal import localcontext
+#from decimal import localcontext
 
 
 # prompt = "insira algo -> "
@@ -8,11 +8,7 @@ from decimal import localcontext
 
 # texto = input(prompt)
 
-<<<<<<< HEAD:Code/Mine1we/Untitled-1.py
-# print("você disse:", texto)
-=======
-aaaaaa
->>>>>>> a87c62d6263198fdc5014121f6a6090df459c432:Code/Mine1we/FundamentosI/FundamentosI_Mine1we.py
+#aaaaaa
 
 # print('''
 
@@ -20,14 +16,34 @@ aaaaaa
 
 # ''')
 
-cparentesamigo = (
+# cparentesamigo = (
 
-            "ta voando",                                   
+#            "ta voando",                                   
 
-                 "faz certo",                
-                                        "loco", 
+ #                "faz certo",                
+  #                                      "loco", 
 
-                            "é"
-)
+   #                         "é"
+#)
 
-print(cparentesamigo)
+#print(cparentesamigo)
+
+from timeit import timeit
+
+def pure_while(n: int = 100000000) -> int:
+    i, x = 0, 0
+    while i < n:
+        x += i
+        i += 1
+    return x
+
+def pure_for(n: int = 100000000) -> int:
+    x = 0
+    for i in range(n):
+        x += i
+    return x
+
+
+
+print(f"While Loop:\t{timeit(pure_while, number=1)} segundos")
+print(f"For Loop:\t{timeit(pure_for, number=1)} segundos")
