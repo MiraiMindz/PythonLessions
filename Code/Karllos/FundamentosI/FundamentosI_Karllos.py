@@ -158,3 +158,24 @@
 #     print('even')
 # else:
 #     print('odd')
+
+# x = 0
+
+# while x < 10:
+#   print(f"valor de x: {x}")
+#   x += 1
+
+# for i in range(11):
+#     print(i)
+#     i += 1
+
+# for num in range(1,101):
+
+#   if(num % 3 == 0 and num % 5 == 0):
+#     print("'FizzBuzz'")
+#   elif(num % 3 == 0):
+#     print("'Fizz'")
+#   elif(num % 5 == 0):
+#     print("'Buzz'")
+#   else:
+#     print(num)

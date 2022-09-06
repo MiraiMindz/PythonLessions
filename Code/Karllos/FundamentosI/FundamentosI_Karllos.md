@@ -3,7 +3,10 @@
 ## Cool Shortcuts
 
 ============================================
+
+```md
 Ctrl + K + C (comment out all lines of code)
+```
 
 ============================================
 
@@ -12,47 +15,64 @@ Ctrl + K + C (comment out all lines of code)
 ## 1.0 dynamically typed and static type (variable declaration in dynamic and static typed language)
 
 =====================================================================================================
+
+```py
 x = 4
 
 static typed (more specific)
 bool var hasClient = True
+```
 
 ======================================
 
 ## 2.1 ways to declare a variable
 
 ============================================
+
+```md
 snake_case
 camelCase
 CapitalCase
 dash-case
 constants are immutable variable
 only use float type when strictly necessary
+```
 
 ============================================
 
 ## 2.2 AMONGUS
 
 ============================================
-⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄
-⠄⠄⠄⠄⠄⠄⠄⣀⣀⣐⡀⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄
-⠄⠄⢠⠄⣠⣶⣿⣿⣿⠿⠿⣛⣂⣀⣀⡒⠶⣶⣤⣤⣬⣀⡀⠄⢀⠄⠄⠄⠄⠄⠄⠄
-⠄⠄⢀⣾⣿⣿⣿⡟⢡⢾⣿⣿⣿⣿⣿⣿⣶⣌⠻⣿⣿⣿⣿⣷⣦⣄⡀⠄⠄⠄⠄⠄
-⠄⠄⣈⣉⡛⣿⣿⣿⡌⢇⢻⣿⣿⣿⣿⣿⠿⠛⣡⣿⣿⣿⣿⣿⣿⣿⣿⣦⣄⠄⠄⠄
-⠄⠺⠟⣉⣴⡿⠛⣩⣾⣎⠳⠿⠛⣋⣩⣴⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣆⠄⠄
-⠄⠄⠄⠘⢋⣴⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡆⠄
-⠄⠄⢀⢀⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡇⠄
-⠄⠄⠄⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠃⣀
-⠄⠄⠄⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠃⠘⠛
-⠄⠄⠄⢻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠟⠋⣀⣀⣠⣤
-⠄⠄⣀⣀⡙⠻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠿⢛⣩⠤⠾⠄⠛⠋⠉⢉
-⠄⠺⠿⠛⠛⠃⠄⠉⠙⠛⠛⠻⠿⠿⠿⠟⠛⠛⠛⠉⠁⠄⠄⣀⣀⣠⣤⣠⣴⣶⣼⣿
+
+```md
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⣤⣤⣤⣤⣤⣶⣦⣤⣄⡀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⢀⣴⣿⡿⠛⠉⠙⠛⠛⠛⠛⠻⢿⣿⣷⣤⡀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⣼⣿⠋⠀⠀⠀⠀⠀⠀⠀⢀⣀⣀⠈⢻⣿⣿⡄⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⣸⣿⡏⠀⠀⠀⣠⣶⣾⣿⣿⣿⠿⠿⠿⢿⣿⣿⣿⣄⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⣿⣿⠁⠀⠀⢰⣿⣿⣯⠁⠀⠀⠀⠀⠀⠀⠀⠈⠙⢿⣷⡄⠀
+⠀⠀⣀⣤⣴⣶⣶⣿⡟⠀⠀⠀⢸⣿⣿⣿⣆⠀⠀⠀⠀                    ⣷⠀
+⠀⢰⣿⡟⠋⠉⣹⣿⡇⠀⠀⠀⠘⣿⣿⣿⣿⣷⣦⣤⣤⣤⣶⣶⣶⣶⣿⣿⣿⠀
+⠀⢸⣿⡇⠀⠀⣿⣿⡇⠀⠀⠀⠀⠹⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠃⠀
+⠀⣸⣿⡇⠀⠀⣿⣿⡇⠀⠀⠀⠀⠀⠉⠻⠿⣿⣿⣿⣿⡿⠿⠿⠛⢻⣿⡇⠀⠀
+⠀⣿⣿⠁⠀⠀⣿⣿⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⣿⣧⠀⠀
+⠀⣿⣿⠀⠀⠀⣿⣿⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⣿⣿⠀⠀
+⠀⣿⣿⠀⠀⠀⣿⣿⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⣿⣿⠀⠀
+⠀⢿⣿⡆⠀⠀⣿⣿⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⣿⡇⠀⠀
+⠀⠸⣿⣧⡀⠀⣿⣿⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⣿⠃⠀⠀
+⠀⠀⠛⢿⣿⣿⣿⣿⣇⠀⠀⠀⠀⠀⣰⣿⣿⣷⣶⣶⣶⣶⠶⠀⢠⣿⣿⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⣿⣿⠀⠀⠀⠀⠀⣿⣿⡇⠀⣽⣿⡏⠁⠀⠀⢸⣿⡇⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⣿⣿⠀⠀⠀⠀⠀⣿⣿⡇⠀⢹⣿⡆⠀⠀⠀⣸⣿⠇⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⢿⣿⣦⣄⣀⣠⣴⣿⣿⠁⠀⠈⠻⣿⣿⣿⣿⡿⠏⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠈⠛⠻⠿⠿⠿⠿⠋⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+```
 
 ============================================
 
 ## 3.0 Primitive types
 
 ============================================
+
+```md
 1  ()
 2  **
 3  *  /  //  %
@@ -85,12 +105,15 @@ Composite type is a type that holds more than one piece of data,
 need a simple type to coexist
 mutability: ability of a type to be changed without creating a new one
 Tuples: (1,2,3,4) immutable, static
+```
 
 =======================================================================
 
 ## 4.0 Arrays, Sets, Lists and etc etc etc
 
 =======================================================================
+
+```md
 arrays are mutable
 append, insert, pop, remove
 index is a position number of the array,
@@ -116,6 +139,7 @@ difference
 symmetric_difference
 intersection
 union
+```
 
 =======================================================================
 
@@ -124,11 +148,14 @@ union
 =======================================================================
 
 The if/else statement executes a block of code if a specified condition is true. If the condition is false, another block of code can be executed. The if/else statement is a part of JavaScript's "Conditional" Statements, which are used to perform different actions based on different conditions.
+ex:.
 
-ex:. if(1 == 1):
-       print(True)
-     else:  
-       print(False)
+```py
+if(1 == 1):
+    print(True)
+  else:  
+    print(False)
+```
 
 As a modern programming language, Python evolves constantly. It’s sometimes challenging, but necessary, to stay up-to-date on the latest innovations and features. One of the language’s most recent additions is the match-case statement. Introduced in Python 3.10, it allows you to evaluate an expression against a list of values.
 
@@ -136,27 +163,27 @@ Dictionary Mapping
 Another possibility is to create a dictionary to store key-value pairs for testing and outputting. The code snippet below demonstrate how this works with a dictionary that stores the different possible cases:
 
 create a function with a dictionary
-def switch(CPU):
 
-definition of the dictionary
-cputester = {
+*def switch(CPU):*
 
-case 1
-"celeron": "Forget about it and play Minesweeper instead...",
+*definition of the dictionary*
+*cputester = {*
 
-case 2
-"core i3": "Good luck with that ;)",
+*case 1*
+*"celeron": "Forget about it and play Minesweeper instead...",*
 
-case 3
-"core i5": "Yeah, you should be fine.",
+*case 2*
+*"core i3": "Good luck with that ;)",*
 
-case 4
-"core i7": "Have fun!",
+*case 3*
+*"core i5": "Yeah, you should be fine.",*
 
-case 5
-"core i9": "Our teams designed nice loading screens... too bad you won't see them..."
+*case 4*
+*"core i7": "Have fun!",*
 
-}
+*case 5*
+*"core i9": "Our teams designed nice loading screens... too bad you won't see them..."*
+*}*
 
 if not found, return message
 return cputester.get(CPU, "Is that even a thing?")
@@ -166,3 +193,18 @@ cpuModel = str.lower(input("Please enter your CPU model: "))
 
 call and print the function
 print(switch(cpuModel))
+
+=======================================================================
+
+## 6.0 Loops while
+
+=======================================================================
+
+**interavel**: anything that you can navigate between elements.
+ex:. lists, arrays, dicionary etc...
+
+*while* = keyword used to create a loop that can be temporary or infinite, depending on the arguments.
+
+*for* = creates an index that receives a value from a interavel.
+
+for > while
