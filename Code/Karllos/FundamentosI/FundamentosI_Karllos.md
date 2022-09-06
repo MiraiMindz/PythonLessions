@@ -164,26 +164,27 @@ Another possibility is to create a dictionary to store key-value pairs for testi
 
 create a function with a dictionary
 
-*def switch(CPU):*
+```py
+def switch(CPU):
 
-*definition of the dictionary*
-*cputester = {*
+definition of the dictionary
+cputester = {
 
-*case 1*
-*"celeron": "Forget about it and play Minesweeper instead...",*
+case 1
+"celeron": "Forget about it and play Minesweeper instead...",
 
-*case 2*
-*"core i3": "Good luck with that ;)",*
+case 2
+"core i3": "Good luck with that ;)",
 
-*case 3*
-*"core i5": "Yeah, you should be fine.",*
+case 3
+"core i5": "Yeah, you should be fine.",
 
-*case 4*
-*"core i7": "Have fun!",*
+case 4
+"core i7": "Have fun!",
 
-*case 5*
-*"core i9": "Our teams designed nice loading screens... too bad you won't see them..."*
-*}*
+case 5
+"core i9": "Our teams designed nice loading screens... too bad you won't see them..."
+}
 
 if not found, return message
 return cputester.get(CPU, "Is that even a thing?")
@@ -193,6 +194,7 @@ cpuModel = str.lower(input("Please enter your CPU model: "))
 
 call and print the function
 print(switch(cpuModel))
+```
 
 =======================================================================
 
@@ -204,7 +206,21 @@ print(switch(cpuModel))
 ex:. lists, arrays, dicionary etc...
 
 *while* = keyword used to create a loop that can be temporary or infinite, depending on the arguments.
+*ex:.*
+
+```py
+while x < 10:
+  print(f"valor de x: {x}")
+  x += 1
+```
 
 *for* = creates an index that receives a value from a interavel.
+*ex:.*
+
+```py
+for i in range(11):
+  print(i)
+  i += 1
+```
 
 for > while
