@@ -196,9 +196,6 @@ match {variavel}:
     case _:
         {codigo}
 
-
-<!-- #endregion -->
-
 - [x] Sequencial
 - [x] Decisivo
 - [ ] Repetitivo
@@ -234,3 +231,54 @@ x = 1
 == é igual?
 
 Escrevam um programa que retorna 'Fizz' caso o numero seja divisivel por 3, 'Buzz' caso ele seja divisivel por 5 e 'FizzBuzz' caso ele seja divisivel por 3 e 5 em um raio de 100 numeros.
+
+<!-- #endregion -->
+
+- [x] Sequencial
+- [x] Decisivo
+- [ ] Repetitivo
+- [ ] Funcional
+
+2 Keywords
+
+Keyword == palavra reservada
+
+while -> Executar um codigo ENQUANTO algo for verdade.
+
+x = 0
+while x < 10:
+    print(x)
+    x = x + 1
+
+1. loop | x = 0
+x = 0
+while 0 < 10:
+    print(x)
+    x = 0 + 1
+
+2. loop
+x = 1
+while 1 < 10:
+    print(x)
+    x = 1 + 1
+
+3. loop
+x = 2
+while 2 < 10:
+    print(x)
+    x = 2 + 1
+
+(...)
+
+10. loop
+x = 10
+while 10 < 10:
+    print(x)
+    x = 10 + 1
+
+for -> PARA algo em tanto
+
+
+suponhamos o seguinte, você quer exibir os numeros entre 1 e 100000000 usando um loop, mas quer fazer isso de forma eficiente, como você fará?
+
+break, continue e else

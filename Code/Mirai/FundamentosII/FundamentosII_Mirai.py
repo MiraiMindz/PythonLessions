@@ -140,7 +140,6 @@
 #     #ambiguous_tuple_equality_example()
 # if __name__ == '__main__':
 #     main()
-# endregion
 # variavel = ''
 # if variavel:
 #     print("é verdade")
@@ -228,42 +227,33 @@
 #     x += 1 #+ x = x + 1
 # for i in range(10):
 #     print(i)
-
-lista_amigos = [
-    "Kaal",
-    "Mine",
-    "Kanddrex",
-    "Mirai",
-    "Joaquim",
-]
-
+# lista_amigos = [
+#     "Kaal",
+#     "Mine",
+#     "Kanddrex",
+#     "Mirai",
+#     "Joaquim",
+# ]
 # for i, v in enumerate(lista_amigos):
 #     print(f"{v} está na posição {i}")
-
 # for i in range(len(lista_amigos)):
 #     print(f"{lista_amigos[i]} está na posição {i}")
-
 # dicionario_aleatorio = {
 #     "Chave A": "Valor 01",
 #     "Chave B": "Valor 02",
 #     "Chave C": "Valor 03",
 # }
-
 # print('CHAVES:')
 # for chave in dicionario_aleatorio:
 #     print(chave)
-
 # print('VALORES:')
 # for valor in dicionario_aleatorio.values():
 #     print(valor)
-
 # print('CHAVES e VALORES:')
 # for chave, valor in dicionario_aleatorio.items():
 #     print(chave, valor)
-
 # lista_num1 = [1, 3, 4, 7, 9]
 # lista_num2 = [1, 3, 5, 7, 9]
-
 # print("Teste 01")
 # for i in lista_num1:
 #     if i % 2 == 0:
@@ -271,10 +261,87 @@ lista_amigos = [
 #         break
 # else:
 #     print("não contem um numero par")
-
-
 # print("Teste 02")
 # for i in lista_num2:
+#     if i % 2 == 0:
+#         print("contem um numero par")
+#         break
+# else:
+#     print("não contem um numero par")
+# x = 0
+# while x < 10:
+#     print(x)
+#     x = x + 1
+# lista_amigos = [
+#     'Kaal',
+#     'Mine',
+#     'Beto',
+#     'Zezinho',
+#     'Kanddrex',
+#     'Mirai'
+# ]
+# for i in lista_amigos:
+#     print(i)
+# x = 0
+# while x < len(lista_amigos):
+#     print(lista_amigos[x])
+#     x += 1
+# res = input("insira resposta: ")
+# while res.lower() != "sair":
+#     print("(1) - iniciar")
+#     print("(2) - ajuda")
+#     print("(3) - opcoes")
+#     res = input("insira resposta: ")
+# endregion
+# from timeit import timeit
+# def pure_while(n: int = 100000000) -> int:
+#     i, x = 0, 0
+#     while i < n:
+#         x += i
+#         i += 1
+#     return x
+# def pure_for(n: int = 100000000) -> int:
+#     x = 0
+#     for i in range(n):
+#         x += i
+#     return x
+# print(f"While Loop:\t{timeit(pure_while, number=1)} segundos")
+# print(f"For Loop:\t{timeit(pure_for, number=1)} segundos")
+# x, y = [1, 2] # DESESTRUTURAÇÃO ou UNPACKING
+# print(x)
+# print(y)
+# lista_amigos = [
+#     'Kaal',
+#     'Mine',
+#     'Beto',
+#     'Zezinho',
+#     'Kanddrex',
+#     'Mirai'
+# ]
+# for i, v in enumerate(lista_amigos):
+#     print(f"O {v} está na posição {i}")
+# dicionario_aleatorio = {
+#     "Chave A": "Valor 01",
+#     "Chave B": "Valor 02",
+#     "Chave C": "Valor 03",
+# }
+# for k, v in dicionario_aleatorio.items():
+#     print(k, v)
+# for i in range(10):
+#     print(i)
+#     if i == 6:
+#         break
+# for i in range(10):
+#     print(i)
+#     if i == 6:
+#         print("e vamos continuar")
+#         continue
+# for i in range(10):
+#     print(i)
+# else:
+#     print("não tem breaks então chegamos ao fim")
+# print("Teste 02")
+# for i in [1, 3, 4, 7, 9]:
 #     if i % 2 == 0:
 #         print("contem um numero par")
 #         break
