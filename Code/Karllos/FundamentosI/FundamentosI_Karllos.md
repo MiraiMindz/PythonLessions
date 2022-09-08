@@ -218,9 +218,40 @@ while x < 10:
 *ex:.*
 
 ```py
-for i in range(11):
+for i in range(10):
   print(i)
   i += 1
 ```
 
 for > while
+
+=======================================================================
+
+## 7.0 list comprehension
+
+=======================================================================
+
+why {end index+1}? because the value will be where
+the list will end, and therefore, you will not find
+included, so to include it, just
+add 1 to index
+
+Understandings consist of generating a new
+element based on a composite data type
+through ifs, elses and for loops, commonly
+we say to be a dynamic generation.
+
+listBase = ['expr exit' for 'var' in 'iteravel']
+listCondition = ['expr exit' for 'var' in 'iteravel' if (condition)]
+
+```py
+Listas
+    - Base: lista_resultado = ['expr_saida' for 'var' in 'iteravel']
+    - Condicional: lista_resultado = ['expr_saida' for 'var' in 'iteravel' if (condição)]
+Sets
+    - Base: set_resultado = {'expr_saida' for 'var' in 'iteravel'}
+    - Condicional: set_resultado = {'expr_saida' for 'var' in 'iteravel' if (condição)}
+Dicionários
+    - Base: dict_resultado = {'chave':'valor' for '(chave, valor)' in 'iteravel'}
+    - Condicional: dict_resultado = {'chave':'valor' for '(chave, valor)' in 'iteravel' if ('chave' satisfaz condição)}
+```

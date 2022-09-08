@@ -170,8 +170,7 @@
 #     i += 1
 
 # for num in range(100):
-
-#     if num % 3 == 0 and num % 5 == 0:
+#     if num % 15 == 0:
 #         print("'FizzBuzz'")
 #     elif num % 3 == 0:
 #         print("'Fizz'")
@@ -184,3 +183,5 @@
 # num.sort()
 
 # print(num)
+
+list_results = []
