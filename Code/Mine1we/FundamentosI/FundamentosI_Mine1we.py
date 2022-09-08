@@ -42,8 +42,3 @@ def pure_for(n: int = 100000000) -> int:
     for i in range(n):
         x += i
     return x
-
-
-
-print(f"While Loop:\t{timeit(pure_while, number=1)} segundos")
-print(f"For Loop:\t{timeit(pure_for, number=1)} segundos")
