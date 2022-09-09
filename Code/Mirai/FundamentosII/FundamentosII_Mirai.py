@@ -346,7 +346,6 @@
 #         break
 # else:
 #     print("não contem um numero par")
-# endregion
 # #?   -10, -9, -8, -7, -6, -5, -4, -3, -2, -1
 # #+     0,  1,  2,  3,  4,  5,  6,  7,  8,  9
 # A = [  1,  5,  4,  2,  3,  7,  0,  8,  6,  9]
@@ -379,3 +378,64 @@
 # lista_chars = ["a", "b", "c", "d", "e"]
 # zip_dict = {k:v for (k, v) in zip(lista_nums, lista_chars)}
 # print(zip_dict)
+# def apresentar(): #+ DECLAREI
+#     print("olá meu nome é Mirai")
+# apresentar()    #+ CHAMAR
+# *
+# def is_even(number, x=0, mmc=0):
+#     if number % 2 == 0:
+#         print('é par')
+#     else:
+#         print('é impar')
+#     if number % mmc == 0:
+#         print(f'{number} é divisivel por {mmc}')
+#     else:
+#         print(f'{number} não é divisivel por {mmc}')
+# is_even(number, mmc=7)
+# def _args(*args):
+#     print(args)
+# _args(1, 2, 3, 4, "aaaaa", True)
+# def _kwargs(**kwargs):
+#     for k, v in kwargs.items():
+#         print("{}, {}".format(k, v))
+# _kwargs(a=1, b=2, c=3)
+# def _args_kwargs(*args, **kwargs):
+#     print(f"ARGS:\t{args}")
+#     print(f"KWARGS:\t{kwargs}")
+# _args_kwargs(1, 2, 3, 4, "aaaaa", True, a=1, b=2, c=3)
+# def funcao_posicional(parametro_1, parametro_2, parametro_3, /):
+#     print(f"parametro_1: {parametro_1}")
+#     print(f"parametro_2: {parametro_2}")
+#     print(f"parametro_3: {parametro_3}")
+# funcao_posicional("Valor 1", "Valor 2", "Valor 3")
+# def funcao_parametro_chave(
+#     parametro_obrigatorio, *, parametro_1="", parametro_2="", parametro_3=""
+# ):
+#     print(f"parametro_obrigatorio: {parametro_obrigatorio}")
+#     print(f"parametro_1: {parametro_1}")
+#     print(f"parametro_2: {parametro_2}")
+#     print(f"parametro_3: {parametro_3}")
+# funcao_parametro_chave(
+#     "valor obrigatorio",
+#     parametro_1="Valor 1",
+#     parametro_2="Valor 2",
+#     parametro_3="Valor 3",
+# )
+# from timeit import timeit
+# def func_test(a, b, c):
+#     pass
+# print(
+#     f'Apenas Posicionais:\t\t{timeit("func_test(1, 2, 3)", number=1, globals={"func_test":func_test}):.8f} segundos'
+# )
+# print(
+#     f'Apenas Parametros-Chave:\t{timeit("func_test(a=1, b=2, c=3)", number=1, globals={"func_test":func_test}):.8f} segundos'
+# )
+# def apresentar(nome="cool_name", idade=99, local="place"):
+#     return f"Olá meu nome é {nome} e eu tenho {idade} anos e moro em {local}"
+# def main():
+#     """Função Principal"""
+#     texto = apresentar("Mirai", local="casa")
+#     print(texto)
+# if __name__ == "__main__":
+#     main()
+# endregion

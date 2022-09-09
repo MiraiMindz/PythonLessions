@@ -281,8 +281,6 @@ suponhamos o seguinte, você quer exibir os numeros entre 1 e 100000000 usando u
 
 break, continue e else
 
-<!-- #endregion -->
-
 Fatiar lista: pegar um pedaço delimitado da lista
 
 
@@ -326,3 +324,16 @@ A função zip() junta elementos de multiplos iteráveis em tuples.
 
 
 A diferença entre a função zip() e a função enumerate() é que a função enumerate() enumera um iterável, enquanto a função zip() junta multiplos iteráveis
+
+
+<!-- #endregion -->
+
+
+def {NOME}():
+    {CODIGO}
+
+posicionais
+argumento-chave
+
+
+*args, **kwargs, * (Keyword Only Arguments) e / (Positional Only Arguments)
