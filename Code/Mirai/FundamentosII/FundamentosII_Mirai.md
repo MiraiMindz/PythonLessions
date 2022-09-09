@@ -232,8 +232,6 @@ x = 1
 
 Escrevam um programa que retorna 'Fizz' caso o numero seja divisivel por 3, 'Buzz' caso ele seja divisivel por 5 e 'FizzBuzz' caso ele seja divisivel por 3 e 5 em um raio de 100 numeros.
 
-<!-- #endregion -->
-
 - [x] Sequencial
 - [x] Decisivo
 - [ ] Repetitivo
@@ -282,3 +280,49 @@ for -> PARA algo em tanto
 suponhamos o seguinte, você quer exibir os numeros entre 1 e 100000000 usando um loop, mas quer fazer isso de forma eficiente, como você fará?
 
 break, continue e else
+
+<!-- #endregion -->
+
+Fatiar lista: pegar um pedaço delimitado da lista
+
+
+lista[inicio:final]
+
+inicio -> INCLUDENTE
+final -> EXCLUDENTE
+
+porque {index final+1}? pois o valor será onde a lista acabará, e portanto, não se encontrará incluso, então para incluirmos ele, basta adicionar 1 ao index
+
+
+Compreensões consistem em gerar um novo elemento com base em um tipo de dado composto atráves de ifs, elses e for loops, comumente dizemos ser uma geração dinamica.
+
+
+
+lista_base = ['expr_saida' for 'var' in 'iteravel']
+lista_condicao = ['expr_saida' for 'var' in 'iteravel' if (condição)]
+
+
+Listas
+    - Base: lista_resultado = ['expr_saida' for 'var' in 'iteravel']
+    - Condicional: lista_resultado = ['expr_saida' for 'var' in 'iteravel' if (condição)]
+Sets
+    - Base: set_resultado = {'expr_saida' for 'var' in 'iteravel'}
+    - Condicional: set_resultado = {'expr_saida' for 'var' in 'iteravel' if (condição)}
+Dicionários
+    - Base: dict_resultado = {'chave':'valor' for '(chave, valor)' in 'iteravel'}
+    - Condicional: dict_resultado = {'chave':'valor' for '(chave, valor)' in 'iteravel' if ('chave' satisfaz condição)}
+
+{'chave':'valor' for '(chave, valor)' in 'iteravel' if ('chave' satisfaz condição)}
+
+
+
+A função zip() junta elementos de multiplos iteráveis em tuples.
+
+(1 - a)
+(2 - b)
+(3 - c)
+(4 - d)
+(5 - e)
+
+
+A diferença entre a função zip() e a função enumerate() é que a função enumerate() enumera um iterável, enquanto a função zip() junta multiplos iteráveis
