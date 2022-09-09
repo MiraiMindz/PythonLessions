@@ -292,7 +292,6 @@
 #     print("(2) - ajuda")
 #     print("(3) - opcoes")
 #     res = input("insira resposta: ")
-# endregion
 # from timeit import timeit
 # def pure_while(n: int = 100000000) -> int:
 #     i, x = 0, 0
@@ -347,3 +346,36 @@
 #         break
 # else:
 #     print("não contem um numero par")
+# endregion
+# #?   -10, -9, -8, -7, -6, -5, -4, -3, -2, -1
+# #+     0,  1,  2,  3,  4,  5,  6,  7,  8,  9
+# A = [  1,  5,  4,  2,  3,  7,  0,  8,  6,  9]
+# #*                     3   7   0
+# print(A[2:])
+# lista_dobrada = []
+# for i in range(1, 11):
+#     lista_dobrada.append(i * 2)
+# print(lista_dobrada)
+# lista_dobrada = [i * 2 for i in range(1, 11)]
+# print(lista_dobrada)
+# lista_de_pares = []
+# for i in range(1, 11):
+#     if i % 2 == 0:
+#         lista_de_pares.append(i)
+# print(lista_de_pares)
+# lista_de_pares = [i for i in range(1, 11) if i % 2 == 0]
+# print(lista_de_pares)
+# adicione 'i' para a lista 'lista_de_pares' caso o resto da divisão(modulo) por 2 for igual a 0 em um raio entre 1 e 11
+# set_de_pares = {i for i in range(1, 11) if i % 2 == 0}
+# print(set_de_pares)
+# res_dict = {}
+# for i in range(1, 10):
+#     if i % 2 != 0:
+#         res_dict[i] = i**3
+# print(res_dict)
+# comp_dict = {i: i**3 for i in range(1, 10) if i % 2 != 0}
+# print(comp_dict)
+# lista_nums = [1, 2, 3, 4, 5]
+# lista_chars = ["a", "b", "c", "d", "e"]
+# zip_dict = {k:v for (k, v) in zip(lista_nums, lista_chars)}
+# print(zip_dict)
