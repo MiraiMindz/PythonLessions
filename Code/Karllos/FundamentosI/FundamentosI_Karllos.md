@@ -12,7 +12,7 @@ Ctrl + K + C (comment out all lines of code)
 
 ====================================================================================================
 
-## 1.0 dynamically typed and static type (variable declaration in dynamic and static typed language)
+## 1. Dynamically typed and static type (variable declaration in dynamic and static typed language)
 
 =====================================================================================================
 
@@ -25,7 +25,7 @@ bool var hasClient = True
 
 ======================================
 
-## 2.1 ways to declare a variable
+## 2. Ways to declare a variable
 
 ============================================
 
@@ -40,7 +40,7 @@ only use float type when strictly necessary
 
 ============================================
 
-## 2.2 AMONGUS
+## 2.1 AMONGUS ඞ
 
 ============================================
 
@@ -68,7 +68,7 @@ only use float type when strictly necessary
 
 ============================================
 
-## 3.0 Primitive types
+## 3. Primitive types
 
 ============================================
 
@@ -109,7 +109,7 @@ Tuples: (1,2,3,4) immutable, static
 
 =======================================================================
 
-## 4.0 Arrays, Sets, Lists and etc etc etc
+## 4. Arrays, Sets, Lists and etc etc etc
 
 =======================================================================
 
@@ -143,7 +143,7 @@ union
 
 =======================================================================
 
-## 5.0 if else statements and match case
+## 5. If else statements and match case
 
 =======================================================================
 
@@ -198,7 +198,7 @@ print(switch(cpuModel))
 
 =======================================================================
 
-## 6.0 Loops while
+## 6. Loops while
 
 =======================================================================
 
@@ -227,7 +227,7 @@ for > while
 
 =======================================================================
 
-## 7.0 list comprehension
+## 7. List comprehension
 
 =======================================================================
 
@@ -258,7 +258,7 @@ Dicionários
 
 =======================================================================
 
-## 8.0 Functions
+## 8. Functions
 
 =======================================================================
 
@@ -303,4 +303,334 @@ def my_function(fname):
 my_function("Emil")
 my_function("Tobias")
 my_function("Linus")
+```
+
+=======================================================================
+
+## 9. Assert
+
+=======================================================================
+
+- **assert** is nothing more than a check, at runtime, of any condition in the code;
+- If the condition is not true, a *AssertionError* exception happens and the program stops;
+- Not used for "expected" error conditions, such as a network connection that did not open. The purpose of **assert** is to aid in debugging by checking the internal sanity of the program.
+
+The syntax used is as follows:
+
+```py
+    assert Expression[, Arguments]
+```
+
+## Example
+
+```py
+In[]:
+
+    def kelvin_fahrenheit(Temperatura):
+        assert (Temperatura >= 0),"Colder absolute zero!"
+
+        return ((Temperatura-273)*1.8)+32
+
+    print kelvin_fahrenheit(273)
+    print int(kelvin_fahrenheit(505.78))
+    print kelvin_fahrenheit(-5)
+
+```
+
+```md
+Out[]:
+
+    32.0
+    451
+
+    Traceback (most recent call last):
+    File "kelvin_fahrenheit.py", line 9, in <module>
+        print kelvin_fahrenheit(-5)
+    File "kelvin_fahrenheit.py", line 4, in kelvin_fahrenheit
+        assert (Temperatura >= 0),"Colder absolute zero!"
+    AssertionError: Colder absolute zero!!
+```
+
+=======================================================================
+
+## 10. Pass, Del, Return and Raise
+
+=======================================================================
+
+## Declaration pass
+
+- This declaration is used when an instruction is required syntactically, but you do not want any commands or code to be executed;
+- The **pass** statement is a *null* operation, nothing happens when it is used.
+
+## example
+
+```py
+In[]:
+
+    for letra in 'Python': 
+        if letra == 'h':
+            pass
+            print 'This is a block using the pass statement'
+        print 'current letter :', letra
+    print "goodbye!"
+```
+
+```md
+Out[]:
+
+    current letter : P
+    current letter : y
+    current letter : t
+    This is a block using the pass statement pass
+    current letter : h
+    current letter : o
+    current letter : n
+    goodbye!
+```
+
+## Keyword del
+
+- The **del** keyword is used to delete objects. In Python, everything is an object. Therefore, the **del** keyword can also be used to exclude *variables*, *lists* or *parts of a list*, etc.
+
+## Examples
+
+- We can exclude a class, for example:
+
+```py
+In[]:
+
+    class Name:
+        name = "Drxw"
+
+    del Name
+    print(Name)
+```
+
+```py
+Out[]:
+
+    Traceback (most recent call last):
+    File "keyword_del.py", line 6, in <modulegt>
+        print(Name)
+    NameError: name 'Name' is not defined
+```
+
+- We can use **del** to remove a variable:
+
+```py
+In[]:
+
+    x = "oh no i'm going to be deleted"
+
+    del x
+    print(x)
+```
+
+```py
+Out[]:
+
+    Traceback (most recent call last):
+    File "keyword_del2.py", line 5, in <modulegt>
+        print(x)
+    NameError: name 'x' is not defined
+```
+
+- We can also remove an item from a list, as in the following example:
+
+```py
+In[]:
+
+    x = ["Coca-cola", "Fanta uva", "Pepsi"]
+
+    del x[0]
+    print(x)
+```
+
+```py
+Out[]:
+
+    ["Fanta uva", "Pepsi"]
+```
+
+## Instrução return
+
+- The **return** is used in functions to signal that the function has obtained a result and this must be returned;
+- After the declaration of this instruction, other instructions will not be executed until the function is called again;
+- If the **return** statement has no expression, `None` will be returned.
+- If the instruction is not declared, the return will be `None`.
+
+## Sintaxe
+
+```py
+def function_name():
+    statements
+    .
+    .
+    return [expression]
+```
+
+## Exercise
+
+Let's do a sum of two numbers and use **return** to show us the value of the operation.
+
+```py
+>>> def add(a, b): 
+...    """This function joins `a` with `b` and returns the result."""
+...    return a + b 
+...
+>>>
+>>> resultado = add(2, 3) 
+>>> print("The result of the operation is:", res)
+The result of the operation is: 5
+```
+
+Let's see what the function returns if we don't put the **return**.
+
+```py
+>>> def something():
+...     pass
+...
+>>> result = something()
+>>> result
+None
+```
+
+Jeez, but I didn't use **return**, why did it return `None`?
+All Python functions return something when executed, by default this return is `None`.
+That is, our function does not return anything, literally!
+
+Test it, try to save the return of the `print` function and see what happens!
+
+## raise Keyword
+
+- This keyword has the function of generating an exception;
+- You can define what type of error to generate and the text to be printed for the user.
+
+Let's look at a simple example:
+
+```py
+In[]:
+
+    x = 7
+
+    if x < 8:
+        raise Exception("sorry, type 8 caracters or more")
+```
+
+```md
+Out[]:
+
+    Exception: sorry, type 8 caracters or more
+```
+
+Another example we can use is checking the type of input data. Let's say that the system only accepts *integer* numbers, but a *string* was passed, we would use the following code snippet to return a message to the user:
+
+```py
+In[]:
+
+    x = "Python LessIons"
+
+    if not type(x) is int:
+        raise TypeError("just type int numbers.")
+```
+
+```md
+Out[]:
+
+    TypeError: just type int numbers!
+```
+
+=======================================================================
+
+## 11. Global expression
+
+=======================================================================
+
+## Declaração global
+
+- Variables created outside of a function are known as global variables;
+- Global variables can be used by everyone, inside and outside of functions.
+
+```py
+In[]:
+
+    x = "LessIons"
+
+    def myfunc():
+        print(f"Python {x}")
+
+    myfunc()
+```
+
+```md
+Out[]:
+
+    Python LessIons
+```
+
+- If you create a variable with the same name inside a function, that variable will be local and can only be used inside the function. The global variable with the same name will remain as it was, global and with the original value.
+
+```py
+In[]:
+
+    x = "LessIons"
+
+    def myfunc():
+    x = "Python"
+    print(f'{x} developers')
+
+    myfunc()
+
+    print(f'Python {x}')
+```
+
+```md
+Out[]:
+
+    Python developers
+    Python LessIons
+```
+
+## Keyword GLOBAL
+
+- as said before, when you create a variable inside a function, that variable is local and can only be used inside that function;
+- To create a global variable inside a function, you can use the keyword **global**.
+- If you use the **global** keyword, the variable belongs to the global scope:
+
+```py
+In[]:
+
+    def string_func():
+        global x
+        x = "fantastic"
+
+    string_func()
+    print(f"Python is {x}")
+```
+
+```md
+Out[]:
+
+    Python is fantastic
+```
+
+- Also, use **global** keyword if you want to change a global variable inside a function:
+
+```py
+In[]:
+
+    x = "fun"
+
+    def string_func():
+        global x
+        x = "fantastic"
+
+    string_func()
+    print(f"Python is {x}")
+```
+
+```md
+Out[]:
+
+    Python is fantastic
 ```
