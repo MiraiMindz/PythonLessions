@@ -452,14 +452,14 @@ Out[]:
     ["Fanta uva", "Pepsi"]
 ```
 
-## Instrução return
+## Instrution return
 
 - The **return** is used in functions to signal that the function has obtained a result and this must be returned;
 - After the declaration of this instruction, other instructions will not be executed until the function is called again;
 - If the **return** statement has no expression, `None` will be returned.
 - If the instruction is not declared, the return will be `None`.
 
-## Sintaxe
+## Sintax
 
 ```py
 def function_name():
@@ -546,7 +546,7 @@ Out[]:
 
 =======================================================================
 
-## Declaração global
+## Global Declaration
 
 - Variables created outside of a function are known as global variables;
 - Global variables can be used by everyone, inside and outside of functions.
