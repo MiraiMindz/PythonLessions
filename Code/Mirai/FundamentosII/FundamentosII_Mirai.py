@@ -439,3 +439,196 @@
 # if __name__ == "__main__":
 #     main()
 # endregion
+
+# def mul(x, y):
+#     return x * y
+
+# print(f"função: {mul(3, 4)}")
+
+# print(f"lambda: {(lambda a, b : a * b)(3, 4)}")
+
+# p = print
+# p("ola mundo")
+
+
+# def capital(func, nome):
+#     resposta = func(nome)
+#     nome_maiusculo = resposta.upper()
+#     return nome_maiusculo
+
+# def apresentar(nome):
+#     return f"olá {nome}"
+
+# resultado_final = capital(apresentar,"Mirai")
+
+# print(resultado_final)
+
+# def apresentar(name):
+#     return f"meu nome é {name}"
+
+
+# def funcao_superior(func):
+#     def funcao_interna(name):
+#         resp = func(name)
+#         return resp.upper()
+
+#     return funcao_interna
+
+#print(funcao_superior(apresentar)("Mirai"))
+
+
+
+#~ FUNÇÂO              VALOR    OUT. FUNC      SOMA VAL + RES. FUNC
+# func_alta_ord = lambda  x,        func:           x + func(x)
+# print(func_alta_ord(2, lambda x: x**2))
+
+# 1.  func_alta_ord = lambda x, func: x + func(x)
+#     print(func_alta_ord(2, lambda y: y ** 2))
+
+# 2.  func_alta_ord = lambda x, func: x + func(x)
+#     func_alta_ord = lambda x,
+#                     lambda y: y ** 2:
+#                                     x + func(x)
+
+# 3.  func_alta_ord = lambda x:
+#                             x + lambda x: x ** 2
+
+# 4.  print(func_alta_ord(2, lambda y: y ** 2))
+#     func_alta_ord = lambda x:
+#                             2 + lambda x: 2 ** 2
+
+
+#! GLOBAL
+# x = 3
+# def local1():
+#     y = 4
+#     print(f"LOCAL1 (GLOBAL): {x}")
+#     print(f"LOCAL1 (VAR L1): {y}")
+#     print(f"LOCAL1 (VAR L2): {z}")
+#     def local2():
+#         global z = 23
+#         # print(f"LOCAL2 (GLOBAL): {x}")
+#         # print(f"LOCAL2 (VAR L1): {y}")
+#         # print(f"LOCAL2 (VAR L2): {z}")
+
+
+#     local2()
+
+# local1()
+
+
+
+
+
+
+
+
+
+# x = "Escopo Global"
+
+
+# def func_legal_var_local():
+#     x = "Escopo Local"
+#     print(x)
+
+
+# def func_legal_var_global():
+#     global x
+#     print(x)
+
+
+# def alterar_global():
+#     global x
+#     x = "Alteramos a variavel global"
+
+
+#print(x)  # Escopo Global
+#func_legal_var_local()  # Escopo Local
+#func_legal_var_global()  # Escopo Global
+# alterar_global()
+# print(x)  # Alteramos a variavel global
+
+# numero_importante = 3
+
+# def funcao1():
+#     if numero_importante == 3:
+#         print('aprovado')
+
+
+# def funcao2():
+#     global numero_importante
+#     numero_importante = 4
+
+# funcao2()
+# funcao1()
+
+
+# def func_extern1():
+#     x = "Func externa 1"
+
+#     def func_intern1():
+#         x = "Func interna 1"
+#         print(x)
+
+#     print(x)
+#     func_intern1()
+
+
+# func_extern1()
+
+
+
+
+# def func_extern2():
+#     x = "Func externa 2"
+
+#     def func_intern2():
+#         nonlocal x
+#         print(x)
+
+#     print(x)
+#     func_intern2()
+
+# func_extern2()
+
+
+
+# def func_extern3():
+#     x = "Func externa 3"
+
+#     def func_intern3():
+#         nonlocal x
+#         x = "Alteramos a variavel da Func Externa 3"
+#         print(x)
+
+#     print(x) # ANTES DE EDITAR
+#     func_intern3() # EDITOU
+#     print(x) # DPS
+
+# func_extern3()
+
+
+# x = 5 # GLOBAL
+
+# def externa():
+#     #x = 1
+
+#     def interna():
+#         x = 2
+#         print("interna:", x)
+
+#     def interna_nao_associada():
+#         print("interna não associada:", x)
+
+#     interna()
+#     interna_nao_associada()
+#     print("externa:", x)
+
+
+# externa()
+# print("global:", x)
+
+
+
+
+

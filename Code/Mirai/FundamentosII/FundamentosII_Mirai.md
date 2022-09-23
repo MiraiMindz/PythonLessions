@@ -325,10 +325,6 @@ A função zip() junta elementos de multiplos iteráveis em tuples.
 
 A diferença entre a função zip() e a função enumerate() é que a função enumerate() enumera um iterável, enquanto a função zip() junta multiplos iteráveis
 
-
-<!-- #endregion -->
-
-
 def {NOME}():
     {CODIGO}
 
@@ -337,3 +333,31 @@ argumento-chave
 
 
 *args, **kwargs, * (Keyword Only Arguments) e / (Positional Only Arguments)
+
+<!-- #endregion -->
+
+- [x] Funções Lambda
+- [x] Funções de Primeira Classe
+- [x] Funções de Alta Ordem
+- [x] Keyword de escopo
+- [x] Shadowing
+- [ ] Operadores
+- [ ] MILESTONE 01
+
+lambda {ARGUMENTOS} : {EXPRESSÂO}
+
+Função de Primeira Classe -> Tratar como variavel
+
+a {
+    b {
+        c {
+            d {
+                return 3
+            }
+        }
+    }
+}
+
+nonlocal | global
+
+Variable Shadowing ocorre quando uma variavel de um escopo interno tem o mesmo nome que uma variavel de um escopo externo, isso pode levar a erros e a comportamentos não esperados no código então deve ser evitado. O recomendado é declarar variaveis internas com outros nomes, ou melhor ainda, não usar variaveis globais.
