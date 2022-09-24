@@ -132,10 +132,62 @@
 
 # pygame.mixer.init()
 # pygame.init()
-# pygame.mixer.music.load('lofi.mp3') #! não consigo pegar o caminho da pasta
+# pygame.mixer.music.load('sounds/lofi.mp3')
 # pygame.mixer.music.play()
 # pygame.event.wait()
 
 # from playsound import playsound
 
-# playsound('./lofi.mp3/') #! eu vou chorar, tem algo errado com esses caminhos
+# playsound('/sounds/lofi.mp3/')
+
+# name = input('type your name:')
+
+# friends = ['Mirai', 'Kaal', 'Kanddrex', 'Betoo', 'Joseph']
+# Mine =    ['Mine']
+
+# if(name in friends):
+#     print('Welcome back!')
+# elif(name in Mine):
+#     print('Hello Minecraft')
+# else:
+#     print("Hello stranger '-'")    
+
+# number = int(input("type a number to find out if it is even or odd:"))
+
+# if( number % 2 == 0):
+#     print('even')
+# else:
+#     print('odd')
+
+# x = 0
+
+# while x < 10:
+#   print(f"valor de x: {x}")
+#   x += 1
+
+# for i in range(11):
+#     print(i)
+#     i += 1
+
+# for num in range(100):
+#     if num % 15 == 0:
+#         print("'FizzBuzz'")
+#     elif num % 3 == 0:
+#         print("'Fizz'")
+#     elif num % 5 == 0:
+#         print("'Buzz'")
+#     else:
+#         print(num)
+
+# num = [1, 3, 2]
+# num.sort()
+
+# print(num)
+
+# def main():
+#     pass
+
+# if __name__ == '__main__':
+#     main()
+
+# print()

@@ -39,8 +39,9 @@ Notas:
 - [ ] Melhorar/Reescrever o Cap 4
 - [ ] Escrever o Cap 5
 - [ ] \[TALVEZ\] Fazer um Scraper para coletar desafios do CodeWars
-- [ ] Virtualizar o Repositorio
+- [x] Virtualizar o Repositorio
 - [ ] Criar testes para os exercicios e milestones
+- [ ] Adicionar StringSlicing Fundamentos II
 
 ## Capitulos Escritos
 
