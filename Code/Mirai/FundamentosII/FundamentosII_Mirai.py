@@ -438,8 +438,6 @@
 #     print(texto)
 # if __name__ == "__main__":
 #     main()
-# endregion
-
 # def mul(x, y):
 #     return x * y
 
@@ -515,13 +513,6 @@
 #     local2()
 
 # local1()
-
-
-
-
-
-
-
 
 
 # x = "Escopo Global"
@@ -627,8 +618,92 @@
 
 # externa()
 # print("global:", x)
+# endregion
+
+from numpy import array
+
+# matriz_1 = [
+#     [1, 2],
+#     [3, 4]
+# ]
+
+# matriz_2 = [
+#     [5, 6],
+#     [7, 8]
+# ]
+
+# produto_das_matrizes = array(matriz_1) @ array(matriz_2)
+# print(produto_das_matrizes)
 
 
+# A = [[1, 2], [3, 4]]
+# B = [[5, 6], [7, 8]]
 
+# N, M, P = len(A), len(A[0]), len(B[0])
 
+# result = []
+# for i in range(N):
+#     row = [0] * P
+#     result.append(row)
 
+# for i in range(N):
+#     for j in range(P):
+#         for k in range(M):
+#             result[i][j] += A[i][k] * B[k][j]
+
+# print(result)
+
+# 2 + 3 #! OP BINARIO
+# not True #! OP UNARIO
+
+# x = 2
+
+# resultado = "é maior q 4" if x > 4 else "é menor q 4"
+# print(resultado)
+
+# a = ["apple", "banana"]
+# b = ["apple", "banana"]
+# c = a
+
+# print(f"A é igual a B ? {a == b}")
+# print(f"A é B ? {a is b}")
+# print(f"A é C ? {a is c}")
+
+# print(f"A é diferente a B ? {a != b}")
+# print(f"A não é B ? {a is not b}")
+# print(f"A não é C ? {a is not c}")
+
+# print(f"ID de B: {hex(id(b))}")
+# print(f"ID de A: {hex(id(a))}")
+# print(f"ID de C: {hex(id(c))}")
+
+# print("h" in "abcdefghijklmnopqrstuvwxyz")
+# print(12 not in [1, 2, 3, 4, 5, 6, 7, 8, 9, 0])
+
+#print(bin(5))
+# print(bin(8))
+
+# a = 156
+# b = 52
+# print(f"A ({a}) = {bin(a)}")
+# print(f"B ({b}) = {bin(b)}")
+# print(f"A & B ({a & b}) = {bin(a & b)}")
+
+# a = 156
+# b = 52
+# print(f"A ({a}) = {bin(a)}")
+# print(f"B ({b}) = {bin(b)}")
+# print(f"A | B ({a | b}) = {bin(a | b)}")
+
+# a = 156
+# b = 52
+# print(f"A ({a}) = {bin(a)}")
+# print(f"B ({b}) = {bin(b)}")
+# print(f"A ^ B ({a ^ b}) = {bin(a ^ b)}")
+
+# a = 156
+# print(f"A ({a}) = {bin(a)}")
+# print(f"Com Bit de Sinal: A ~ ({~a}) = {bin(~a)}")
+# print(f"Sem Bit de Sinal: A ~ ({~a & 255}) = {bin(~a & 255)}")
+
+# print(4 << 3)

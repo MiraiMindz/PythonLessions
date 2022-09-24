@@ -336,14 +336,6 @@ argumento-chave
 
 <!-- #endregion -->
 
-- [x] Funções Lambda
-- [x] Funções de Primeira Classe
-- [x] Funções de Alta Ordem
-- [x] Keyword de escopo
-- [x] Shadowing
-- [ ] Operadores
-- [ ] MILESTONE 01
-
 lambda {ARGUMENTOS} : {EXPRESSÂO}
 
 Função de Primeira Classe -> Tratar como variavel
@@ -361,3 +353,91 @@ a {
 nonlocal | global
 
 Variable Shadowing ocorre quando uma variavel de um escopo interno tem o mesmo nome que uma variavel de um escopo externo, isso pode levar a erros e a comportamentos não esperados no código então deve ser evitado. O recomendado é declarar variaveis internas com outros nomes, ou melhor ainda, não usar variaveis globais.
+
+
+- [x] Funções Lambda
+- [x] Funções de Primeira Classe
+- [x] Funções de Alta Ordem
+- [x] Keyword de escopo
+- [x] Shadowing
+- [ ] Operadores
+- [ ] MILESTONE 01
+
+- Aritméticos
+  - multiplicador de matrizes (@)
+- Lógicos
+  - Operador Ternário (condicional)
+- Comparativos
+  - maior que >
+  - menor que <
+  - é igual ==
+  - diferente !=
+  - maior ou igual a >=
+  - menor ou igual a <=
+- Identidade
+  - is
+  - is not
+- Membros
+  - in
+  - not in
+- Bitwise
+  - AND (&)
+  - OR (|)
+  - NOT (~)
+  - XOR (^) (exclusive or)
+  - RightShift (>>)
+  - LeftShift (<<)
+- Associativos
+  - Igual =
+  - Mais-Igual +=
+  - Menos-Igual -=
+  - Multiplicação-Igual *=
+  - Divisão-Igual /=
+  - Modulo-Igual %=
+  - Potencia-Igual **=
+  - TrueDiv-Igual //=
+  - AND-Igual &= (Bitwise)
+  - OR-Igual |= (Bitwise)
+  - XOR-Igual ^= (Bitwise)
+  - RightShift-Igual >>= (Bitwise)
+  - LeftShift-Igual <<= (Bitwise)
+  - Associação de expressão (Walrus Operator) :=
+
+
+{se verdadeiro} if {expressão} else {se falso}
+
+0123456789
+
+2000
+
+1 = 1 x 10⁰, 10 = 1 x 10¹, 100 = 1 x 10²... e por ai vai.
+
+1 = 1 x 2⁰, 2 = 1 x 2¹, 4 = 1 x 2²... e por ai vai.
+
+bin       dec   hex
+100000 =  128 = FF
+
+0101
+1100
+0100
+
+
+10011100
+00110100
+
+10101000 xor
+
+Igual =
+Mais-Igual +=
+Menos-Igual -=
+Multiplicação-Igual *=
+Divisão-Igual /=
+Modulo-Igual %=
+Potencia-Igual **=
+TrueDiv-Igual //=
+AND-Igual &= (Bitwise)
+OR-Igual |= (Bitwise)
+XOR-Igual ^= (Bitwise)
+RightShift-Igual >>= (Bitwise)
+LeftShift-Igual <<= (Bitwise)
+Associação de expressão (Walrus Operator) :=
