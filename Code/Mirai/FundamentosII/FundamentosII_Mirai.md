@@ -334,8 +334,6 @@ argumento-chave
 
 *args, **kwargs, * (Keyword Only Arguments) e / (Positional Only Arguments)
 
-<!-- #endregion -->
-
 lambda {ARGUMENTOS} : {EXPRESSÂO}
 
 Função de Primeira Classe -> Tratar como variavel
@@ -441,3 +439,40 @@ XOR-Igual ^= (Bitwise)
 RightShift-Igual >>= (Bitwise)
 LeftShift-Igual <<= (Bitwise)
 Associação de expressão (Walrus Operator) :=
+
+<!-- #endregion -->
+
+
+if-else
+
+if
+
+else
+
+elif -> else if
+
+while - for
+
+while -> enquanto verdade
+
+
+
+1. Global
+2. A
+3. B
+4. C
+
+Global
+
+A {
+    x = 1
+    B {
+        print(x)
+        print(z)
+        y = 2
+        C {
+            z = 3
+        }
+    }
+}
+A[{index inicial}:{index final+1}]

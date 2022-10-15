@@ -618,9 +618,7 @@
 
 # externa()
 # print("global:", x)
-# endregion
-
-from numpy import array
+# from numpy import array
 
 # matriz_1 = [
 #     [1, 2],
@@ -707,3 +705,97 @@ from numpy import array
 # print(f"Sem Bit de Sinal: A ~ ({~a & 255}) = {bin(~a & 255)}")
 
 # print(4 << 3)
+
+# endregion
+
+# x = "Azul"                              #+ Associação
+# x == "Carro"                            #+ Comparação
+
+# if x == "Carro":                        #! Obrigatorio ter 1 if no inicio
+#     print("Carro é igual a Carro")
+# elif x == "Pessoa":                     #? Quantos Quiser
+#     print("Pessoa é igual a Pessoa")
+# elif x == "Azul":                       #? Quantos Quiser
+#     print("Azul é igual a Azul")
+# else:                                   #! Obrigatorio ter 1 else no fim
+#     print("x não é igual a nada")
+
+# #*  Para ter cadeias de elif você deve ter 1 if no inicio
+# #*  e um else no final, porém não é obrigatorio para if-else e if
+# #*  ou seja, se tivermos apenas um if, não precisamos de um else
+# #*  e se tivermos um if e um else, não precisamos de um elif
+
+
+# pessoas = ['João', 'Mateus', 'Caio', 'Nicolas', 'Ivan']
+
+# match pessoas:
+#     case [a]:
+#         print(f'Apenas um valor: {a}')
+#     case [a, b]:
+#         print(f'Dois itens: {a}, {b}')
+#     case [a, b, c]:
+#         print(f'Três itens: {a}, {b}, e {c}')
+#     case [a, b, c, *rest]:
+#         print(f'Mais que três itens: {a}, {b}, {c}, e também: {rest}')
+#     case _:
+#         print('Valor incorreto')
+
+
+# # resposta = ''
+# # while resposta != "sair":
+# #     resposta = input('insira a resposta: ')
+
+# # x = 0           #~ declarando x
+# # while x < 10:   #~ enquanto x for menor que 10
+# #     print(x)    #~ exibir x
+# #     x += 1      #~ aumentar x por 1
+
+
+# for i in range(10):
+#     print(i)
+
+# def exibir_lista_comidas():
+#     comidas = ['arroz', 'pão', 'feijão']
+
+#     if type(comidas) == type([]):
+#         print(comidas)
+#     else:
+#         print('del sys')
+
+# exibir_lista_comidas()
+
+# dicionario_aleatorio = {
+#     "Chave A": "Valor 01",
+#     "Chave B": "Valor 02",
+#     "Chave C": "Valor 03",
+# }
+
+# for chave, valor in dicionario_aleatorio.items():
+#     print(chave, valor)
+
+# for i in range(1, 21):
+#     if i % 15 == 0:
+#         print("FizzBuzz")
+#     elif i % 3 == 0:
+#         print("Fizz")
+#     elif i % 5 == 0:
+#         print("Buzz")
+#     else:
+#         print(i)
+
+
+#    0, 1, 2, 3, 4, 5, 6, 7, 8, 9
+# A = [1, 5, 4, 2, 3, 7, 0, 8, 6, 9]
+# print(A[4:7])
+
+
+# lista_normal = [1, 2, 3, 4, 5]
+# lista_dobrada = [i * 2 for i in lista_normal]
+# print(f"lista_normal: {lista_normal}")
+# print(f"lista_dobrada: {lista_dobrada}")
+
+
+lista_normal = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+lista_de_pares = [i for i in lista_normal if i % 2 == 0]
+print(f"lista_normal: {lista_normal}")
+print(f"lista_de_pares: {lista_de_pares}")

@@ -8,4 +8,4 @@ Include/
 Lib/
 Scripts/
 pyvenv.cfg
-.BACKUP_pre-commit-config.yaml
+.pre-commit-config.yaml
