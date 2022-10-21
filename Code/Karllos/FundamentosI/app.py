@@ -12,11 +12,11 @@ movieName = ['Batman', 'Sherlock Holmes', 'Star Wars']
 movieYear = [2022, 1993, 1978]
 movieSinopse = ['cavaleiro das trevas', 'detetive', 'guerras galacticas']
 
-print('Bem vindo a Biblioteca de Filmes do Karllos\nEscolha uma opção:\n(1) - Adicionar um Filme\n(2) - Pesquisar um Filme\n(3) - Ver todos os Filmes\n(4) - Ajuda\n(0) - Sair')
+print('Bem vindo a Biblioteca de Filmes do Karllos\nEscolha uma opção:\n(1) - Adicionar um Filme\n(2) - Pesquisar um Filme\n(3) - Ver todos os Filmes\n(4) - Ajuda\n(0) - Sair\ninsira algo:')
 choicedMovie = int(input())
 print("\033c", end='')
 
-while choicedMovie != 0:    
+while choicedMovie:
     def option1(newMovie, newMovieYear, newMovieSinopse):
         '''a partir dos parametros adiciona itens na lista dos filmes'''
         movieName.append(newMovie), movieYear.append(newMovieYear), movieSinopse.append(newMovieSinopse)     
@@ -27,7 +27,7 @@ while choicedMovie != 0:
         quit()
     def option3():
         '''mostra todos os itens na biblioteca'''
-        print(f'Filmes Nome: {movieName}\nFilme Ano: {movieYear}\nFilme Sinopse: {movieSinopse}')
+        print(f'Filmes Nome: {movieName}\nFilmes Ano: {movieYear}\nFilmes Sinopse: {movieSinopse}')
         quit()
     def option4():
         '''menu de ajuda da biblioteca'''
