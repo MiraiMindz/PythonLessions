@@ -3737,7 +3737,6 @@ print(Estudante.__name__)
 
 Veja que nós não precisamos inicializar um objeto, pois nós usamos o `__name__` nativo embutido em cada classe do Python.
 
-Para definirmo
 Definindo a função `__name__`:
 
 
