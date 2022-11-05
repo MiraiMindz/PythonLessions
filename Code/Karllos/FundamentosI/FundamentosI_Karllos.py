@@ -191,3 +191,16 @@
 #     main()
 
 # print()
+
+# class Teacher:
+#     def __init__(self, nome, idade, turma, casa):
+#         self.nome = nome
+#         self.idade = idade
+#         self.turma = turma
+#         self.casa = casa
+
+#     def apresentar(self):
+#         print(f"Olá turma! meu nome é {self.nome}, tenho {self.idade} anos e eu moro na minha casa que fica em {self.casa}, agora eu vou fazer a chamada {self.turma}")
+
+# teacher_Mirai = Teacher("Mirai", 17, ['Daniel', 'Jorge', 'Fagundes', 'Pedro'], 'Realengo')
+# teacher_Mirai.apresentar()

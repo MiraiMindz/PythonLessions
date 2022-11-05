@@ -634,3 +634,91 @@ Out[]:
 
     Python is fantastic
 ```
+
+=======================================================================
+
+## 12. Classes and Methods
+
+=======================================================================
+
+An object is a class when instantiated as we will see below.
+
+```py
+#Classe pc
+class pc:
+    #Método inicializador
+    def __init__(self, placaMae, cpu, memRam, hd, fonte, placaVideo):
+        self.placaMae = placaMae
+        self.cpu = cpu
+        self.memRam = memRam 
+        self.hd = hd
+        self.fonte = fonte
+        self.placaVideo = placaVideo
+
+    #Método
+    def ligar(self):
+        return "Ligando..." 
+
+#Inicializando a classe
+#Objeto pc
+MeuPc = pc("GigaByte","Intel","Corsair","80GB","500w","Nvidia")
+```
+
+Accessing object attributes and methods
+
+Let's now access the attributes and methods of the my PC object.
+
+```py
+print("Your PC's motherboard is: ",MyPc.Motherboard)
+```
+
+Exit:
+
+```md
+Your PC's motherboard is: GigaByte
+```
+
+I want to try a new setup for my PC.
+
+So I'm going to change the cpu attribute.
+
+```py
+MyPc.cpu = "AMD"
+print("Your PC processor is: ",MyPc.cpu)
+```
+
+Exit:
+
+```md
+Your PC processor is: AMD
+```
+
+Now I want to play something, I want to turn on my PC.
+
+Just use the call method of our object.
+
+```py
+print(MyPc.connect())
+```
+
+Exit:
+
+```md
+Turning on...
+```
+
+Last but not least I want to know all my PC configuration, in just one screenshot.
+
+For this to happen we will use the dict which is: an attribute of the class.
+
+```py
+print(MyPc.__dict)
+```
+
+Exit:
+
+```py
+{'Maecard': 'GigaByte', 'cpu': 'Intel', 'memRam': 'Corsair', 'hd': '80GB', 'source': '500w', 'Videocard': 'Nvidia'}
+```
+
+We have all the attributes of the MyPc object in a dictionary when we use the dict attribute.
