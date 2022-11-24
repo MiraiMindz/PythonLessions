@@ -36,12 +36,12 @@ Notas:
 
 ## TODOs
 
-- [ ] Melhorar/Reescrever o Cap 4
-- [ ] Escrever o Cap 5
+- [x] Melhorar/Reescrever o Cap 4
+- [x] Escrever o Cap 5
 - [ ] \[TALVEZ\] Fazer um Scraper para coletar desafios do CodeWars
 - [x] Virtualizar o Repositorio
 - [ ] Criar testes para os exercicios e milestones
-- [ ] Adicionar StringSlicing Fundamentos II
+- [x] Adicionar StringSlicing Fundamentos II
 
 ## Capitulos Escritos
 
@@ -50,7 +50,7 @@ Notas:
 - [x] 02. Fundamentos do Python - I
 - [x] 03. Fundamentos do Python - II
 - [x] 04. Programação Orientada a Objetos
-- [ ] 05. Erros
+- [ ] 05. Erros \[EM PROGRESSO\]
 - [ ] 06. Arquivos
 - [ ] 07. Databases
 - [ ] 08. Type-Hint

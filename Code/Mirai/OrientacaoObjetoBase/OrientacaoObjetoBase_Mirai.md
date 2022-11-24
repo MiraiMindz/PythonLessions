@@ -9,7 +9,6 @@ Pessoas:
         - Andar
         - Falar
         - Correr
-<!--#endregion -->
 
 Atributo => Guarda Valor -> Variaveis
 Metodo   => Ação -> que PODE usar atributos.
@@ -38,8 +37,49 @@ self -> um parametro especial, se refere a classe em si
 *Um Objeto é uma Instancia de uma Classe.*
 
 
-
 classe professor:
     - Atributo de Classe
     - 3 Atributos de instancia
     - Metodo -> apresentar
+
+pessoa:
+    - Atributos:
+      - nome
+      - idade
+      - residencia
+
+    - metodos:
+      - andar
+      - correr
+      - falar
+
+nós temos um estudante com um nome, uma profissão (estudante) e que contem 5 notas e queremos calcular a média delas.
+
+class {Nome}:
+    def __init__(self):
+        {codigo}
+
+
+Classe, Objetos e Instancias
+
+Metodos Mágicos (Magic Methods/Dunder Methods)
+
+__init__(x) -> Executado assim que um novo objeto é instanciado.
+__call__(x) -> Executado quando uma instancia é chamada como função.
+__name__(x) -> Retorna o nome da classe cujo o objeto foi instanciado.
+__repr__(x) -> Retorna uma string de representação da classe.
+
+__new__() -> Executado para criar uma nova instancia de uma classe.
+
+class {nome}({classe pai}):
+    def __init__(self, {variaveis da classe pai}):
+        super().__init__({variaveis da classe pai})
+
+
+<!--#endregion -->
+
+criem uma lista de quadrados, baseada em uma outra lista
+
+[1, 2, 3] -> [1, 4, 9]
+
+
