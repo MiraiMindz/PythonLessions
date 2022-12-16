@@ -587,10 +587,10 @@ apresentacao = "Olá, meu nome é {}, eu nasci em {} e sei programar em {}"
 nome = "Mirai"
 linguagem = "Python"
 idade = 17
-print(apresentacao.format(nome, idade, linguagem))
+print(apresentacao.format(nome, 2022 - idade, linguagem))
 ```
 
-    Olá, meu nome é Mirai, eu nasci em 17 e sei programar em Python
+    Olá, meu nome é Mirai, eu nasci em 2005 e sei programar em Python
 
 
 ##### 2.2.2.1.4. Concatenação
