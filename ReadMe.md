@@ -13,7 +13,6 @@ Esse curso foi feito para ajudar uns amigos a entrarem nesse mundo de tecnologia
 - [Site Oficial do Python](https://www.python.org)
 - [CodeTriage](https://www.codetriage.com) (Contribua para projetos Open-Source)
 
-
 Até o presente momento, você construirá 11 projetos (pode variar no futuro):
 
 - Milestone 1: Criar uma Biblioteca de Filmes
