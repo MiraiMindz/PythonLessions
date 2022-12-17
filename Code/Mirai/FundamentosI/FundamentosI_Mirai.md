@@ -458,8 +458,6 @@ tipo            ::=  "b" | "c" | "d" | "e" | "E" | "f" | "F" | "g" | "G" | "n" |
 %a	converte para o equivalente ao ascii()
 %%	uma % (porcentagem)
 
-<!--#endregion -->
-
 Tipo Compostos
 - [x] Tuples
 - [x] Listas
@@ -496,3 +494,50 @@ tuple() -> converte para tuple
 list()  -> converte para lista
 set()   -> converte para set
 dict()  -> converte para dicionario
+
+
+<!-- #endregion -->
+
+Variaveis, Comentários, print() e input()
+
+Tipos de Dado
+
+Dado é tudo aquilo que guarda informação, ou seja, um numero, um texto, Verdadeiro ou Falso, uma letra, qualquer coisa que seja informação
+
+Primitivos (ou Simples, ou Básicos)
+- Strings (str)
+CONCATENAÇÃO -> Juntar dois textos
+
+- Integers e Floats (int & float)
+
+soma: +
+subtração: -
+potencia: **
+mutiplicação: *
+divisão: /
+"divisão verdadeira": //
+módulo: %
+
+- Booleans (bool)
+
+Verdadeiros:
+- True
+- Qualquer string que não esteja vazia
+- Qualquer numero diferente de 0
+- Qualquer outro tipo de dado que não esteja vazio
+
+Falsos:
+- False
+- Strings vazias ("" ou '')
+- 0
+- Qualquer outro tipo de dado vazio
+
+Operadores Lógicos
+- and
+- or
+- not
+
+
+
+
+Compostos (ou Agrupados, ou Complexos)

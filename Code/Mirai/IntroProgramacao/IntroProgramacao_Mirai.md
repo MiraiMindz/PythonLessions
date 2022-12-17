@@ -181,10 +181,10 @@ Python é uma linguagem de programação de alto nível, interpretada de script,
 
 Resolver problemas aplicandos conceitos
 
-                Programação       -          Comunicação
-HABILIDADES:     Escreve Codigo     |             Fala
-LINGUAGENS:      Python, C, Go      |       PT,   Eng,   Rus
-CONCEITOS:       If, Funções        |      Carro, Car,   автомобиль
+                Programação        -         Comunicação
+HABILIDADES:    Escreve Codigo     |             Fala
+LINGUAGENS:     Python, C, Go      |       PT,   Eng,   Rus
+CONCEITOS:      If, Funções        |      Carro, Car,   автомобиль
 
 Programação é sobre resolver problemas aplicando conceitos usando a habilidade de escrever codigo.
 
@@ -257,8 +257,6 @@ Programação é sobre resolver problemas aplicando os conceitos usando as lingu
 Programador x Escritor de Código
 
 Programadores, dominam os conceitos, escritores de código não.
-
-<!-- #endregion -->
 
 Código Fonte -> nossas ideias -> máquina
 
@@ -338,3 +336,103 @@ Nivel -> distancia entre o codigo de maquina, e a praticidade da linguagem
 
 
 Python é uma linguagem de programação de alto nível, interpretada de script, imperativa, orientada a objetos, funcional, de tipagem dinâmica e forte.
+
+<!-- #endregion -->
+
+- Desenvolvimento de Sites
+- Desenvolvimento de Jogos
+- Desenvolvimento de Aplicativos
+- Sistemas e Bancos de dados
+- Inteligencias Artificiais
+- Algoritmos
+
+
+3 pilares:
+                Programação                 Comunicação
+Habilidade:     Escrever Código             Fala
+Linguagens:     Python, C, Go               Portugues, Ingles, Russo
+Conceitos:      If, Funções, Objetos        Carro, Car, автомобиль
+
+Programação é sobre resolver problemas aplicando os conceitos usando as linguagens.
+
+Programador x Escritor de Código.
+
+Programadores, dominam os conceitos, escritores de código não.
+
+
+
+
+
+
+Python é uma  de ,, , de
+
+
+3 linguagens de computação:
+    1. linguagem de programação. print, 2 + 2 mov se se não
+    2. linguagem de marcação. **negrito** *italico*
+    3. linguagens de estilo. backgrond-color, shadow
+
+
+Paradigma: uma serie de métodos, dogmas, regras e conceitos que guiam o código fonte
+
+Imperativa, Funcional, Orientada a Objetos -> multi-paradigmática.
+
+
+funcao Codigo1() {
+    x = 2 + 2
+    exibir(x)
+}
+
+funcao Codigo2() {
+    x = 2 - 2
+    exibir(x)
+}
+
+Codigo2()
+Codigo1()
+
+
+
+Orientada a Objetos
+
+public class Program {
+    public static void main(String[] args) throws Exception {
+        String str = "Olá Mundo";
+        System.out.println(str);
+    }
+}
+
+
+tipagem dinâmica e forte.
+
+Fraca: variavel mudando
+
+nome = "mirai"
+nome -> 5
+
+Estático: String texto = "Esse aqui é um texto" # Linguagens Estaticas
+Dinâmico: texto = "Esse aqui é um texto"        # Linguagens Dinâmicas
+
+
+texto = "Esse aqui é um texto"
+texto = 5
+
+Execução
+- Interpretadas -> escrever e executar
+- Compiladas -> escrever, compilar e executar
+
+Compilação: traduzir o codigo fonte para codigo de maquina, através do compilador.
+main.c -> compilador -> main.exe
+x = 3
+Interpretação: executado em tempo real através do interpretador.
+main.py -> executar
+
+
+Nível
+"humanidade" e "completude"
+
+Baixo Nível:
+
+Alto Nível:
+
+print("ola mundo")

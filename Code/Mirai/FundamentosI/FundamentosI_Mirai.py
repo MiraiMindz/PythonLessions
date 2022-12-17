@@ -497,7 +497,17 @@
 # print(pessoa)
 # pessoa.pop("sexo")
 # print(pessoa)
-# endregion
 # medias = [70, 80, 100, 100, 90, 70]
 # media = sum(medias) / len(medias)
 # print(media / 10)
+
+# endregion
+
+
+# pega 2 numeros do usuario
+# retorna um elevado ao outro
+
+resultado = 10 / 3
+
+print(f'{resultado:.2f}')
+
