@@ -540,4 +540,67 @@ Operadores Lógicos
 
 
 
+NaN - inf
+
+Prefixos
+Sequencias de escapagem
+Templates
+Conversores
+Especificações da Mini-linguagem de formatação
+Depuração e padrão printf
+
+
+
+Prefixos:
+  r ou R: raw strings (rString)
+  u ou U: unicode strings (uString)
+  f ou F: format strings (fString)
+
+  fr ou Fr ou fR ou FR ou rf ou rF ou Rf ou RF: raw-format strings (frString ou rfString)
+
+
+    !a: Representação ASCII
+    !r: o equivalente a repr()
+    !s:o equivalente a str()
+
+
+
+
+Especificações da Mini-linguagem de formatação
+
+
+especificação   ::=  [[preenchimento]alinhamento][sinal][#][0][largura][agrupamento][.precisão][tipo]
+preenchimento   ::=  <qualquer caractere>
+alinhamento     ::=  "<" | ">" | "=" | "^"
+sinal           ::=  "+" | "-" | " "
+largura         ::=  digito+
+agrupamento     ::=  "_" | ","
+precisão        ::=  digito+
+tipo            ::=  "b" | "c" | "d" | "e" | "E" | "f" | "F" | "g" | "G" | "n" | "o" | "s" | "x" | "X" | "%"
+
+
+Depuração e padrão printf
+
+
 Compostos (ou Agrupados, ou Complexos)
+
+
+Tuples
+Listas
+Sets
+Dicionarios
+
+chave:valor
+
+
+
+str(): converte para string
+int(): converte para int
+float(): converte para float
+bool(): converte para booleano
+tuple(): converte para tuple
+list(): converte para lista
+set(): converte para set
+dict(): converte para dicionario
+
+coerção
