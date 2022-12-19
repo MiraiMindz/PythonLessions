@@ -504,10 +504,3 @@
 # endregion
 
 
-# pega 2 numeros do usuario
-# retorna um elevado ao outro
-
-resultado = 10 / 3
-
-print(f'{resultado:.2f}')
-
