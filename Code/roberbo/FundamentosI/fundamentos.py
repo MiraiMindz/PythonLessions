@@ -36,4 +36,23 @@
 
 #print(int(numero1) ** int(numero2))
 
+#informacoe = ("miguel", "15", "brasileiro")
+
+#print(f"meu nome é {informacoe[0]} tenho {informacoe[1]} anos e sou {informacoe[2]} ")
+
+#nomes = input("fale 5 amigos: ")
+
+#n2 = (nomes)
+
+#print(f"seus amigos são: {n2} ") 
+
+
+#lista = ["comprar: arroz feijão batata e salame"]
+
+#informacoes = {
+#"nome": 'roberbo',
+#'idade': 15,
+#"notas": lista,
+#}
+#print(informacoes)
 
