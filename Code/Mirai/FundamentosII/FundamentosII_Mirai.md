@@ -440,9 +440,6 @@ RightShift-Igual >>= (Bitwise)
 LeftShift-Igual <<= (Bitwise)
 Associação de expressão (Walrus Operator) :=
 
-<!-- #endregion -->
-
-
 if-else
 
 if
@@ -476,3 +473,76 @@ A {
     }
 }
 A[{index inicial}:{index final+1}]
+Controle de Fluxo (Control Flow) -> determina a forma como o código será executado
+
+
+
+Sequencial: o código é executado de forma sequencial, cima a baixo
+
+Decisivo: o código é executado baseado em uma decisão, if statements
+
+Repetitivo: o código é executado em loop, while e for loops
+
+Funcional: o código é dividido e executado em forma de funções (veremos mais a frente)
+
+
+match-case e cadeias de elifs
+
+
+if condição:
+    {codigo}
+else:
+    {codigo}
+
+
+
+x > 2 -> booleano: True | False
+
+
+if + else -> elif
+
+
+
+
+
+while loops
+
+while condição:
+    {codigo}
+
+for {index} in (raio):
+    {codigo}
+
+
+
+GLOBAL
+
+A {
+    ESCOPO DE A
+    x
+    B {
+        ESCOPO DE B
+        C {
+            ESCOPO DE C
+            print(x)
+            y
+        }
+    print(y)
+    }
+
+
+
+enumerate -> (posição, item)
+
+
+break, continue, else
+
+fatiar uma lista -> coletar só uma parte dela
+
+Base: lista_resultado = ['expr_saida' for 'var' in 'iteravel']
+
+Condicional: lista_resultado = ['expr_saida' for 'var' in 'iteravel' if (condição)]
+
+
+
+<!-- #endregion -->

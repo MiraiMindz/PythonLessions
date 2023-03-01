@@ -75,11 +75,9 @@ class {nome}({classe pai}):
     def __init__(self, {variaveis da classe pai}):
         super().__init__({variaveis da classe pai})
 
-
-<!--#endregion -->
-
 criem uma lista de quadrados, baseada em uma outra lista
 
 [1, 2, 3] -> [1, 4, 9]
 
+<!--#endregion -->
 

@@ -337,8 +337,6 @@ Nivel -> distancia entre o codigo de maquina, e a praticidade da linguagem
 
 Python é uma linguagem de programação de alto nível, interpretada de script, imperativa, orientada a objetos, funcional, de tipagem dinâmica e forte.
 
-<!-- #endregion -->
-
 - Desenvolvimento de Sites
 - Desenvolvimento de Jogos
 - Desenvolvimento de Aplicativos
@@ -391,8 +389,6 @@ funcao Codigo2() {
 Codigo2()
 Codigo1()
 
-
-
 Orientada a Objetos
 
 public class Program {
@@ -401,7 +397,6 @@ public class Program {
         System.out.println(str);
     }
 }
-
 
 tipagem dinâmica e forte.
 
@@ -436,3 +431,90 @@ Baixo Nível:
 Alto Nível:
 
 print("ola mundo")
+
+- site
+- jogo
+- app
+- banco de dado
+- ia
+- algoritmo
+
+
+Python é uma  de alto nível, interpretada de script, imperativa, orientada a objetos, funcional, de tipagem dinâmica e forte.
+
+linguagem de marcação -> documentação, *italico* **negrito**
+linguagem de estilo -> background-color: black;
+linguagem de programação -> 2 + 2, print()
+
+classificações:
+    paradigma:
+        - imperativo: de cima pra baixo
+        - funcional: através de funções
+        - orientada a objetos: hierarquia
+
+    tipagem estatica: var legal numero, var legal text
+    tipagem dinamica: var legal
+
+    nivel:
+        print()
+        execute()
+        count()
+
+Programação é sobre resolver problemas aplicando os conceitos usando as linguagens.
+
+Matriz
+Paradigma
+Método de tradução
+Tipagem
+Nível
+
+Matriz: Categoria da linguagem computacional
+- Programação (Lógica): funções e comandos, do, for, 2+2, print()
+- Marcação (Documentação): marcadores de texto <bold>, <i>, <h1>
+- Estilo (Design):  uso de propriedades de aparência, background-color
+    CSS, SASS, SCSS,
+
+Paradigma: DEFINE a funcionalidade, especificidadem orientação, regras e conceito:
+- Imperativo: SEQUENCIAIS, ORDENS
+- Funcional: blocos de código chamados funções
+- Orientado a Objeto: Classes
+
+Tipagem: Como a linguagem lida com variaveis na memoria.
+    - Estilo: Como a gente faz?
+        - Dinamico: texto = "Esse aqui é um texto"
+        - Estatico: String texto = "Esse aqui é um texto"
+
+    - Força:
+
+Execução:
+    - Interpretada:
+    - Compilada:
+
+Nivel:
+    - Alto:
+```py
+print("Olá Mundo!")
+```
+    - Baixo:
+```
+section .data
+str db "Olá Mundo!", 0xA  ; Declara a variavel str="Olá Mundo!" e adiciona o LineFeed
+len equ $ - str           ; Coleta o tamanho em bits da variavel
+
+global _start
+section .text
+_start:
+mov eax, 4                ; Usa o código de operação do kernel SYS_WRITE
+mov ebx, 1                ; Usa o StdIO, nesse caso, usaremos o StdIn
+mov ecx, str              ; Move a variavel str para parametro const_char
+mov edx, len              ; Move o tamanho em bits da variavel para o parametro size_t
+int 0x80                  ; Chama o kernel para performar a operação
+
+mov eax, 1                ; Usa o código de operação do kernel SYS_EXIT
+int 0x80                  ; Chama o kernel para performar a operação
+```
+
+Introdução a Programação
+
+<!-- #endregion -->
+

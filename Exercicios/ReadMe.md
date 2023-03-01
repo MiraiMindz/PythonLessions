@@ -16,6 +16,6 @@ Mirai/
    └─ main.py
 ```
 
-Vocês podem copiar a pasta de algum exercicio dentro da pasta `Mirai/` e resolver, ali já tem algumas atividades para praticar
+Vocês podem copiar a pasta de algum exercicio dentro da pasta `Desafios/` e resolver, ali já tem algumas atividades para praticar
 
 > Dica: Evitem usar Espaços no nome do arquivo, facilta caso tenhamos que usa-lo em um terminal

@@ -705,9 +705,6 @@
 # print(f"Sem Bit de Sinal: A ~ ({~a & 255}) = {bin(~a & 255)}")
 
 # print(4 << 3)
-
-# endregion
-
 # x = "Azul"                              #+ Associação
 # x == "Carro"                            #+ Comparação
 
@@ -795,7 +792,157 @@
 # print(f"lista_dobrada: {lista_dobrada}")
 
 
-lista_normal = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-lista_de_pares = [i for i in lista_normal if i % 2 == 0]
-print(f"lista_normal: {lista_normal}")
-print(f"lista_de_pares: {lista_de_pares}")
+# lista_normal = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+# lista_de_pares = [i for i in lista_normal if i % 2 == 0]
+# print(f"lista_normal: {lista_normal}")
+# print(f"lista_de_pares: {lista_de_pares}")
+#   Dicionário -> Estudante
+#   Nome, Idade, Notas -> lista
+#
+#   calcule a média das notas
+#   se for superior ou igual a 6
+#       exiba "Aprovado"
+#   se não exiba "Reprovado"
+
+
+# estudante = {
+#     "nome": "roberbo",
+#     "idade": 15,
+#     "notas": [6, 6, 6, 6, 6, 6],
+# }
+
+# media = sum(estudante["notas"]) / len(estudante["notas"])
+# print(f"seu nome é {estudante['nome']} sua idade é {estudante['idade']} e você foi")
+
+# if media >= 6:
+#     print("aprovado")
+# else:
+#     print("reprovado")
+
+
+
+#   Menu
+#       (1) - exibir "opcao 1"
+#       (2) - exibir "opcao 2"
+#       (0) - Sair
+#
+#   Enquanto o Usuário não digitar 0
+#   exibir o menu, e caso ele digite
+#   alguma das opções exiba a opção
+#
+#   caso ele digite algo que não é uma opção
+#   exiba "Opção não encontrada", e exiba o menu
+
+# for i in [1, 3, 4, 7, 9]:
+#     if i % 2 == 0:
+#         print("contem um numero par")
+#         break
+# else:
+#     print("não contem um numero par")
+
+
+# # r idx: -10, -9, -8, -7, -6, -5, -4, -3, -2, -1
+# # index:   0   1   2   3   4   5   6   7   8   9
+# A   =     [1,  5,  4,  2,  3,  7,  0,  8,  6,  9]
+
+# print(A[-8:])
+
+
+# lista_de_pares = []
+# for i in range(1, 11):
+#     if i % 2 == 0:
+#         lista_de_pares.append(i)
+
+# def checar_amigo(lista_amigos_argumento, lista_pessoas_argumento):
+#     for pessoa in lista_pessoas_argumento:
+#         if pessoa in lista_amigos_argumento:
+#             print(f'olá amigo')
+#         else:
+#             print(pessoa)
+
+
+# lista_pessoas = [
+#     'pessoa00',
+#     'pessoa01',
+#     'pessoa02',
+#     'pessoa03',
+#     'pessoa04',
+#     'pessoa05',
+#     'pessoa06',
+#     'pessoa07',
+#     'pessoa08',
+#     'pessoa09',
+#     'pessoa10',
+#     'pessoa11',
+#     'pessoa12',
+#     'pessoa13',
+#     'pessoa14',
+#     'pessoa15',
+#     'pessoa16',
+#     'pessoa17',
+#     'pessoa18',
+#     'pessoa19',
+# ]
+
+# lista_amigos = ['pessoa01', 'pessoa02', 'pessoa09', 'pessoa13']
+# lista_pessoas2 = [
+#     'pessoa00',
+#     'pessoa01',
+#     'pessoa02',
+#     'pessoa03',
+#     'pessoa04',
+#     'pessoa05',
+#     'pessoa06',
+#     'pessoa07',
+#     'pessoa08',
+#     'pessoa09',
+#     'pessoa10',
+#     'pessoa11',
+#     'pessoa12',
+#     'pessoa13',
+#     'pessoa14',
+#     'pessoa15',
+#     'pessoa16',
+#     'pessoa17',
+#     'pessoa18',
+#     'pessoa19',
+# ]
+
+
+# checar_amigo(lista_amigos, lista_pessoas)
+# print("==========================")
+# checar_amigo(lista_amigos, lista_pessoas2)
+
+
+#   Uma função, que tem um nome como parametro
+#   ela tem que exibir/printar uma apresentação
+#
+#   Olá meu nome é...
+
+
+
+# def apresentar(nome="nome_legal", idade=99): # Parametro
+#     if nome == "":
+#         nome = "nome_legal"
+#     if idade == "":
+#         idade=99
+
+
+#     print(f"Olá {nome} e eu tenho {idade} anos")
+
+
+# resposta = input("Insira seu nome e sua idade (separados por ,): ")
+
+# resposta_junta = resposta.replace(" ", "")
+# if resposta_junta != "":
+#     resposta_separada = resposta_junta.split(',')
+# else:
+#     resposta_separada = ["",""]
+
+# apresentar(
+#     nome=resposta_separada[0],
+#     idade=resposta_separada[1]
+# ) # Argumento
+
+# endregion
+

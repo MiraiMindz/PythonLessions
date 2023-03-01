@@ -495,9 +495,6 @@ list()  -> converte para lista
 set()   -> converte para set
 dict()  -> converte para dicionario
 
-
-<!-- #endregion -->
-
 Variaveis, Comentários, print() e input()
 
 Tipos de Dado
@@ -588,9 +585,11 @@ Compostos (ou Agrupados, ou Complexos)
 Tuples
 Listas
 Sets
-Dicionarios
+Dicionarios = {
+  "chave": valor,
+}
 
-chave:valor
+media = sum(Dicionarios["chave"]) / len()
 
 
 
@@ -604,3 +603,6 @@ set(): converte para set
 dict(): converte para dicionario
 
 coerção
+
+<!-- #endregion -->
+
