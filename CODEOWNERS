@@ -1,0 +1,19 @@
+# Lines starting with '#' are comments.
+# Each line is a file pattern followed by one or more owners.
+# Order is important. The last matching pattern has the most precedence.
+################################################################################
+# @MiraiMindz will be requested for review when someone opens a pull request.
+# On any of the following files:
+/Classes/ @MiraiMindz
+/Code/Mirai/ @MiraiMindz
+/Code/ReadMe.md @MiraiMindz
+/Code/generate_files.py @MiraiMindz
+/Exercicios/Desafios/ @MiraiMindz
+/Exercicios/Milestones/Mirai/ @MiraiMindz
+/Exercicios/Milestones/.gitignore @MiraiMindz
+/Exercicios/Milestones/ReadMe.md @MiraiMindz
+/Exercicios/Milestones/generate_milestones.py @MiraiMindz
+/Exercicios/Milestones/ReadMe.md @MiraiMindz
+.gitignore @MiraiMindz
+Indice.md @MiraiMindz
+ReadMe.md @MiraiMindz
