@@ -501,5 +501,159 @@
 # media = sum(medias) / len(medias)
 # print(media / 10)
 
+# isAdmin = True
+# hasNet = True
+# hasAccess = False
+
+# # Se ele tiver todos os 3, entre no sistema.
+
+# if isAdmin and hasNet and hasAccess:
+#     print("entrando no sistema")
+# else:
+#     print("acesso bloquado")
+
+
+# def promptYesNo(prompt):
+#     resp = input(f"{prompt} [y/n]: ")
+#     returnValue = False
+#     if resp[0].lower() not in ('s', 'n'):
+#         print("WRONG INPUT")
+#         if promptYesNo("Voce deseja digitar de novo?"):
+#             returnValue = promptYesNo(prompt)
+#     else:
+#         if resp[0].lower() == "y":
+#             returnValue = True
+#     return returnValue
+
+
+# def isGay():
+#     resp = input("Você é Gay? ")
+#     if resp[0].lower() not in ("n", "s"):
+#         print("DIGITE UMA RESPOSTA CORRETA")
+#         isGay()
+#     else:
+#         if resp[0].lower() == "s":
+#             print("tchola")
+#         else:
+#             print("comedor de xereca sigma")
+
+
+# isGay()
+
+
+# from timeit import timeit
+
+# def or_scircuitTF():
+#     return True or False
+
+# def or_circuitFT():
+#     return False or True
+
+# def and_circuitTF():
+#     return True or False
+
+# def and_scircuitFT():
+#     return False and True
+
+# iterations = 1_000_000
+
+# print(f"or_circuitFT: {timeit(or_circuitFT, number=iterations)}")
+# print(f"or_scircuitTF: {timeit(or_scircuitTF, number=iterations)}")
+# print(f"and_circuitTF: {timeit(and_circuitTF, number=iterations)}")
+# print(f"and_scircuitFT: {timeit(and_scircuitFT, number=iterations)}")
+
+
 # endregion
 
+# inf = float('inf')
+# NaN = float('nan')
+
+# print(inf, type(inf))
+# print(NaN, type(NaN))
+# print(NaN + 2.2)
+
+# rawFormatString = fr"\uffff"
+
+# print(rawFormatString)
+
+# from string import Template
+
+# template_string = Template("Ola meu nome é $nome eu tenho $idade anos e eu estou ${acao}ndo")
+
+# resultado = template_string.substitute(nome="Mirai", idade=18, acao="programa")
+
+# print(resultado)
+
+# texto = "Meu nome é %s e eu tenho %04d anos."
+
+# print(texto % ('Mirai', 18))
+
+
+# tulipa = (1, 2, 3, 4)
+
+# a, b, c, d = tulipa 
+# tulipa_nova = a, +b, +c, +d, 5
+
+
+# print(tulipa, hex(id(tulipa)))
+# print(tulipa_nova, hex(id(tulipa_nova)))
+
+# print(id(tulipa) == id(tulipa_nova))
+
+
+# #       -4  -3  -2  -1
+# #        0   1   2   3
+# lista = [1,  2,  3,  4]
+
+# print(lista)
+
+# lista.append(5)
+# print(lista)
+# lista.insert(3, 87)
+# lista.insert(5, 87)
+# print(lista)
+
+# lista.pop(2)
+# print(lista)
+# lista.remove(87)
+# print(lista)
+
+
+
+# matriz = [
+#     [1, 2, 3],
+#     [4, 5, 6],
+#     [7, 8, 9],
+# ]
+
+# print(matriz[1][1])
+
+
+# numeros = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+# pares = {0, 2, 6, 4, 8}
+# impares = {1, 3, 5, 7, 9}
+# primos = {1, 2, 3, 5, 7}
+
+# print(primos.issubset(impares))
+
+
+# dicionario = {
+#     "chave1": "valor1",
+#     "chave2": "valor2",
+#     "chave3": "valor3",
+#     "chave4": "valor4",
+#     "chave5": "valor5",
+# }
+
+# dicionario.pop('chave2')
+
+# print(dicionario)
+
+
+# dicionario['chave6'] = 'valor6'
+
+# print(dicionario)
+
+notas  = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+print(sum(notas) / len(notas))

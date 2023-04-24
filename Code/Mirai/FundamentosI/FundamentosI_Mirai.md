@@ -604,5 +604,172 @@ dict(): converte para dicionario
 
 coerção
 
+Variaveis, Comentários, print() e input()
+
+identificador = valor
+
+
+identificador = input(prompt)
+
+
+Dados Primitivos guardam apenas uma informação, ou seja, um numero, um texto, um Verdadeiro
+
+fString
+
+
+soma: +
+subtração: -
+potencia: **
+mutiplicação: *
+divisão: /
+"divisão verdadeira": //
+módulo: %
+
+
+
+Parenteses () em sequencia, ou seja, externos primeiro
+Exponenciação: **
+Mutilicativos: *, @
+Divisivos: /, //, %
+Adição: +
+Subtração: -
+
+
+Verdadeiros:
+True
+Qualquer string que não esteja vazia
+Qualquer numero diferente de 0
+Qualquer outro tipo de dado que não esteja vazio
+
+Falsos:
+False
+Strings vazias ("" ou '')
+0
+Qualquer outro tipo de dado vazio
+
+and
+or
+not
+
+or: first true last false
+and: first false last true
+not: negates the value
+
+
+Curto Círcuito: encurtar a operação ao reorganizar os valores.
+
+    etapa 01
+    etapa 02
+    etapa 03
+    etapa 04
+    etapa 05
+    etapa 06
+    etapa 07
+    etapa 08
+    etapa 09
+    etapa 10 (if) X 
+    etapa 11
+    etapa 12
+    etapa 13 <-
+    etapa 14
+ -> etapa 15
+    etapa 16
+    etapa 17
+    etapa 18
+    etapa 19
+    etapa 20
+
 <!-- #endregion -->
 
+
+> Strings
+>> Operadores (6 grupos)
+>>> Prefixo
+>>> Sequencias de escapagem
+>>> Templates
+>>> Conversores
+>>> Mini-linguagem de formatação
+>>> Depuração / Padrão printf
+
+[x] - fStrings
+[x] - rStrings
+[x] - uStrings
+[x] - rfStrigs ou frStrings
+
+
+
+$variavel
+
+${variavel}
+
+[x] - !a -> ascii
+[x] - !s -> string
+[x] - !r -> repr()
+
+
+
+f
+>^=<
++-
+,_
+#
+b x c
+
+
+
+8 4 2 1
+0 0 1 1
+
+
+strings 
+ints
+float
+boolean
+
+compostos:
+tuples -> Array Imutavel
+listas -> Arrays
+dicionarios -> Named_Arrays
+sets (conjuntos) -> Hash_Arrays
+
+4 -> Array -> conjunto
+
+
+Mutabilidade: a capacidade de alterar um tipo de dado sem q seja um criado um novo.
+
+
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+
+
+PEP8
+
+Python Enhancement Proposal
+
+
+Conversão & Coerção
+
+sum() & len()
+
+
+if else while for match-case
+
+def
+
+shadowing
+
+escopo
+
+Logica booleana
+
+operadores
+
+proj 1 >  FilmLib

@@ -546,3 +546,66 @@ Condicional: lista_resultado = ['expr_saida' for 'var' in 'iteravel' if (condiç
 
 
 <!-- #endregion -->
+
+Sequencial
+x = 4
+y = x + 2
+print(y)
+
+Decisivo
+x > 4
+x < 4?
+
+se x == 4 {
+    dkasd
+} se não {
+    adfdafj
+}
+
+Repetitivo
+
+x = 0
+enquanto x < 20 {
+    x += 1
+}
+
+
+
+
+
+if (decisão):
+    codigo
+
+else + if
+
+
+Cadeia de elif
+
+(elif-chain)
+
+
+comparação de padrão estrutural
+
+[
+    {}, {}, {}
+]
+
+[
+    [],[],
+]
+
+
+match pessoas:
+	case [a]:
+		print(f'Apenas um valor: {a}')
+	case [a, (b,)]:
+		print(f'Dois itens: {a}, {b}')
+	case [a, b, c]:
+		print(f'Três itens: {a}, {b}, e {c}')
+	case [a, b, c, *rest]:
+		print(f'Mais que três itens: {a}, {b}, {c}, e também: {rest}')
+	case _:
+		print('Valor incorreto')
+
+
+if len(pessoas) == 2 and type(pessoas[1]) == type(())

@@ -1,8 +1,12 @@
 # Um Curso de Programação em Python
 
-Esse curso foi feito para ajudar uns amigos a entrarem nesse mundo de tecnologia e também como uma forma de armazenar meu conhecimento na area.
+## PROJETO AINDA EM DESENVOLVIMENTO
 
-Se você estiver curioso para saber os conteudos, dê uma olhada no [Índice](./Indice.md)
+Eu ainda estou escrevendo o curso, cada capitulo leva em média de 2 a 4 dias pra ser escrito por conta da quantidade de conteudos.
+
+Se você estiver curioso para saber todos conteudos que eu irei abordar, dê uma olhada no [Índice](./Indice.md)
+
+Esse curso foi feito para ajudar uns amigos a entrarem nesse mundo de tecnologia e também como uma forma de armazenar meu conhecimento na area.
 
 **Todos os códigos (que não são de lives nem de tutelagens de mal-código) nesse repositório são escritos seguindo o [PyLint](https://github.com/PyCQA/pylint), passam por um pre-commit e são formatados usando o [black](https://github.com/psf/black)**
 

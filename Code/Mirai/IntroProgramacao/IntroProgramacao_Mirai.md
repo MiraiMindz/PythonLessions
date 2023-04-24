@@ -518,3 +518,108 @@ Introdução a Programação
 
 <!-- #endregion -->
 
+Desenvolvimento de Sites
+Desenvolvimento de Jogos
+Desenvolvimento de Aplicativos
+Sistemas e Bancos de dados
+Inteligencias Artificiais
+Algoritmos
+
+As linguagens podem ser classificadas de acordo com seus paradigmas, método de tradução, tipagem, nível, geração, entre outros, vale também ressaltar que uma linguagem pode ter mais de um tipo de classificação dentro de um mesmo campo.
+
+
+Linguagem de Computação (Matriz):
+    Programação (Logica): As linguagens de Programação são marcadas por funções e comandos, elas trabalham a logica de maquina, alguns exemplos são, Python e BASH.
+
+    Marcação (Documentação): As Linguagens de Marcação são marcada pelo uso de marcadores de texto (ex: itálico, negrito, cabeçalhos, etc...), elas são mais usadas na criação de documentos, exemplos seriam MarkDown e HTML (HyperTextMarkupLanguage).
+
+    Estilo (Design): As Linguagens de Estilo são marcadas pelo o uso de propriedades de aparência (ex: background-color, shadow, etc...), elas são usadas na estilização de sites e aplicativos, exemplos seriam CSS e SASS.
+
+Python de , de 
+
+imperativa, , funcional,
+
+```sh
+str="Movendo Arquivo1"            # Primeira Instrução
+printf "%s\n" "${str}"            # Segunda Instrução
+mv -vi Arquivo1.ext /diretorio1/  # Terceira Instrução
+printf "%s\n" "Concluido"         # Quarta Instrução
+```
+
+```py
+print(1)
+print(2)
+print(3)
+```
+
+```go
+package main
+
+import "fmt"
+
+// Aqui nós declaramos a primeira função
+func funcao_print_1() {
+    fmt.Println("Função 1")
+}
+
+// Aqui nós declaramos a segunda função
+func funcao_print_2() {
+    fmt.Println("Função 2")
+}
+
+func main() {
+    funcao_print_2() // Aqui chamamos a segunda
+    funcao_print_1() // Aqui chamamos a primeira
+    funcao_print_2()
+    funcao_print_2()
+    funcao_print_2()
+
+    funcao_print_2()
+    funcao_print_2()
+    funcao_print_2()
+    funcao_print_2()
+}
+```
+
+orientada a objetos -> Classes
+
+```java
+public class Program {    
+    public static void main(String[] args) throws Exception {
+        String text = "Olá Mundo";
+        System.out.println(text);
+    }
+}
+```
+
+tipagem dinâmica e forte:
+
+```py
+x = 4
+x = "texto"
+```
+
+alto nível
+
+
+```py
+print("Hello World!")
+```
+
+```nasm
+section .data
+    texto db "Olá Mundo!", 0xA
+    len equ $ - texto
+
+global _start
+section .text
+_start:
+    mov eax, 4
+    mov ebx, 1
+    mov ecx, texto
+    mov edx, len
+    int 0x80
+
+    mov eax, 1
+    int 0x80
+```
