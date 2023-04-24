@@ -2,7 +2,7 @@
 
 ## PROJETO AINDA EM DESENVOLVIMENTO
 
-Eu ainda estou escrevendo o curso, cada capitulo leva em média de 2 a 4 dias pra ser escrito por conta da quantidade de conteudos.
+Eu ainda estou escrevendo o curso, cada capitulo leva em média de 2 a 4 dias para ser escrito por conta da quantidade de conteudos.
 
 Se você estiver curioso para saber todos conteudos que eu irei abordar, dê uma olhada no [Índice](./Indice.md)
 
