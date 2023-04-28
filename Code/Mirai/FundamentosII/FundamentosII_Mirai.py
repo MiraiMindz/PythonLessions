@@ -947,27 +947,168 @@
 # endregion
 
 
-carro = "Ford"
+# carro = "Ford"
 
-if carro == "Wolkswagen" :
-    ...
-elif carro == "BMW":
-    ...
-elif carro == "Pegeout":
-    ...
-elif carro == "Ferrari":
-    ...
-else:
-    ...
+# if carro == "Wolkswagen" :
+#     ...
+# elif carro == "BMW":
+#     ...
+# elif carro == "Pegeout":
+#     ...
+# elif carro == "Ferrari":
+#     ...
+# else:
+#     ...
 
-match carro:
-    case "Wolkswagen":
-        ...
-    case "BMW":
-        ...
-    case "Pegeout":
-        ...
-    case "Ferrari":
-        ...
-    case _:
-        ...
+# match carro:
+#     case "Wolkswagen":
+#         ...
+#     case "BMW":
+#         ...
+#     case "Pegeout":
+#         ...
+#     case "Ferrari":
+#         ...
+#     case _:
+#         ...
+
+
+#               [5, 6, 7]
+#  -10 -9 -8 -7 -6 -5 -4 -3 -2 -1
+#    0  1  2  3  4  5  6  7  8  9
+# A = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+# print(A[-6:-3])
+
+
+# dobro = (i * 2 if i % 2 == 0 else i * 10 for i in range(10))
+
+# resp = []
+# for i in range(10):
+#     if i % 2 == 0:
+#         resp.append(i * 2)
+#     else:
+#         resp.append(i * 10)
+
+
+# print(dobro)
+
+
+
+## x = {chave:valor for (chave, valor) in enumerate(["a", "b", "c"]) if chave == "a"}
+## print(x)
+
+
+# lista_numeros = [1, 2, 3, 4, 5]
+# lista_characteres = ['a', 'b', 'c', 'd', 'e']
+
+# resultado = {k:v for (k ,v) in zip(lista_numeros, lista_characteres)}
+# print(resultado)
+
+# Enumera um Iteravel
+# Junta varios iteraveis
+
+
+
+
+
+
+
+# Funções
+
+
+# def ola():
+#     print("Ola")
+
+# ola()
+
+#             # Parametro Padrao
+# def apresentar(idade, nome = ""): # Argumento
+#     print(f"Ola meu nome é {nome} e eu tenho {idade} anos.")
+
+# #apresentar() # Parametro
+# apresentar(idade=17, nome="Pedro") # Argumentos Chave
+# #apresentar("Jorge", 32)
+
+
+# def multi_print(*args):
+#     print(*args, type(args))
+#     #for i in args:
+#     #    print(i)
+
+# multi_print(1, 2, 3, 4, 5, 6)
+
+
+# a, b = 1, 2
+
+
+# def multi_key_print(**kwargs):
+#     print(**kwargs)
+#     for k, v in kwargs.items():
+#         print(k, v)
+
+
+
+
+# multi_key_print(a=1, b=2, c=3, d=4)
+
+
+
+
+# def position_only(a, b, c, /):
+#     print(a, b, c)
+
+
+# position_only(1, 2, 3)
+
+# def keyword_only(*, a, b, c):
+#     print(a, b, c)
+
+# keyword_only(a=1, b=2, c=3)
+
+
+
+# def args_kwargs(*args, **kwargs):
+#     print(args)
+#     print(kwargs)
+
+# args_kwargs()
+
+
+# def funcao_complexa(x, y, z):
+#     '''
+#     Titulo
+#     ====
+#     Caso X seja verdade, multiplica z num raio de y, caso contrario soma
+    
+#     '''
+#     if x:
+#         for i in range(y):
+#             print(i * z)
+#     else:
+#         for i in range(y):
+#             print(i + z)
+
+# funcao_complexa(False, 20, 2)
+
+
+
+# Código deve ser auto-descritivo
+# Comentários dizem o porque
+# Documentação te diz Como
+
+
+def add(*args):
+    x = 0
+    for i in args:
+        x += i
+
+    return x
+
+
+resultado = add(1, 2, 3)
+
+print(resultado * 2)
+
+
+

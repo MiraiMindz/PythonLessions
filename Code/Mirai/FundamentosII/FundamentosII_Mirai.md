@@ -609,3 +609,46 @@ match pessoas:
 
 
 if len(pessoas) == 2 and type(pessoas[1]) == type(())
+
+
+Compreensão
+    - Lista
+    - Set
+    - Dicionário
+    é gerar um tipo de dado composto de forma dinamica
+
+Expressões:
+lista: ``lista_resultado = ['expr_saida' for 'var' in 'iteravel']`
+
+
+
+
+
+
+
+Funções
+
+é um parte de código independente que pode ser re-utilizada, elas servem para exercer uma FUNÇÃO (vide o nome).
+
+
+def nome_da_funcao():
+    corpo_da_função
+
+Argumentos e Parametros
+
+Args && Kwargs
+
+* **
+
+
+{
+    "permission": valor
+    ...
+
+    800
+}
+
+for dict.Keys()
+    x = {}
+
+    **x
