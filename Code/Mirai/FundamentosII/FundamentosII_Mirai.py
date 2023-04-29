@@ -973,6 +973,112 @@
 #         ...
 
 
+# RECURSIVIDADE
+# def count_recur(x):
+#     print(x)
+#     x += 1
+#     if not x < 10:
+#         return
+    
+#     count_recur(x=x)
+
+
+# count_recur(0)
+
+
+
+# x = 0
+# while True:
+#     print(x)
+#     x += 1
+#     if not x < 10:
+#         break
+
+
+# lista_amigos = ["amigo1", "amigo2", "amigo3"]
+
+
+
+# for amigo in lista_amigos:
+#     print(amigo)
+
+
+# x = 0
+# while True:
+#     print(lista_amigos[x])
+#     x += 1
+#     if x == len(lista_amigos):
+#         break
+
+
+
+# from timeit import timeit
+
+
+# def pure_while(n: int = 100000000) -> int:
+#     i, x = 0, 0
+#     while i < n:
+#         x += i
+#         i += 1
+#     return x
+
+
+# print(f"While Loop:\t{timeit(pure_while, number=1)} segundos")
+
+
+# def pure_for(n: int = 100000000) -> int:
+#     x = 0
+#     for i in range(n):
+#         x += i
+#     return x
+
+
+# print(f"For Loop:\t{timeit(pure_for, number=1)} segundos")
+
+#def func():
+#    print("a")
+
+
+
+# lista_amigos = ["amigo1", "amigo2", "amigo3"]
+
+# for posicao, amigo in enumerate(lista_amigos):
+#     print(posicao, amigo)
+
+
+# dicionario = {
+#     "chave1": "valor1",
+#     "chave2": "valor2",
+#     "chave3": "valor3",
+# }
+
+# for x, y in dicionario.items():
+#     print(x, y)
+
+
+
+
+# for i in [1, 5, 87, 2]:
+#     if i % 2 == 0:
+#         print("Contém um numero par")
+#         break
+# else:
+#     print("Não contem um numero par")
+
+
+
+
+
+# x = 13
+# for i in range(2, x):
+#     if x % i == 0:
+#         print(f"{x} não é primo")
+#         break
+# else:
+#     print(f"{x} é primo")
+
+
+
 #               [5, 6, 7]
 #  -10 -9 -8 -7 -6 -5 -4 -3 -2 -1
 #    0  1  2  3  4  5  6  7  8  9

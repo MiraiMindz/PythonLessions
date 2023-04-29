@@ -611,6 +611,77 @@ match pessoas:
 if len(pessoas) == 2 and type(pessoas[1]) == type(())
 
 
+
+
+
+
+
+enquanto ALGO_FOR_VERDADE {
+    exec codigo
+}
+
+
+
+FOR -> while com condição
+
+
+
+delimitador de localidade
+
+
+
+<!-- Global
+
+importante = 3
+
+A {
+    x = 5
+    B {
+        y = "cachorro"
+        print(x)
+        C {
+            nonlocal x = 3
+            print(x)
+            
+            D {
+                importante = 8
+                print(x)
+                print(y)
+            }
+
+            print(y)
+        }
+
+        print(x)
+    }
+    print(x)
+} -->
+
+0 - 30
+
+se for divisivel por 3, exibe "Fizz"
+se for divisivel por 5, exibe "Buzz"
+se for divisivel por 3 e 5, exibe "FizzBuzz"
+se não for, exibe o numero
+
+
+1
+2
+fizz
+4
+buzz
+fizz
+7
+8
+fizz
+buzz
+11
+fizz
+13
+14
+fizzbuzz
+
+
 Compreensão
     - Lista
     - Set
