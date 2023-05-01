@@ -1204,17 +1204,263 @@
 # Documentação te diz Como
 
 
-def add(*args):
-    x = 0
-    for i in args:
-        x += i
+# def add(*args):
+#     x = 0
+#     for i in args:
+#         x += i
 
-    return x
-
-
-resultado = add(1, 2, 3)
-
-print(resultado * 2)
+#     return x
 
 
+# resultado = add(1, 2, 3)
 
+# print(resultado * 2)
+
+
+
+
+
+
+
+
+
+# def add_numbers(x, y):
+#     return x + y
+
+
+# add_numbers2 = lambda x, y : x + y
+
+# print(add_numbers(1, 2), add_numbers2(1, 2))
+
+# print()
+
+# (lambda x, y : x + y)(5, 6)
+
+# lista = [1, 2, 3, 4, 5]
+
+
+
+# resultado = list(map((lambda x : x ** 2 + 37), lista))
+
+# print(resultado)
+
+
+
+
+# imprimir = print
+
+# imprimir("Test")
+
+
+
+
+# def func_sup(func, name):
+#     resp = func(name)
+#     up_name = resp.upper()
+#     return up_name
+
+
+# def hello_name(name):
+#     return f"Olá {name}"
+
+
+# print(func_sup(hello_name, "Mirai"))
+
+
+
+
+
+# def upper_function(func):
+#     def inner_function(name):
+#         answer = func(name)
+#         return answer.upper()
+
+#     return inner_function
+
+# def h_name(name):
+#     return f"Olá {name}"
+
+# print(upper_function(h_name)("Mirai"))
+
+
+
+
+
+
+
+# # func_alta_ordem = lambda x, func: x + func(x)
+
+# # print(func_alta_ordem(2, lambda x: x**2))
+
+# func_alta_ordem = lambda x, y=(lambda x: x**2): x + y(x)
+
+# print(func_alta_ordem(2))
+
+
+# x = "Escopo Global"
+
+
+# def func_legal_var_local():
+#     x = "Escopo Local"
+#     print(x)
+
+
+# def func_legal_var_global():
+#     global x
+#     print(x)
+
+
+# def alterar_global():
+#     global x
+#     x = "Alteramos a variavel global"
+
+
+# print(x)  # Escopo Global
+# func_legal_var_local()  # Escopo Local
+# func_legal_var_global()  # Escopo Global
+# alterar_global()
+# print(x)  # Alteramos a variavel global
+
+
+
+
+
+
+
+# def func_extern1():
+#     x = "Func externa 1"
+#     def func_intern1():
+#         x = "Func interna 1"
+#         print(x)
+#     print(x)
+#     func_intern1()
+
+
+# def func_extern2():
+#     x = "Func externa 2"
+#     def func_intern2():
+#         nonlocal x
+#         print(x)
+
+#     print(x)
+#     func_intern2()
+
+
+# def func_extern3():
+#     x = "Func externa 3"
+#     def func_intern3():
+#         nonlocal x
+#         x = "Alteramos a variavel da Func Externa 3"
+#         print(x)
+
+#     print(x)
+#     func_intern3()
+
+
+# func_extern1()
+# func_extern2()
+# func_extern3()
+
+
+
+# x = 0
+# def externa():
+#     y = 1
+
+#     def interna():
+#         x = 2
+#         print("interna:", x)
+
+#     def interna_nao_associada():
+#         print("interna não associada:", z)
+
+#     interna()
+#     interna_nao_associada()
+#     print("externa:", x)
+
+
+# externa()
+# print("global:", x)
+
+
+
+
+
+
+# from numpy import array
+
+# matriz_1 = [[1, 2], [3, 4]]
+
+# matriz_2 = [[5, 6], [7, 8]]
+
+# produto_das_matrizes = array(matriz_1) @ array(matriz_2)
+
+# print(produto_das_matrizes)
+
+
+# A = [[1, 2], [3, 4]]
+
+
+# B = [[5, 6], [7, 8]]
+
+
+
+# N, M, P = len(A), len(A[0]), len(B[0])
+
+# result = []
+# for i in range(N):
+# 	row = [0] * P
+# 	result.append(row)
+
+# for i in range(N):
+# 	for j in range(P):
+# 		for k in range(M):
+# 			result[i][j] += A[i][k] * B[k][j]
+
+# print(result)
+
+
+# a, b = 1, 2
+
+# # {se verdadeiro} if {expressão} else {se falso}
+
+# c = a if a < b else b  # c = a
+# d = a if a > b else b  # d = b
+
+
+# a = ["apple", "banana"]
+# b = ["apple", "banana"]
+# c = a
+
+# print(f"A é igual a B ? {a == b}")
+# print(f"A é B ? {a is b}")
+# print(f"A é C ? {a is c}")
+
+# print(f"A é diferente a B ? {a != b}")
+# print(f"A não é B ? {a is not b}")
+# print(f"A não é C ? {a is not c}")
+
+# print(f"ID de A: {hex(id(a))}")
+# print(f"ID de B: {hex(id(b))}")
+# print(f"ID de C: {hex(id(c))}")
+
+# id(a) == id(b)
+# id(a) == id(c)
+
+
+# print("h" in "abcdefghijklmnopqrstuvwxyz")
+# print(12 not in [1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 12])
+
+
+
+# x = 3
+
+# x += 1
+
+# -=
+# *=
+# /=
+# //=
+# %=
+
+# x

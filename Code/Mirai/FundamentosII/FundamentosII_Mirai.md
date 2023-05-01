@@ -723,3 +723,154 @@ for dict.Keys()
     x = {}
 
     **x
+
+
+
+
+
+
+
+
+
+lambda {argumentos} : {expressão}
+
+
+
+Função anonima
+
+- Uso Unico
+- Sem declaração
+
+
+
+Função de Primeira Classe
+
+Função de Alta Ordem
+
+Conceitos da programação funcional
+
+------
+
+
+Função de Primeira Classe
+
+
+
+key indentificador() {
+    codigo
+}
+
+tipo identificador = valor
+
+variavel do tipo `function` -> Callable
+
+
+------
+
+Função de Alta Ordem
+
+Retornam uma função
+
+*Uma função que gera uma função*
+
+
+
+global
+
+nonlocal
+
+
+
+
+
+IDEAL até 3 niveis de identação
+
+
+
+
+
+- Aritmeticos
+- Logicos
+- Comparativos
+- Bitwise
+- Associativos
+- Identidade
+- Membros
+
+
+
++
+-
+*
+/
+**
+//
+%
+@ 
+
+
+
+
+>
+<
+==
+!=
+>=
+>=
+
+
+is
+
+is not
+
+in
+
+not in
+
+
+
+
+
+
+
+AND (&)
+OR (|)
+NOT (~)
+XOR (^) (exclusive or)
+RightShift (>>)
+LeftShift (<<)
+
+
+
+
+
+1 = 1 x 10^0
+50 = 5 x 10^1
+600 = 6 x 10^2
+
+
+505
+
+13 10 + 3
+
+1 x 10^1 + 3 x 10^0 = 13
+
+10 + 3
+
+
+0 -> 0
+1 -> 1
+
+2^n - 1, sendo o numero de bits
+
+2^7 2^6 2^5 2^4 2^3 2^2 2^1  2^0
+
+
+
+
+
+128  64  32  16  8   4   2   1
+[0] [0] [0] [1] [0] [1] [0] [1]
+
+2^2 + 2^0
+4 + 1 = 5
